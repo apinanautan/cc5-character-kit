@@ -10,12 +10,12 @@
    "folder": "1. นายสมจิต + นางอุไร",
    "outfit": [
     [
-     "MO:Owen\\Pants.ccCloth",
-     null
+     "47ae0874",
+     "cotton_khaki"
     ],
     [
-     "MO:Farmer\\Shirt 01.ccCloth",
-     null
+     "63b0a4",
+     "stripe_grey"
     ],
     [
      "MO:Oahu\\Flip Flops.ccShoes",
@@ -176,8 +176,8 @@
      null
     ],
     [
-     "MO:Streetstyle\\Shirt 01.ccCloth",
-     null
+     "63b0a4",
+     "cotton_charcoal"
     ],
     [
      "MO:Casual 01\\Shoes.ccShoes",
@@ -203,11 +203,11 @@
    "folder": "2. ญาติ ๆ",
    "outfit": [
     [
-     "185f00",
-     "pha_thung_green"
+     "f909f8",
+     "cotton_navy"
     ],
     [
-     "b621bb",
+     "63b0a4",
      "floral_maroon"
     ],
     [
@@ -382,7 +382,7 @@
     ],
     [
      "63b0a4",
-     "plaid_blue"
+     "cotton_rust"
     ],
     [
      "MO:Oahu\\Flip Flops.ccShoes",
@@ -407,12 +407,12 @@
    "folder": "7. ชาวบ้าน",
    "outfit": [
     [
-     "2fb73d",
-     null
+     "f909f8",
+     "cotton_khaki"
     ],
     [
-     "d128d4",
-     "floral_brown"
+     "63b0a4",
+     "floral_green"
     ],
     [
      "MO:Oahu\\Flip Flops.ccShoes",
@@ -442,8 +442,8 @@
      null
     ],
     [
-     "MO:Pyjamas\\Shirt 01.ccCloth",
-     null
+     "63b0a4",
+     "cotton_cream"
     ],
     [
      "MO:Oahu\\Sandals 02.ccShoes",
@@ -470,7 +470,7 @@
    "outfit": [
     [
      "185f00",
-     "plaid_brown"
+     "pha_thung_batik"
     ],
     [
      "b1e2b4",
