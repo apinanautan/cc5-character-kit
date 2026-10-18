@@ -6,6 +6,22 @@
 
 ---
 
+## 0. สั่ง CC5 โดยไม่ต้องกดหน้าจอ (ใช้ได้ทั้ง Claude / GPT / Codex)
+
+CC5 มี plugin **CC5Bridge** (`cc5_plugin/CC5Bridge`, ลิงก์เข้า `CC5\Bin64\OpenPlugin` แล้วด้วย `install_plugin.bat`) — รันคำสั่งจากไฟล์ ไม่ต้องเห็นหน้าต่าง
+```bash
+python tools\start_cc5.py            # เปิด CC5 (กด OK ป๊อปอัปเปิดโปรแกรมเอง) และรอจน bridge พร้อม  (--restart = ปิดเปิดใหม่)
+python tools\cc5.py status           # ALIVE ไหม ใครล็อกอยู่
+python tools\cc5.py lock gpt         # จองก่อนใช้ (ถ้าขึ้น already locked = อีก agent ใช้อยู่ ห้ามแย่ง)
+python tools\cc5.py run cc5uild.py                          # สคริปต์อะไรก็ได้ใน cc5/ รอผลแล้วพิมพ์ log
+python tools\cc5.py run cc5\load_render.py job=krong_banphot  # ส่งค่าเข้า BRIDGE_ARGS ได้
+python tools\cc5.py unlock           # เลิกใช้แล้วปลดล็อก (ถ้า agent เดิมติดลิมิต ผู้ใช้ลบ cc5_jobs\LOCK.txt เองได้)
+```
+- ผลรูปอยู่ในโฟลเดอร์ job (เช่น `check.png`, `<ชื่อ>.png`) — เปิดดูรูปทุกครั้งก่อนบอกว่าผ่าน
+- ทำครบหนึ่งตัว → อัปเดต `docs/STATUS.md` → `git commit` + `git push` ทันที (อีก agent จะรู้ว่าถึงไหน)
+- ยังต้องกดด้วยมือ: **InstaLOD** (ลดโพลี) และ **Export iAvatar** ยังไม่มีคำสั่ง Python — ถ้า agent กดจอไม่ได้ ให้เขียนขั้นตอนให้ผู้ใช้กด (ตำแหน่งปุ่มในข้อ 5 และ 7)
+- CC5 แครช/ค้าง → `python tools\start_cc5.py --restart`
+
 ## 1. งานนี้คืออะไร
 
 ผู้ใช้ทำคลิปนิทาน/เรื่องเล่าไทยด้วย iClone 8 ต้องการ **ตัวละคร 3D ใน Character Creator 5 (CC5)** ตามรายชื่อตัวละครของแต่ละเรื่อง
@@ -86,7 +102,7 @@
   - **"By Face Count" ใช้ไม่ได้** · ตัวนับหน้าใน CC5 (`GetFacesCount`) อ่านผิดหลัง InstaLOD → นับจริงด้วย `cc5\export_cloth_obj.py` แล้วนับบรรทัด `f ` ใน `cc5_jobs\cloth_check.obj`
 - Blender decimate (`blender/decimate_obj.py`, `cc5/reduce_polys.py`) ลดได้สวยแต่ **ส่งกลับ CC5 ไม่ได้** (ReplaceMesh ปฏิเสธจำนวนจุดต่าง) — อย่าใช้ทางนี้
 
-## 8. สถานะเรื่อง "กรงกตัญญู" (2026-10-18 16:15)
+## 8. สถานะเรื่อง "กรงกตัญญู" — ตัวล่าสุดอยู่ที่ docs/STATUS.md (ตารางนี้คือ ณ 2026-10-18 16:15)
 
 ไฟล์อยู่ `Desktop\กรงกตัญญู\` ครบ 16 ตัว (โฟลเดอร์ 1,2,3,4,6,7,8 — ข้อ 5 รถยนต์ ผู้ใช้จัดเอง)
 

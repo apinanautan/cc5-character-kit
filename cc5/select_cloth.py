@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
 
 d = kit.current_job()
-name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8"))["name"]
+name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))["name"]
 want = open(os.path.join(kit.JOBS, "select_cloth.txt"), encoding="utf-8").read().strip()
 proj = os.path.join(d, name + ".ccProject")
 RLPy.RFileIO.LoadFile(proj)  # always start from the saved project

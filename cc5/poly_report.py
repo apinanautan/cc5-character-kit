@@ -10,7 +10,7 @@ for d in open(kit.BATCH, encoding="utf-8").read().splitlines():
     d = d.strip()
     if not d:
         continue
-    name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8"))["name"]
+    name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))["name"]
     proj = os.path.join(d, name + ".ccProject")
     if not os.path.exists(proj):
         continue

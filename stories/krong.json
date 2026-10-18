@@ -143,7 +143,7 @@
      "pha_thung_batik"
     ],
     [
-     "fc523c",
+     "MO:Old\\Shirt.ccCloth",
      "floral_blue_faded"
     ],
     [
@@ -317,12 +317,12 @@
    "folder": "4. บรรพจ",
    "outfit": [
     [
-     "0374dd",
-     null
+     "MO:Owen\\Pants.ccCloth",
+     "cotton_charcoal"
     ],
     [
-     "189a5b",
-     null
+     "MO:Farmer\\Shirt 02.ccCloth",
+     "cotton_olive"
     ],
     [
      "MO:Casual 03\\Shoes.ccShoes",

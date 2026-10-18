@@ -39,7 +39,7 @@ def fix(av, d, mode, log):
 def main(mode):
     """Run on the current job (first line of batch.txt): load its project, fix, render, save."""
     d = kit.current_job()
-    name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8"))["name"]
+    name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))["name"]
     log = []
     try:
         proj = os.path.join(d, name + ".ccProject")

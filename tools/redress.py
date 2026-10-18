@@ -12,7 +12,7 @@ from fabric_onto_garment import make
 job, specs = sys.argv[1], sys.argv[2:]
 d = os.path.join(kit.JOBS, job)
 jf = os.path.join(d, "job.json")
-s = json.load(open(jf, encoding="utf-8"))
+s = json.load(open(jf, encoding="utf-8-sig"))
 shoes = [i for i in s["items"] if i.lower().endswith(".ccshoes")]
 for f in os.listdir(d):
     if f.startswith("new") and f.lower().endswith(".cccloth"):

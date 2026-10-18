@@ -11,7 +11,7 @@ TARGET = 12000    # tops / shoes
 TARGET_LONG = 15000  # long skirts / trousers / dresses (more cloth area)
 
 d = kit.current_job()
-name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8"))["name"]
+name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))["name"]
 work = os.path.join(d, "reduce")
 os.makedirs(work, exist_ok=True)
 log = []

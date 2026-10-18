@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
 
 d = kit.current_job()
-job = json.load(open(os.path.join(d, "job.json"), encoding="utf-8"))
+job = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))
 name = job["name"]
 tex = job["skin_arm"] if os.path.isabs(job["skin_arm"]) else os.path.join(kit.REPO, "data", job["skin_arm"])
 RLPy.RFileIO.LoadFile(os.path.join(d, name + ".ccProject"))

@@ -5,7 +5,6 @@
 # A job is skipped once it has result.txt (delete it to rebuild). Export the .iAvatar by hand afterwards.
 import importlib, json, os, sys, time, traceback
 import RLPy
-import RLPy2
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -17,10 +16,12 @@ BODY = {"male": "Male", "female": "Female", "neutral": "Neutral", "child": "Kid"
 
 
 def build(here):
-    job = json.load(open(os.path.join(here, "job.json"), encoding="utf-8"))
+    job = json.load(open(os.path.join(here, "job.json"), encoding="utf-8-sig"))
     name, log = job["name"], []
 
     def step(label, fn):
+        with open(os.path.join(here, 'progress.txt'), 'a', encoding='utf-8') as progress:
+            progress.write('START ' + label + '\n')
         t = time.time()
         try:
             r = fn()
@@ -29,6 +30,7 @@ def build(here):
             log.append("FAIL %s\n%s" % (label, traceback.format_exc()))
 
     def headshot():
+        import RLPy2  # Load Headshot only when needed; existing-project re-dress skips the AI module.
         skin = RLPy2.RArrayListWString(3, "None"); skin[0] = "Soft Skin"
         mask = RLPy2.RArrayListWString(4, "None"); mask[0] = "No Mask"
         body = getattr(RLPy2.EHSBodyType, BODY.get(job.get("body"), "Neutral"), RLPy2.EHSBodyType.Neutral)
@@ -36,7 +38,7 @@ def build(here):
             os.path.join(here, job["face"]), body, False, RLPy2.RArrayListWString(), skin, mask)
 
     if job.get("load_project"):  # re-dress a finished character: same head, new clothes
-        step("load project", lambda: RLPy.RFileIO.LoadFile(os.path.join(here, name + ".ccProject")))
+        step("load project", lambda: RLPy.RFileIO.LoadFile(os.path.join(here, job.get("project_source", name + ".ccProject"))))
     elif not job.get("skip_headshot"):
         step("headshot", headshot)
     av = RLPy.RScene.GetAvatars()[0]
@@ -155,7 +157,7 @@ for d in open(kit.BATCH, encoding="utf-8").read().splitlines():
     d = d.strip()
     if not d:
         continue
-    name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8"))["name"]
+    name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))["name"]
     if os.path.exists(os.path.join(d, "result.txt")):  # delete result.txt to (re)build a job
         continue
     try:
