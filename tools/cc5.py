@@ -6,6 +6,7 @@
 import json, os, sys, time, uuid
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 B = os.path.join(kit.JOBS, "bridge")
 INBOX, OUTBOX, LOCK = os.path.join(B, "inbox"), os.path.join(B, "outbox"), os.path.join(kit.JOBS, "LOCK.txt")
@@ -49,8 +50,11 @@ def main(a):
             print("WARNING: bridge not alive — the command waits in the inbox until CC5 runs")
         out = os.path.join(OUTBOX, cid + ".json")
         t = time.time()
+        from start_cc5 import cc5_pids, popups, press, VK_RETURN
         while not os.path.exists(out):
             time.sleep(2)
+            for h in popups(cc5_pids()):  # modal warnings (missing hair textures etc.) block CC5 -> OK them
+                press(h, VK_RETURN)
             if time.time() - t > 3600:
                 sys.exit("timeout waiting for " + out)
         r = json.load(open(out, encoding="utf-8"))

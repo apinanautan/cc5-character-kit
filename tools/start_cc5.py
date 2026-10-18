@@ -29,7 +29,7 @@ def popups(pids):
             r = wintypes.RECT()
             u32.GetWindowRect(h, ctypes.byref(r))
             w, hgt = r.right - r.left, r.bottom - r.top
-            if 150 < w < 700 and 80 < hgt < 400:  # small dialog, not the main window / splash
+            if 150 < w < 1000 and 80 < hgt < 650:  # small dialog, not the main window / splash
                 found.append(h)
         return True
 
