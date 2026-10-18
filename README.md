@@ -50,6 +50,18 @@ python tools\redress.py krong_urai_40 "RC:Pants\Pants(28).ccCloth=pha_thung_gree
 ```
 แล้วใน CC5 รัน `cc5\build.py` (หัวและผมเดิม เปลี่ยนแค่ชุด) อย่าลืมแก้ชุดในไฟล์เรื่องให้ตรงด้วย
 
+## ลดโพลีกอนเสื้อผ้า (ให้ iClone เบา)
+
+- เกณฑ์: ร่างกาย CC5 ราว 20,000 หน้า → เสื้อผ้าแต่ละชิ้นไม่ควรเกิน **~15,000 หน้า** (เสื้อ ~12,000, กระโปรง/กางเกงยาว ~15,000) ทั้งตัวรวมไม่ควรเกิน ~60,000–80,000
+- วัด: CC5 → Script → `cc5\poly_report.py` (ทุกงานใน batch.txt) → `cc5_jobs\poly_report.json` (ผลก่อนลดของเรื่องกรงกตัญญู: `data/poly_report_krong_before.json`)
+- ลด: ใช้ **InstaLOD ใน CC5** (เก็บ skin weight + UV + ลายผ้าไว้ให้) แบบ **By Percentage** เท่านั้น ("By Face Count" ใช้ไม่ได้)
+  1. เขียนชื่อเสื้อผ้าใน `cc5_jobs\select_cloth.txt` แล้ว `python -c "import kit,os;kit.set_batch([os.path.join(kit.JOBS,'<job>')])"`
+  2. CC5 → Script → `cc5\select_cloth.py` (เปิดโปรเจกต์ + เลือกชิ้นนั้น)
+  3. Modify → InstaLOD → Polygon Reduction - Object (ดับเบิลคลิก) → By Percentage = เป้าหมาย/จำนวนเดิม×100 → Apply → Close → Ctrl+S
+  4. นับจริงด้วย `cc5\export_cloth_obj.py` (ตัวนับหน้าใน CC5 อ่านผิดหลัง InstaLOD)
+- Blender decimate (`blender/decimate_obj.py`) ลดได้สวยแต่ **ส่งกลับ CC5 ไม่ได้** (ReplaceMesh ต้องจำนวนจุดเท่าเดิม)
+- CC5 กิน RAM เพิ่มทุกครั้งที่เปิดโปรเจกต์ → เปิดหลายตัวต่อกันแล้วค้าง/เด้ง ให้ปิดเปิด CC5 ใหม่ทุก ~4–5 ตัว
+
 ## โครงสร้าง
 
 ```
