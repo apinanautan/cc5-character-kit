@@ -1,0 +1,485 @@
+{
+ "title": "กรงกตัญญู",
+ "era": "คนไทยต่างจังหวัด ยุคปัจจุบัน",
+ "notes": "ตัวละครหลัก 16 ตัว (2026-10-18). outfit = [ของชิ้นล่างก่อน, ชิ้นบน, รองเท้า]; ไอดีย่อ = data/wardrobe_verified.json; MO:/RC: = คลังเสื้อผ้า",
+ "characters": {
+  "krong_somjit_40": {
+   "sex": "male",
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "1. นายสมจิต + นางอุไร",
+   "outfit": [
+    [
+     "MO:Owen\\Pants.ccCloth",
+     null
+    ],
+    [
+     "MO:Farmer\\Shirt 01.ccCloth",
+     null
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "Fringe Hairstyle",
+   "name": "นายสมจิต วัย 40",
+   "face": {
+    "อายุ": "ประมาณ 39 ปี",
+    "บทบาท": "พ่อของอรวรรณ ชายชาวบ้านขยัน ใจดี คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "คล้ำแดด",
+    "ทรงผม": "ผมสั้นเรียบสีดำ",
+    "ใบหน้า": "หน้าเหลี่ยม คิ้วหนา",
+    "prompt_name": "นายสมจิต"
+   }
+  },
+  "krong_urai_40": {
+   "sex": "female",
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "1. นายสมจิต + นางอุไร",
+   "outfit": [
+    [
+     "RC:Pants\\Pants(28).ccCloth",
+     "pha_thung_green"
+    ],
+    [
+     "MO:Painter\\Shirt.ccCloth",
+     "floral_brown"
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "08_Ponytail with bangs",
+   "name": "นางอุไร วัย 40",
+   "face": {
+    "อายุ": "ประมาณ 38 ปี",
+    "บทบาท": "แม่ของอรวรรณ แม่บ้านชาวบ้าน อ่อนโยน คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "สีน้ำผึ้ง",
+    "ทรงผม": "ผมดำยาวรวบตึงไปด้านหลัง",
+    "ใบหน้า": "หน้ากลม ตาอ่อนโยน",
+    "prompt_name": "นางอุไร"
+   }
+  },
+  "krong_somjit_70": {
+   "sex": "male",
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "1. นายสมจิต + นางอุไร",
+   "outfit": [
+    [
+     "1790c8",
+     null
+    ],
+    [
+     "MO:Billybob\\Vest.ccCloth",
+     null
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "hair": "07_Classic side part",
+   "name": "นายสมจิต วัย 70 แผลไฟลวก",
+   "face": {
+    "อายุ": "ประมาณ 70 ปี",
+    "บทบาท": "นายสมจิตตอนแก่",
+    "สีผิว": "คล้ำแดด",
+    "ทรงผม": "ผมสั้นสีขาว",
+    "prompt_name": "นายสมจิต วัย 70",
+    "ref": "krong_somjit_40"
+   },
+   "skin_arm": "arm_burn.png",
+   "layer": "in"
+  },
+  "krong_somjit_70_thin": {
+   "sex": "male",
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "1. นายสมจิต + นางอุไร",
+   "outfit": [
+    [
+     "1790c8",
+     null
+    ],
+    [
+     "MO:Sweat\\Top 01.ccCloth",
+     null
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "07_Classic side part",
+   "name": "นายสมจิต วัย 70 ซูบผอม",
+   "face": {
+    "อายุ": "ประมาณ 70 ปี",
+    "บทบาท": "นายสมจิตตอนแก่ ซูบผอม แก้มตอบ ดูอิดโรย ขาดการดูแล",
+    "สีผิว": "คล้ำแดด",
+    "ทรงผม": "ผมสั้นสีขาว ยุ่งเล็กน้อย",
+    "prompt_name": "นายสมจิต วัย 70 ซูบผอม",
+    "ref": "krong_somjit_70"
+   },
+   "head_from": "krong_somjit_70",
+   "skin_arm": "arm_burn.png",
+   "layer": "in",
+   "morphs": {
+    "2025-06-10-16-36-51_pack_skinny_fullbody_01": 1.0,
+    "2019-09-30-13-56-29_face thinner": 0.6
+   }
+  },
+  "krong_urai_70": {
+   "sex": "female",
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "1. นายสมจิต + นางอุไร",
+   "outfit": [
+    [
+     "55e2cd",
+     "pha_thung_batik"
+    ],
+    [
+     "fc523c",
+     "floral_blue_faded"
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "hair": "09_Classic bun",
+   "name": "นางอุไร วัย 70",
+   "face": {
+    "อายุ": "ประมาณ 68 ปี",
+    "บทบาท": "นางอุไรตอนแก่",
+    "สีผิว": "สีน้ำผึ้ง",
+    "ทรงผม": "ผมขาวรวบไปด้านหลัง",
+    "prompt_name": "นางอุไร วัย 70",
+    "ref": "krong_urai_40"
+   }
+  },
+  "krong_relative_m": {
+   "sex": "male",
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "2. ญาติ ๆ",
+   "outfit": [
+    [
+     "f7c187",
+     null
+    ],
+    [
+     "MO:Streetstyle\\Shirt 01.ccCloth",
+     null
+    ],
+    [
+     "MO:Casual 01\\Shoes.ccShoes",
+     null
+    ]
+   ],
+   "hair": "Short blowback",
+   "name": "ญาติ ชาย",
+   "face": {
+    "อายุ": "ประมาณ 50 ปี",
+    "บทบาท": "ญาติของนายสมจิต ชาวบ้าน คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมสั้นสีดำแซมเทา",
+    "ใบหน้า": "หน้ายาว จมูกกว้าง",
+    "prompt_name": "ญาติผู้ชาย"
+   }
+  },
+  "krong_relative_f": {
+   "sex": "female",
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "2. ญาติ ๆ",
+   "outfit": [
+    [
+     "185f00",
+     "pha_thung_green"
+    ],
+    [
+     "b621bb",
+     "floral_maroon"
+    ],
+    [
+     "MO:Dash\\Shoes 01.ccShoes",
+     null
+    ]
+   ],
+   "hair": "06_Ear length Bob",
+   "name": "ญาติ หญิง",
+   "face": {
+    "อายุ": "ประมาณ 47 ปี",
+    "บทบาท": "ญาติของนายสมจิต ชาวบ้าน คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมดำแซมเทาสั้นประบ่า",
+    "ใบหน้า": "หน้ารูปไข่ คางแหลม",
+    "prompt_name": "ญาติผู้หญิง"
+   }
+  },
+  "krong_orawan_child": {
+   "sex": "female",
+   "age_group": "child",
+   "body": "child",
+   "folder": "3. อรวรรณ",
+   "outfit": [
+    [
+     "a6ef0d",
+     "cotton_cream"
+    ],
+    [
+     "RC:Pants\\Pants(28).ccCloth",
+     "cotton_navy"
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "03_Cute braid",
+   "name": "อรวรรณ วัยประถม",
+   "face": {
+    "อายุ": "ประมาณ 9 ขวบ",
+    "บทบาท": "อรวรรณตอนเป็นเด็กนักเรียนประถม",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมเด็กหญิงรวบไปด้านหลัง",
+    "prompt_name": "อรวรรณ วัยประถม",
+    "ref": "krong_orawan_young"
+   }
+  },
+  "krong_orawan_young": {
+   "sex": "female",
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "3. อรวรรณ",
+   "outfit": [
+    [
+     "56a4c7",
+     null
+    ],
+    [
+     "MO:Underbelly\\Shirt.ccCloth",
+     "floral_red"
+    ],
+    [
+     "MO:Dash\\Shoes 01.ccShoes",
+     null
+    ]
+   ],
+   "hair": "05_Shoulder length",
+   "name": "อรวรรณ วัยสาว",
+   "face": {
+    "อายุ": "ประมาณ 22 ปี",
+    "บทบาท": "ลูกสาวคนเดียวของนายสมจิต สาวชาวบ้าน คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมดำยาวรวบตึงไปด้านหลัง",
+    "ใบหน้า": "หน้ารูปไข่ ตาโต",
+    "prompt_name": "อรวรรณ"
+   },
+   "layer": "in"
+  },
+  "krong_orawan_pregnant": {
+   "sex": "female",
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "3. อรวรรณ",
+   "outfit": [
+    [
+     "f909f8",
+     "cotton_charcoal"
+    ],
+    [
+     "04f1fc",
+     null
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "05_Shoulder length",
+   "head_from": "krong_orawan_young",
+   "name": "อรวรรณ ตอนท้อง",
+   "morphs": {
+    "cc embed morphs/embed_torso113": 1.0,
+    "cc embed morphs/embed_torso111": 1.0
+   }
+  },
+  "krong_banphot": {
+   "sex": "male",
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "4. บรรพจ",
+   "outfit": [
+    [
+     "0374dd",
+     null
+    ],
+    [
+     "189a5b",
+     null
+    ],
+    [
+     "MO:Casual 03\\Shoes.ccShoes",
+     null
+    ]
+   ],
+   "hair": "Hair2\\Group\\Hair\\Classic short",
+   "name": "บรรพจ",
+   "face": {
+    "อายุ": "ประมาณ 25 ปี",
+    "บทบาท": "แฟนหนุ่มของอรวรรณ คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "ขาวเหลือง",
+    "ทรงผม": "ผมสั้นรองทรง",
+    "ใบหน้า": "หน้าคม กรามชัด",
+    "prompt_name": "บรรพจ"
+   }
+  },
+  "krong_son_baby": {
+   "sex": "male",
+   "age_group": "child",
+   "body": "baby",
+   "folder": "6. ลูกชายของอรวรรณ",
+   "outfit": [
+    [
+     "0352c8",
+     null
+    ]
+   ],
+   "hair": "",
+   "name": "ลูกชายอรวรรณ วัยทารก",
+   "face": {
+    "อายุ": "ประมาณ 1 ขวบ",
+    "บทบาท": "ลูกชายของอรวรรณตอนเป็นทารก",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมบางสั้น",
+    "prompt_name": "ทารกชาย",
+    "ref": "krong_son_child"
+   }
+  },
+  "krong_son_child": {
+   "sex": "male",
+   "age_group": "child",
+   "body": "child",
+   "folder": "6. ลูกชายของอรวรรณ",
+   "outfit": [
+    [
+     "9b1c4f",
+     null
+    ],
+    [
+     "63b0a4",
+     "plaid_blue"
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "Side-swept Fringe",
+   "name": "ลูกชายอรวรรณ 4-5 ขวบ",
+   "face": {
+    "อายุ": "4-5 ขวบ",
+    "บทบาท": "ลูกชายของอรวรรณ เด็กชาวบ้าน",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมสั้นเกรียนเด็กชาย",
+    "prompt_name": "ลูกชาย 4-5 ขวบ"
+   }
+  },
+  "krong_neighbor_f": {
+   "sex": "female",
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "7. ชาวบ้าน",
+   "outfit": [
+    [
+     "2fb73d",
+     null
+    ],
+    [
+     "d128d4",
+     "floral_brown"
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "hair": "02_Wavy short Bob",
+   "name": "เพื่อนบ้าน หญิง",
+   "face": {
+    "อายุ": "ประมาณ 55 ปี",
+    "บทบาท": "เพื่อนบ้านของนายสมจิต ช่างพูด คนไทยต่างจังหวัด ยุคปัจจุบัน",
+    "สีผิว": "คล้ำแดด",
+    "ทรงผม": "ผมดำแซมเทาดัดสั้น",
+    "ใบหน้า": "หน้ากลม แก้มอวบ",
+    "prompt_name": "เพื่อนบ้านหญิง"
+   }
+  },
+  "krong_elder_m": {
+   "sex": "male",
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "8. คนแก่ บ้านพักคนชรา",
+   "outfit": [
+    [
+     "MO:Pyjamas\\Pants 01.ccCloth",
+     null
+    ],
+    [
+     "MO:Pyjamas\\Shirt 01.ccCloth",
+     null
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "hair": "10_Male pattern bald",
+   "name": "คนแก่ ชาย",
+   "face": {
+    "อายุ": "ประมาณ 78 ปี",
+    "บทบาท": "ชายชราในบ้านพักคนชรา",
+    "สีผิว": "สองสี",
+    "ทรงผม": "ผมขาวบางสั้น",
+    "ใบหน้า": "หน้ายาว ตาเล็ก",
+    "prompt_name": "ตาแก่บ้านพักคนชรา"
+   }
+  },
+  "krong_elder_f": {
+   "sex": "female",
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "8. คนแก่ บ้านพักคนชรา",
+   "outfit": [
+    [
+     "185f00",
+     "plaid_brown"
+    ],
+    [
+     "b1e2b4",
+     "floral_blue_faded"
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "hair": "Layered Pixie",
+   "name": "คนแก่ หญิง",
+   "face": {
+    "อายุ": "ประมาณ 80 ปี",
+    "บทบาท": "หญิงชราในบ้านพักคนชรา",
+    "สีผิว": "ขาวเหลือง",
+    "ทรงผม": "ผมขาวสั้น",
+    "ใบหน้า": "หน้าเล็ก แก้มตอบ",
+    "prompt_name": "ยายแก่บ้านพักคนชรา"
+   }
+  }
+ }
+}

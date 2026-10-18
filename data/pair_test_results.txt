@@ -1,0 +1,73 @@
+CLASH	Farmer/Shirt 01.ccCloth	Biker/Pants(1).ccCloth
+OK	Farmer/Shirt 01.ccCloth	Blood Hunter/Pants.ccCloth
+CLASH	Farmer/Shirt 01.ccCloth	Old/Pants.ccCloth
+OK	Farmer/Shirt 01.ccCloth	Owen/Pants.ccCloth
+OK	Farmer/Shirt 01.ccCloth	Pants/กางเกงตาแก่.ccCloth
+CLASH	Farmer/Shirt 01.ccCloth	Pyjamas/Pants 01.ccCloth
+CLASH	Farmer/Shirt 02.ccCloth	Biker/Pants(1).ccCloth
+OK	Farmer/Shirt 02.ccCloth	Blood Hunter/Pants.ccCloth
+CLASH	Farmer/Shirt 02.ccCloth	Old/Pants.ccCloth
+OK	Farmer/Shirt 02.ccCloth	Owen/Pants.ccCloth
+OK	Farmer/Shirt 02.ccCloth	Pants/กางเกงตาแก่.ccCloth
+CLASH	Farmer/Shirt 02.ccCloth	Pyjamas/Pants 01.ccCloth
+CLASH	Billybob/Vest.ccCloth	Biker/Pants(1).ccCloth
+OK	Billybob/Vest.ccCloth	Blood Hunter/Pants.ccCloth
+CLASH	Billybob/Vest.ccCloth	Old/Pants.ccCloth
+OK	Billybob/Vest.ccCloth	Owen/Pants.ccCloth
+OK	Billybob/Vest.ccCloth	Pants/กางเกงตาแก่.ccCloth
+CLASH	Billybob/Vest.ccCloth	Pyjamas/Pants 01.ccCloth
+CLASH	Sweat/Top 01.ccCloth	Biker/Pants(1).ccCloth
+OK	Sweat/Top 01.ccCloth	Blood Hunter/Pants.ccCloth
+CLASH	Sweat/Top 01.ccCloth	Old/Pants.ccCloth
+OK	Sweat/Top 01.ccCloth	Owen/Pants.ccCloth
+OK	Sweat/Top 01.ccCloth	Pants/กางเกงตาแก่.ccCloth
+CLASH	Sweat/Top 01.ccCloth	Pyjamas/Pants 01.ccCloth
+OK	Streetstyle/Shirt 01.ccCloth	Biker/Pants(1).ccCloth
+CLASH	Streetstyle/Shirt 01.ccCloth	Blood Hunter/Pants.ccCloth
+OK	Streetstyle/Shirt 01.ccCloth	Old/Pants.ccCloth
+OK	Streetstyle/Shirt 01.ccCloth	Owen/Pants.ccCloth
+OK	Streetstyle/Shirt 01.ccCloth	Pants/กางเกงตาแก่.ccCloth
+OK	Streetstyle/Shirt 01.ccCloth	Pyjamas/Pants 01.ccCloth
+OK	Pyjamas/Shirt 01.ccCloth	Biker/Pants(1).ccCloth
+CLASH	Pyjamas/Shirt 01.ccCloth	Blood Hunter/Pants.ccCloth
+OK	Pyjamas/Shirt 01.ccCloth	Old/Pants.ccCloth
+OK	Pyjamas/Shirt 01.ccCloth	Owen/Pants.ccCloth
+OK	Pyjamas/Shirt 01.ccCloth	Pants/กางเกงตาแก่.ccCloth
+OK	Pyjamas/Shirt 01.ccCloth	Pyjamas/Pants 01.ccCloth
+OK	Underbelly/Shirt.ccCloth	Biker/Pants(1).ccCloth
+OK	Underbelly/Shirt.ccCloth	Blood Hunter/Pants.ccCloth
+OK	Underbelly/Shirt.ccCloth	Old/Pants.ccCloth
+OK	Underbelly/Shirt.ccCloth	Owen/Pants.ccCloth
+CLASH	Underbelly/Shirt.ccCloth	Pants/กางเกงตาแก่.ccCloth
+OK	Underbelly/Shirt.ccCloth	Pyjamas/Pants 01.ccCloth
+OK	Old/Shirt.ccCloth	Biker/Pants(1).ccCloth
+CLASH	Old/Shirt.ccCloth	Blood Hunter/Pants.ccCloth
+OK	Old/Shirt.ccCloth	Old/Pants.ccCloth
+OK	Old/Shirt.ccCloth	Owen/Pants.ccCloth
+OK	Old/Shirt.ccCloth	Pants/กางเกงตาแก่.ccCloth
+OK	Old/Shirt.ccCloth	Pyjamas/Pants 01.ccCloth
+OK	Painter/Shirt.ccCloth	Biker/Pants(1).ccCloth
+OK	Painter/Shirt.ccCloth	Blood Hunter/Pants.ccCloth
+OK	Painter/Shirt.ccCloth	Old/Pants.ccCloth
+OK	Painter/Shirt.ccCloth	Owen/Pants.ccCloth
+OK	Painter/Shirt.ccCloth	Pants/กางเกงตาแก่.ccCloth
+OK	Painter/Shirt.ccCloth	Pyjamas/Pants 01.ccCloth
+OK	Vince/Vest.ccCloth	Biker/Pants(1).ccCloth
+OK	Vince/Vest.ccCloth	Blood Hunter/Pants.ccCloth
+OK	Vince/Vest.ccCloth	Old/Pants.ccCloth
+OK	Vince/Vest.ccCloth	Owen/Pants.ccCloth
+OK	Vince/Vest.ccCloth	Pants/กางเกงตาแก่.ccCloth
+OK	Vince/Vest.ccCloth	Pyjamas/Pants 01.ccCloth
+CLASH	Lounge Wear/Shirt.ccCloth	Biker/Pants(1).ccCloth
+OK	Lounge Wear/Shirt.ccCloth	Blood Hunter/Pants.ccCloth
+CLASH	Lounge Wear/Shirt.ccCloth	Old/Pants.ccCloth
+OK	Lounge Wear/Shirt.ccCloth	Owen/Pants.ccCloth
+OK	Lounge Wear/Shirt.ccCloth	Pants/กางเกงตาแก่.ccCloth
+CLASH	Lounge Wear/Shirt.ccCloth	Pyjamas/Pants 01.ccCloth
+CLASH	Autumn/Sweater.ccCloth	Biker/Pants(1).ccCloth
+OK	Autumn/Sweater.ccCloth	Blood Hunter/Pants.ccCloth
+CLASH	Autumn/Sweater.ccCloth	Old/Pants.ccCloth
+OK	Autumn/Sweater.ccCloth	Owen/Pants.ccCloth
+OK	Autumn/Sweater.ccCloth	Pants/กางเกงตาแก่.ccCloth
+CLASH	Autumn/Sweater.ccCloth	Pyjamas/Pants 01.ccCloth
+DONE

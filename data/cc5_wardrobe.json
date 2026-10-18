@@ -1,0 +1,418 @@
+{
+ "rules": [
+  ".ccHair โหลดไม่ขึ้นใน CC5 ใช้เฉพาะ .rlHair",
+  "ก่อนเลือกของ ดูไฟล์นี้ก่อน ห้ามใช้ status broken/rejected",
+  "เพิ่มรายการใหม่ทุกครั้งที่ลองของชิ้นใหม่",
+  "ผู้ชายแต่ละตัวต้องใช้ทรงผมที่ดูต่างกันชัด ๆ (ยาว/สั้น/แสก/หน้าม้า) ไม่ใช่ผมสั้นคล้ายกัน",
+  "ใน job.json ให้โหลดกางเกงก่อนเสื้อ ช่วยลดเสื้อทะลุกางเกง หรือใช้ชุดชิ้นเดียว (full) ถ้ามี",
+  "ผมให้สุ่มด้วย snapgen_modules/cc5/cc5_pick_hair.py จาก cc5_hair_pool.json (คัดด้วยตาแล้ว) ไม่เลือกเอง",
+  "wardrobe_verify_raw.jsonl: knocked_off \"lower\" = เป็นเสื้อจริง (ใส่คู่กางเกงได้), knocked_off \"upper\" = อยู่ช่องกางเกง/ชุดชิ้นเดียว, [] = เสื้อคลุมซ้อนทับ (ระวังทะลุกัน) — ชื่อ upper/lower ในไฟล์ดิบสลับกัน (2026-10-14)",
+  "ระวัง: catalog บางไฟล์ที่ชื่อเหมือนทรงผม (Eddy, Kevin, Male_Flat, Male_Angled, Male_High Arch) อยู่ในโฟลเดอร์ Eyebrows = เป็นคิ้ว ไม่ใช่ผม ห้ามใช้เป็น hair (2026-10-14)"
+ ],
+ "items": [
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+   "part": "hair",
+   "name": "ผมสั้นชายคลาสสิก",
+   "status": "ok",
+   "used_by": [
+    "Nai Chai Husband of Sunee CC5"
+   ],
+   "note": "ใช้แล้วกับนายชัย ห้ามใช้ซ้ำในเรื่องเดียวกัน"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+   "part": "hair",
+   "name": "ผมหน้าม้าปัดข้าง (เด็กชาย)",
+   "status": "ok",
+   "used_by": [
+    "Wichit Child"
+   ],
+   "note": ""
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\06_Ear length Bob.rlHair",
+   "part": "hair",
+   "name": "ผมบ็อบติ่งหู (เด็กหญิง/หญิง)",
+   "status": "ok",
+   "used_by": [
+    "Wanna Child"
+   ],
+   "note": ""
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hottest Hairstyles\\Low ponytail.ccHair",
+   "part": "hair",
+   "name": "หางม้าต่ำ",
+   "status": "broken",
+   "used_by": [],
+   "note": ".ccHair โหลดใน CC5 ไม่ขึ้น"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\A-Line Bob.ccHair",
+   "part": "hair",
+   "name": "บ็อบ A-Line",
+   "status": "broken",
+   "used_by": [],
+   "note": ".ccHair โหลดใน CC5 ไม่ขึ้น"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 03.ccCloth",
+   "part": "upper",
+   "name": "เสื้อเชิ้ตทำงานชาย",
+   "status": "ok",
+   "used_by": [
+    "Nai Chai Husband of Sunee CC5"
+   ],
+   "note": ""
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Painter\\Shirt.ccCloth",
+   "part": "upper",
+   "name": "เสื้อช่างทาสี",
+   "status": "rejected",
+   "used_by": [],
+   "note": "ลองแล้วไม่ใช้กับนายชัย"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Farmer\\Shirt 02.ccCloth",
+   "part": "upper",
+   "name": "เสื้อชาวนา",
+   "status": "rejected",
+   "used_by": [],
+   "note": "ลองแล้วไม่ใช้กับนายชัย"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar short sleeves shirt\\Open_collar_short_sleeves_shirt_C.ccCloth",
+   "part": "upper",
+   "name": "เสื้อเชิ้ตแขนสั้นสีชมพู",
+   "status": "ok",
+   "used_by": [
+    "Wanna Child"
+   ],
+   "note": "ใส่ตัวเด็กได้พอดี"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Others\\Others(8).ccCloth",
+   "part": "upper",
+   "name": "เสื้อยืดเด็ก (ไม่มีกางเกงในตัว)",
+   "status": "ok",
+   "used_by": [
+    "Wichit Child"
+   ],
+   "note": "ต้องใส่กางเกงแยก"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Blood Hunter\\Pants.ccCloth",
+   "part": "lower",
+   "name": "กางเกงขายาวชาย",
+   "status": "ok",
+   "used_by": [
+    "Nai Chai Husband of Sunee CC5"
+   ],
+   "note": ""
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(4).ccCloth",
+   "part": "lower",
+   "name": "กางเกงขาสามส่วนสีเขียวเข้ม",
+   "status": "ok",
+   "used_by": [
+    "Wanna Child"
+   ],
+   "note": "ใส่ตัวเด็กได้"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Leisure\\Shorts.ccCloth",
+   "part": "lower",
+   "name": "กางเกงขาสั้น cargo",
+   "status": "ok",
+   "used_by": [
+    "Wichit Child"
+   ],
+   "note": ""
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Flip Flops.ccShoes",
+   "part": "shoes",
+   "name": "รองเท้าแตะคีบ",
+   "status": "ok",
+   "used_by": [
+    "Wichit Child",
+    "Wanna Child"
+   ],
+   "note": "ใส่ได้ทุกวัย"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Dash\\Shoes 01.ccShoes",
+   "part": "shoes",
+   "name": "รองเท้าแตะสวม",
+   "status": "ok",
+   "used_by": [
+    "Nai Chai Husband of Sunee CC5",
+    "Wichit Young"
+   ],
+   "note": ""
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Short blowback.rlHair",
+   "part": "hair",
+   "name": "ผมสั้นเสยหลัง (ชาย)",
+   "status": "rejected",
+   "used_by": [],
+   "note": "หน้าตาเหมือนผมสั้นชายตัวอื่น ผู้ใช้บอกว่าซ้ำ"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Side part wavy.rlHair",
+   "part": "hair",
+   "name": "ผมแสกข้างยาวประบ่าลอนเล็กน้อย (ชาย)",
+   "status": "rejected",
+   "used_by": [],
+   "note": "ผมยาวประบ่า ดูเป็นผู้หญิง ห้ามใช้กับผู้ชาย"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาย.ccCloth",
+   "part": "upper",
+   "name": "เสื้อเชิ้ตแขนสั้นสีน้ำตาล",
+   "status": "ok",
+   "used_by": [
+    "Wichit Young"
+   ],
+   "note": "ชายเสื้อทะลุกางเกงเล็กน้อยด้านข้าง"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Owen\\Pants.ccCloth",
+   "part": "lower",
+   "name": "กางเกงคาร์โก้ขายาวสีเทา",
+   "status": "ok",
+   "used_by": [
+    "Wichit Young"
+   ]
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+   "part": "hair",
+   "name": "ผมสั้นแสกข้าง (ชาย)",
+   "status": "ok",
+   "used_by": [
+    "Wichit Young"
+   ],
+   "note": "โหลดแล้วเตือน texture หาย 3 ไฟล์ กด OK ได้ ผมยังขึ้นปกติ"
+  },
+  {
+   "path": "Shirts(1).ccCloth",
+   "part": "upper",
+   "name": "Shirts(1).ccCloth",
+   "used_by": [],
+   "status": "rejected",
+   "notes": "ผู้ใช้ไม่เอา: ชุดปิ่นร่างแรก ไม่สวย ดูเป็นผู้ชาย (2026-10-04)"
+  },
+  {
+   "path": "กางเกงขายาว.ccCloth",
+   "part": "lower",
+   "name": "กางเกงขายาว.ccCloth",
+   "used_by": [],
+   "status": "rejected",
+   "notes": "ผู้ใช้ไม่เอา: ชุดปิ่นร่างแรก ไม่สวย ดูเป็นผู้ชาย (2026-10-04)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(9).ccCloth",
+   "part": "lower",
+   "name": "Shirts(9) ไม่ใช่ผ้าซิ่น",
+   "status": "broken",
+   "used_by": [],
+   "notes": "เป็นหางนางเงือก/ชุดคอสตูม ไม่ใช่ผ้าซิ่น (2026-10-04)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(1).ccCloth",
+   "part": "upper",
+   "name": "เสื้อหญิงคอกลมสีน้ำเงินเข้ม",
+   "status": "rejected",
+   "used_by": [],
+   "note": "ผู้ใช้ไม่เอา เสื้อน้ำเงินใส่ซ้ำทุกตัว (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(3).ccCloth",
+   "part": "other",
+   "name": "ผ้าคลุม cape (catalog บอกว่าเสื้อแขนยาวสีเขียว)",
+   "status": "rejected",
+   "used_by": [],
+   "note": "จริงๆ เป็นผ้าคลุม ใส่แล้วทับเสื้อ/กางเกงหลุด (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\All Star\\Jacket.ccCloth",
+   "part": "outer",
+   "name": "แจ็กเก็ตหนังสีน้ำตาล",
+   "status": "ok",
+   "used_by": [],
+   "note": "แจ็กเก็ตบาง: เสื้อแขนยาวทุกตัวทะลุแขนแจ็กเก็ต (ลอง Painter Shirt, Business shirt 033761) ห้ามใส่ทับเสื้อแขนยาว (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Biker\\Pants(1).ccCloth",
+   "part": "lower",
+   "name": "กางเกงขายาวสีดำ (คาร์โก้)",
+   "status": "ok",
+   "used_by": [],
+   "note": "ใส่คู่ Business shirt (Close_collar_long_sleeves_shirt_C) แล้วชายเสื้อโผล่ทะลุหน้ากางเกงใต้เข็มขัด ห้ามคู่กัน (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts.ccCloth",
+   "part": "unknown",
+   "name": "Shirts.ccCloth (catalog: เสื้อกั๊กแดงกับกางเกง)",
+   "status": "untested",
+   "used_by": [],
+   "note": "เคยสงสัยว่าเป็นผ้าคลุม แต่จริงๆ ตัวผ้าคลุมคือ Shirts(3) — ตัวนี้ยังไม่ได้ลองเดี่ยว"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Billybob\\Vest.ccCloth",
+   "part": "full",
+   "name": "เสื้อกล้ามขาว (Vest)",
+   "status": "ok",
+   "used_by": [],
+   "note": "อยู่ช่องเดียวกับกางเกง ใส่แล้วกางเกงหลุด ห้ามใช้คู่กางเกง (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Casual 04\\Pants.ccCloth",
+   "part": "lower",
+   "name": "กางเกงสแล็ก Casual 04",
+   "status": "ok",
+   "used_by": [],
+   "note": "ทับเสื้อ Business shirt (Close_collar_long_sleeves_shirt_C) หลุด (ช่องเดียวกัน) ห้ามคู่กัน (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar long sleeves shirt\\Close_collar_long_sleeves_shirt_C.ccCloth",
+   "part": "upper",
+   "name": "เสื้อเชิ้ตแขนยาวสีน้ำเงิน ปกลายทาง (Business shirt C)",
+   "status": "ok",
+   "used_by": [
+    "Nai Chai (เลือกนักมักได้แร่)"
+   ],
+   "note": "ใส่คู่ Slacks_A (Professional Outfit) เรียบร้อย ยัดเสื้อในกางเกงไม่ทะลุ; คู่อื่นทะลุ (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Professional Outfit\\Slacks\\Slacks_A.ccCloth",
+   "part": "lower",
+   "name": "กางเกงสแล็กสีกรม (Professional Outfit Slacks_A)",
+   "status": "ok",
+   "used_by": [
+    "Nai Chai (เลือกนักมักได้แร่)"
+   ],
+   "note": "catalog เขียนผิดว่า \"พื้นผิวกางเกงแบบทดสอบ\"; เข้าชุดกับเสื้อ Professional Outfit (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Full-body\\Sckript\\Antiquity\\Women\\Base_dress_2.cccloth",
+   "part": "full",
+   "name": "ชุดเดรสโบราณแขนกุดคอวี มีเข็มขัด (catalog บอกว่าเสื้อพื้นเมืองกับผ้าถุง)",
+   "status": "rejected",
+   "used_by": [],
+   "note": "จริงๆ เป็นชุดยุคโบราณตะวันตก ไม่ใช่ชุดไทย ไม่เหมาะเรื่องยุค 80 (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Open_collar_short_sleeves_shirt_Base.ccCloth",
+   "part": "upper",
+   "name": "เสื้อเชิ้ตแขนสั้นคอเปิด พื้นขาว (Plain Base)",
+   "status": "ok",
+   "used_by": [
+    "Rice Mill Daughter (เลือกนักมักได้แร่)"
+   ],
+   "note": "เสื้อพื้นขาวไว้ใส่ลายผ้า ใส่คู่ผ้าถุง Etek ได้ไม่ทะลุ (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\กระโปรง(1).ccCloth",
+   "part": "lower",
+   "name": "ผ้าถุงยาวผ่าข้าง (Etek)",
+   "status": "ok",
+   "used_by": [
+    "Rice Mill Daughter (เลือกนักมักได้แร่)"
+   ],
+   "note": "ใส่ลายผ้า tile ได้สวย เช่น silk_mudmee (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar long sleeves shirt\\Open_collar_long_sleeves_shirt_A.ccCloth",
+   "part": "upper",
+   "name": "เสื้อเชิ้ตขาวแขนยาวคอเปิด (Professional A)",
+   "status": "ok",
+   "used_by": [
+    "Somphop (เลือกนักมักได้แร่)"
+   ],
+   "note": "คู่ Slacks_B ไม่ทะลุ (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Professional Outfit\\Slacks\\Slacks_B.ccCloth",
+   "part": "lower",
+   "name": "กางเกงสแล็ก Slacks_B (เดิมลายสก๊อต)",
+   "status": "ok",
+   "used_by": [
+    "Somphop (เลือกนักมักได้แร่)"
+   ],
+   "note": "ลายเดิมสก๊อตน้ำตาล แฟชั่นไป เปลี่ยนผ้าเป็น cotton_khaki แล้วดูเป็นข้าราชการ (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar long sleeves shirt\\Close_collar_long_sleeves_shirt_B.ccCloth",
+   "part": "upper",
+   "name": "เชิ้ตแขนยาวสีฟ้า ปก/ข้อมือขาว (Business shirt B)",
+   "status": "ok",
+   "used_by": [
+    "Airport Officer (เลือกนักมักได้แร่)"
+   ],
+   "note": "คู่ Slacks_C ไม่ทะลุ (2026-10-14)"
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Professional Outfit\\Slacks\\Slacks_C.ccCloth",
+   "part": "lower",
+   "name": "สแล็ก Slacks_C (เดิมสีเหลืองมัสตาร์ด)",
+   "status": "ok",
+   "used_by": [
+    "Airport Officer (เลือกนักมักได้แร่)"
+   ],
+   "note": "สีเดิมส้มเหลือง ไม่เหมาะ; ใส่ผ้า cotton_charcoal แล้วดูทางการ; mohom ดูเป็นยีนส์, stripe_grey ดูเป็นชุดนอน (2026-10-14)"
+  }
+ ],
+ "presets": [
+  {
+   "label": "ชายหนุ่มมีฐานะ ยุค 80",
+   "items": [
+    "Close_collar_long_sleeves_shirt_C",
+    "Slacks_A",
+    "Casual 01 Shoes"
+   ],
+   "note": "ใส่เสื้อก่อนหรือหลังก็ได้ ไม่ทะลุ"
+  },
+  {
+   "label": "หญิงสาวมีฐานะ ยุค 80",
+   "items": [
+    "Open_collar_short_sleeves_shirt_Base + floral_maroon",
+    "Etek ผ้าถุง + silk_mudmee",
+    "vacation sandals"
+   ],
+   "note": "ไม่ทะลุ"
+  },
+  {
+   "label": "ข้าราชการหนุ่ม/ปลัด ยุค 80",
+   "items": [
+    "Open_collar_long_sleeves_shirt_A",
+    "Slacks_B + cotton_khaki",
+    "Casual 03 Shoes"
+   ],
+   "note": "ผม Slicked Back Hairstyle"
+  },
+  {
+   "label": "หญิงสาวลูกกำนัน (แต่งดีกว่าชาวบ้าน) ยุค 80",
+   "items": [
+    "Open_collar_short_sleeves_shirt_C + floral_blue_faded",
+    "ผ้าถุง Pants(29) 55e2cd + pha_thung_batik (fabric_onto_garment)",
+    "Flip Flops"
+   ],
+   "note": "ไม่ทะลุ (Ratree, 2026-10-14)"
+  },
+  {
+   "label": "เจ้าหน้าที่/พนักงานออฟฟิศชาย ยุค 80",
+   "items": [
+    "Close_collar_long_sleeves_shirt_B",
+    "Slacks_C + cotton_charcoal",
+    "Casual 03 Shoes"
+   ],
+   "note": "ไม่ทะลุ"
+  }
+ ]
+}
