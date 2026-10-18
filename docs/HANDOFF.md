@@ -1,7 +1,7 @@
 # HANDOFF — งานทำตัวละคร CC5 (อ่านไฟล์นี้ก่อนทำต่อ)
 
 > สำหรับ AI/คนที่มาทำต่อ (GPT, Claude, คน) — อัปเดตล่าสุด 2026-10-18 16:15
-> repo: https://github.com/apinanautan/cc5-character-kit (private) · โฟลเดอร์ในเครื่อง: `C:\Users\Apinan\Documents\CC5 Characters`
+> repo: https://github.com/apinanautan/cc5-character-kit (public) · โฟลเดอร์ในเครื่อง: `C:\Users\Apinan\Documents\CC5 Characters`
 > คู่มือใช้งานสั้นๆ อยู่ที่ `README.md` ไฟล์นี้คือรายละเอียดเต็ม + สถานะงานค้าง
 
 ---
