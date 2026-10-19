@@ -234,12 +234,12 @@
    "folder": "3. อรวรรณ",
    "outfit": [
     [
-     "a6ef0d",
-     "cotton_cream"
+     "0ce08ad1",
+     "cotton_navy"
     ],
     [
-     "RC:Pants\\Pants(28).ccCloth",
-     "cotton_navy"
+     "63b0a4",
+     "floral_red"
     ],
     [
      "MO:Oahu\\Flip Flops.ccShoes",
@@ -256,7 +256,7 @@
     "prompt_name": "อรวรรณ วัยประถม",
     "ref": "krong_orawan_young"
    },
-   "layer": "in"
+   "layer": "out"
   },
   "krong_orawan_young": {
    "sex": "female",
