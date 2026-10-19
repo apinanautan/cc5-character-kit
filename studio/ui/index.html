@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>ตัวละคร CC5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f4f1; --surface:#fff; --text:#1c1c1e; --muted:#86868b; --line:#e6e6e2; --soft:#efefeb;
+  --accent:#1f6f50; --accent-soft:#e3f0ea; --run:#e8a33a; --fail:#d8574e; --skip:#d6d6d2;
+  --r:14px; --shadow:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--text);
+  font:15px/1.5 "IBM Plex Sans Thai","Leelawadee UI",system-ui,sans-serif}
+button,input,textarea{font:inherit;color:inherit}
+.app{display:grid;grid-template-columns:250px 1fr;height:100%}
+/* sidebar */
+aside{border-right:1px solid var(--line);padding:22px 14px;display:flex;flex-direction:column;gap:6px;overflow:auto}
+.brand{font-weight:600;font-size:17px;padding:0 10px 14px}
+.brand span{color:var(--muted);font-weight:400}
+.new{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:1px dashed #cfcfca;background:none;cursor:pointer;margin-bottom:10px}
+.new:hover{background:var(--surface)}
+.sitem{padding:10px 12px;border-radius:10px;cursor:pointer}
+.sitem:hover{background:var(--soft)}
+.sitem.on{background:var(--surface);box-shadow:var(--shadow)}
+.sitem .t{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sitem .m{font-size:12.5px;color:var(--muted)}
+.mini{height:3px;background:var(--line);border-radius:3px;margin-top:6px;overflow:hidden}
+.mini i{display:block;height:100%;background:var(--accent)}
+/* main */
+main{overflow:auto;padding:30px 38px 80px}
+.head{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.head h1{font-size:26px;font-weight:600;margin:0;flex:1;min-width:0}
+.head h1 input{border:none;background:none;font-size:26px;font-weight:600;width:100%;outline:none}
+.sub{color:var(--muted);font-size:13.5px}
+.btn{border:none;border-radius:999px;padding:10px 20px;cursor:pointer;background:var(--soft);font-weight:500;white-space:nowrap}
+.btn:hover{filter:brightness(.97)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.stop{background:#fbe7e5;color:var(--fail)}
+.btn.ghost{background:none;color:var(--muted);padding:8px 12px}
+.btn:disabled{opacity:.45;cursor:default}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow)}
+textarea{width:100%;min-height:220px;border:none;outline:none;resize:vertical;padding:18px 20px;background:none;line-height:1.7}
+.hint{color:var(--muted);font-size:13px;padding:0 20px 16px}
+.row{display:flex;gap:10px;align-items:center}
+.spacer{flex:1}
+/* toggles */
+.opts{display:flex;gap:18px;flex-wrap:wrap;margin:-6px 0 20px}
+.tg{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13.5px;color:#444;user-select:none}
+.tg input{display:none}
+.tg i{width:32px;height:19px;border-radius:19px;background:#d4d4cf;position:relative;transition:.2s}
+.tg i:after{content:"";position:absolute;width:15px;height:15px;border-radius:50%;background:#fff;top:2px;left:2px;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.tg input:checked+i{background:var(--accent)}
+.tg input:checked+i:after{left:15px}
+/* progress */
+.overall{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:24px}
+.overall i{display:block;height:100%;background:var(--accent);transition:width .4s}
+/* cast grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.cc{cursor:pointer;overflow:hidden;transition:transform .15s}
+.cc:hover{transform:translateY(-2px)}
+.cc.sel{outline:2px solid var(--accent)}
+.pic{aspect-ratio:4/4.6;background:var(--soft);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.pic .ini{font-size:38px;color:#bdbdb7;font-weight:500}
+.cb{padding:12px 14px 14px}
+.cn{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cm{font-size:12.5px;color:var(--muted)}
+.steps{display:flex;gap:3px;margin:10px 0 6px}
+.steps i{flex:1;height:4px;border-radius:4px;background:var(--line)}
+.steps i.ok{background:var(--accent)} .steps i.skip{background:var(--skip)}
+.steps i.fail{background:var(--fail)} .steps i.run{background:var(--run);animation:pulse 1s infinite alternate}
+@keyframes pulse{to{opacity:.35}}
+.state{font-size:12.5px;color:var(--muted)} .state.fail{color:var(--fail)} .state.run{color:#b07415} .state.done{color:var(--accent)}
+/* edit cards (before creating) */
+.ec{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.ec.off{opacity:.45}
+.ec input.name{border:none;outline:none;font-weight:500;font-size:15px;width:100%;background:none}
+.seg{display:inline-flex;background:var(--soft);border-radius:999px;padding:3px}
+.seg button{border:none;background:none;border-radius:999px;padding:3px 12px;cursor:pointer;font-size:13px;color:var(--muted)}
+.seg button.on{background:#fff;color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.seg.need{box-shadow:0 0 0 1.5px var(--fail)}
+.age{width:62px;border:1px solid var(--line);border-radius:8px;padding:3px 8px;outline:none}
+.notes{border:1px solid var(--line);border-radius:8px;padding:5px 9px;outline:none;width:100%;font-size:13px}
+.fold{font-size:12px;color:var(--muted)}
+.x{border:none;background:none;color:var(--muted);cursor:pointer;font-size:13px;padding:0}
+/* drawer */
+.drawer{position:fixed;top:0;right:0;width:400px;height:100%;background:var(--surface);box-shadow:-8px 0 30px rgba(0,0,0,.08);
+  transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;z-index:5}
+.drawer.on{transform:none}
+body.dr main{padding-right:440px}
+.dimg{background:var(--soft);height:52%;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.dimg img{max-width:100%;max-height:100%}
+.dbody{padding:20px 22px;overflow:auto;flex:1}
+.dbody h2{margin:0;font-size:19px;font-weight:600}
+.list{margin:14px 0;padding:0;list-style:none}
+.list li{padding:7px 0;border-bottom:1px solid var(--soft);font-size:14px}
+.list li small{display:block;color:var(--muted)}
+.err{background:#fbe7e5;color:#a33c35;border-radius:10px;padding:10px 12px;font-size:13px;margin:10px 0}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.close{position:absolute;top:12px;right:14px;border:none;background:rgba(255,255,255,.85);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:16px}
+/* log */
+.logbar{position:fixed;left:250px;right:0;bottom:0;background:rgba(244,244,241,.92);backdrop-filter:blur(6px);border-top:1px solid var(--line);
+  padding:8px 38px;font-size:13px;color:var(--muted);display:flex;gap:12px;align-items:center;cursor:pointer}
+.logbar b{font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.logfull{position:fixed;left:250px;right:0;bottom:37px;max-height:40%;overflow:auto;background:var(--surface);border-top:1px solid var(--line);
+  padding:14px 38px;font-size:13px;display:none;white-space:pre-wrap;color:#555}
+.logfull.on{display:block}
+.empty{color:var(--muted);text-align:center;padding:80px 0}
+.toast{position:fixed;left:50%;bottom:60px;transform:translateX(-50%);background:#1c1c1e;color:#fff;padding:10px 18px;border-radius:10px;font-size:14px;display:none;z-index:9}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">ตัวละคร CC5 <span>· ตามเรื่อง</span></div>
+    <button class="new" onclick="newStory()">＋ เรื่องใหม่</button>
+    <div id="slist"></div>
+  </aside>
+  <main id="main"></main>
+</div>
+<div class="drawer" id="drawer"></div>
+<div class="logbar" id="logbar" onclick="document.getElementById('logfull').classList.toggle('on')"><span>บันทึก</span><b id="logline">พร้อม</b></div>
+<div class="logfull" id="logfull"></div>
+<div class="toast" id="toast"></div>
+<script>
+const STEPS=[["plan","แผน"],["fabric","ลายผ้า"],["face","หน้า"],["build","สร้างตัว"],["scar","แผล"],["weights","แขนเสื้อ"],["export","iAvatar"]];
+let view={mode:"new",rows:[],title:"",path:null,story:null,sel:null,busy:false};
+let opts=JSON.parse(localStorage.getItem("opts")||'{"ai_fabric":true,"weights":false,"export":true}');
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+async function call(p,body={}){const r=await fetch(p,{method:"POST",body:JSON.stringify(body)});const j=await r.json();if(j&&j.error){toast(j.error);throw j.error}return j}
+function toast(m){const t=$("toast");t.textContent=m;t.style.display="block";clearTimeout(t._h);t._h=setTimeout(()=>t.style.display="none",3200)}
+const img=(p,t)=>p?`/img?p=${encodeURIComponent(p)}&t=${t||0}`:"";
+
+async function loadStories(){
+  const s=await call("/api/stories");
+  $("slist").innerHTML=s.map(x=>`<div class="sitem ${x.path===view.path?"on":""}" onclick='openStory(${JSON.stringify(x.path)})'>
+    <div class="t">${esc(x.title)}</div><div class="m">${x.done}/${x.count} ตัว</div>
+    <div class="mini"><i style="width:${x.count?100*x.done/x.count:0}%"></i></div></div>`).join("");
+}
+function newStory(){view={mode:"new",rows:[],title:"",path:null,story:null,sel:null};closeDrawer();render();loadStories()}
+async function openStory(p){view.mode="story";view.path=p;view.sel=null;closeDrawer();view.story=await call("/api/story",{path:p});render();loadStories()}
+
+function render(){
+  const m=$("main");
+  if(view.mode==="new"){
+    m.innerHTML=`<div class="head"><h1><input id="title" placeholder="ชื่อเรื่อง" value="${esc(view.title)}" oninput="view.title=this.value"></h1></div>
+    <div class="card"><textarea id="list" placeholder="วางรายชื่อตัวละคร บรรทัดละข้อ เช่น
+1 นายสมจิต+นางอุไร วัยเกือบ40+เกือบ70
+1.1 สมจิตวัย70 แผลไฟลวกที่แขน
+2 ญาติๆ ช-ญ
+3 อรวรรณ ลูกสาว วัยประถม+วัยสาว+ตอนท้อง">${esc(view.text||"")}</textarea>
+    <div class="row" style="padding:0 16px 14px"><div class="hint" style="padding:0">ใส่หมายเหตุได้: แผลไฟไหม้ที่แขน/หน้า/ขา · ผอม · ท้อง</div><div class="spacer"></div>
+    <button class="btn primary" onclick="parse()">อ่านรายชื่อ</button></div></div>
+    ${view.rows.length?editGrid():""}`;
+    return;
+  }
+  const s=view.story; if(!s){m.innerHTML="";return}
+  const n=s.characters.length, done=s.characters.filter(c=>/^(ok|skip)/.test(c.status.export||"")).length;
+  m.innerHTML=`<div class="head"><div style="flex:1;min-width:0"><h1>${esc(s.title)}</h1>
+     <div class="sub">${done}/${n} ตัวเสร็จ · <a href="#" onclick="call('/api/open',{dir:${esc(JSON.stringify(s.out_dir))}});return false" style="color:inherit">${esc(s.out_dir)}</a></div></div>
+     ${view.busy?`<button class="btn stop" onclick="stop()">หยุด</button>`:`<button class="btn primary" onclick="start()">${done?"ทำต่อ":"เริ่มทำ"}</button>`}</div>
+   <div class="opts">${tg("ai_fabric","ลายผ้าใหม่ด้วย AI")}${tg("weights","เกลี่ยแขนเสื้อ (ทดลอง)")}${tg("export","Export iAvatar ให้เอง")}</div>
+   <div class="overall"><i style="width:${n?100*done/n:0}%"></i></div>
+   <div class="grid">${s.characters.map(card).join("")}</div>`;
+}
+function tg(k,label){return `<label class="tg"><input type="checkbox" ${opts[k]?"checked":""} onchange="opts['${k}']=this.checked;localStorage.setItem('opts',JSON.stringify(opts))"><i></i>${label}</label>`}
+function stateOf(c){
+  const st=c.status; const f=STEPS.find(([k])=>/^fail/.test(st[k]||""));
+  if(f) return ["fail","พังที่ "+f[1]];
+  const r=STEPS.find(([k])=>st[k]==="run"); if(r) return ["run","กำลังทำ: "+r[1]];
+  if(/^(ok|skip)/.test(st.export||"")) return ["done","เสร็จแล้ว"];
+  const nx=STEPS.find(([k])=>!st[k]); return ["", nx?"รอ: "+nx[1]:""];
+}
+function card(c){
+  const [cls,txt]=stateOf(c);
+  return `<div class="card cc ${view.sel===c.job?"sel":""}" onclick="openChar('${c.job}')">
+   <div class="pic">${c.pic?`<img src="${img(c.pic,c.pic_t)}">`:`<div class="ini">${esc(c.name.replace(/^(นาย|นาง|ลุง|ป้า)/,"")[0]||"")}</div>`}</div>
+   <div class="cb"><div class="cn">${esc(c.name)}</div><div class="cm">${c.sex==="m"?"ชาย":"หญิง"} · ${c.age} ปี${c.notes?" · "+esc(c.notes):""}</div>
+   <div class="steps">${STEPS.map(([k])=>`<i class="${(c.status[k]||"").split(":")[0]}"></i>`).join("")}</div>
+   <div class="state ${cls}">${txt}</div></div></div>`;
+}
+function editGrid(){
+  return `<div class="row" style="margin:28px 0 14px"><div class="sub">${view.rows.filter(r=>r.use).length} ตัว · คลิกแก้ได้ทุกช่อง</div><div class="spacer"></div>
+    <button class="btn primary" onclick="create()">สร้างเรื่อง · สุ่มชุดให้ทุกตัว</button></div>
+    <div class="grid">${view.rows.map((r,i)=>`<div class="card ec ${r.use?"":"off"}">
+      <div class="row"><input class="name" value="${esc(r.name)}" onchange="view.rows[${i}].name=this.value">
+        <button class="x" title="${r.use?"ไม่ทำตัวนี้":"ทำตัวนี้"}" onclick="view.rows[${i}].use=!view.rows[${i}].use;render()">${r.use?"✕":"↺"}</button></div>
+      <div class="row"><div class="seg ${r.sex==="?"&&r.use?"need":""}">
+        <button class="${r.sex==="m"?"on":""}" onclick="view.rows[${i}].sex='m';render()">ชาย</button>
+        <button class="${r.sex==="f"?"on":""}" onclick="view.rows[${i}].sex='f';render()">หญิง</button></div>
+        <input class="age" type="number" min="0" max="110" value="${r.age}" onchange="view.rows[${i}].age=+this.value"> <span class="cm">ปี</span></div>
+      <input class="notes" placeholder="หมายเหตุ (แผล / ผอม / ท้อง)" value="${esc(r.notes)}" onchange="view.rows[${i}].notes=this.value">
+      <div class="fold">📁 ${esc(r.folder||"—")}</div></div>`).join("")}</div>`;
+}
+async function parse(){
+  view.text=$("list").value; view.title=$("title").value;
+  view.rows=await call("/api/parse",{text:view.text}); render();
+  document.querySelector(".grid")?.scrollIntoView({behavior:"smooth",block:"start"});
+}
+async function create(){
+  view.title=($("title")||{}).value||view.title;
+  if(!view.title.trim()) return toast("ใส่ชื่อเรื่องก่อน");
+  const bad=view.rows.filter(r=>r.use&&!["m","f"].includes(r.sex)); if(bad.length) return toast("เลือกเพศให้ครบ: "+bad.map(r=>r.name).join(", "));
+  const s=await call("/api/create",{title:view.title,rows:view.rows});
+  view.mode="story";view.path=s.path;view.story=s;render();loadStories();
+}
+async function start(){const r=await call("/api/start",{path:view.path,opts});if(!r.ok)toast(r.msg);view.busy=true;render();if(opts.export)toast("ตอน Export ห้ามจับเมาส์/คีย์บอร์ด")}
+async function stop(){await call("/api/stop");toast("จะหยุดหลังขั้นที่กำลังทำ")}
+function openChar(job){view.sel=job;drawer();render()}
+function closeDrawer(){$("drawer").classList.remove("on");document.body.classList.remove("dr");view.sel=null}
+function drawer(){
+  const c=view.story&&view.story.characters.find(x=>x.job===view.sel); if(!c) return;
+  const fails=STEPS.filter(([k])=>/^fail/.test(c.status[k]||"")).map(([k,l])=>`<div class="err">${l}: ${esc(c.status[k].slice(6))}</div>`).join("");
+  $("drawer").innerHTML=`<button class="close" onclick="closeDrawer();render()">✕</button>
+   <div class="dimg">${c.pic?`<img src="${img(c.pic,c.pic_t)}">`:`<span class="sub">ยังไม่มีรูป</span>`}</div>
+   <div class="dbody"><h2>${esc(c.name)}</h2><div class="sub">${c.sex==="m"?"ชาย":"หญิง"} · ${c.age} ปี · ${esc(c.folder)}</div>${fails}
+   <ul class="list">${c.outfit.map(o=>`<li>${esc(o.name)}${o.fabric?`<small>ลาย ${esc(o.fabric)}</small>`:""}</li>`).join("")}
+   ${c.hair?`<li>ผม ${esc(c.hair)}</li>`:""}${c.same_head?`<li>ใช้หัวเดียวกับ ${esc(c.same_head)}</li>`:""}</ul>
+   <div class="actions"><button class="btn" onclick="act('reroll')">สุ่มชุดใหม่</button>
+   <button class="btn" onclick="act('reset','build')">ทำใหม่ตั้งแต่สร้างตัว</button>
+   <button class="btn" onclick="act('reset','fabric')">ทำใหม่ทั้งหมด</button>
+   <button class="btn ghost" onclick='call("/api/open",{dir:${esc(JSON.stringify(c.dir))}})'>เปิดโฟลเดอร์</button></div></div>`;
+  $("drawer").classList.add("on"); document.body.classList.add("dr");
+}
+async function act(a,from){
+  const r=await call("/api/"+a,{path:view.path,job:view.sel,from});
+  if(r.ok===false) return toast(r.msg);
+  view.story=r; drawer(); render(); toast(a==="reroll"?"สุ่มชุดใหม่แล้ว กด ทำต่อ":"ล้างแล้ว กด ทำต่อ");
+}
+async function poll(){
+  try{
+    const r=await call("/api/status",{path:view.mode==="story"?view.path:null});
+    const was=view.busy; view.busy=r.busy;
+    $("logline").textContent=r.log.length?r.log[r.log.length-1]:"พร้อม";
+    $("logfull").textContent=r.log.join("\n");
+    if(r.story&&view.mode==="story"&&r.story.path===view.path){
+      const changed=JSON.stringify(r.story)!==JSON.stringify(view.story)||was!==r.busy;
+      view.story=r.story; if(changed){render(); if(view.sel) drawer(); if(was&&!r.busy) loadStories();}
+    }
+  }catch(e){}
+  setTimeout(poll,1500);
+}
+newStory(); poll();
+</script>
+</body>
+</html>
