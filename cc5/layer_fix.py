@@ -21,7 +21,7 @@ def fix(av, d, mode, log):
     work = os.path.join(d, "layer_fix")
     os.makedirs(work, exist_ok=True)
     f = {k: os.path.join(work, k + ".obj") for k in ("outer", "inner", "fixed")}
-    for p in f.values():
+    for p in list(f.values()) + [f["fixed"][:-4] + "_inner.obj"]:
         if os.path.exists(p):
             os.remove(p)
     RLPy.RFileIO.ExportObjFile(clothes[outer], f["outer"], RLPy.EExport3DFileOption__None)
@@ -29,11 +29,13 @@ def fix(av, d, mode, log):
     t = time.time()
     r = subprocess.run([kit.BLENDER, "-b", "--python", os.path.join(kit.REPO, "blender", "layer_fix_obj.py"), "--",
                         f["outer"], f["inner"], f["fixed"]], capture_output=True, text=True, timeout=900)
-    log += [l for l in r.stdout.splitlines() if l.startswith(("MOVED", "WROTE"))]
+    log += [l for l in r.stdout.splitlines() if l.startswith(("MOVED", "WROTE", "POKES"))]
     log.append("blender %.0fs rc=%s" % (time.time() - t, r.returncode))
     if not os.path.exists(f["fixed"]):
         raise RuntimeError("blender failed:\n" + r.stdout[-1500:] + r.stderr[-1500:])
     clothes[outer].GetMeshes()[0].ReplaceMesh(f["fixed"], RLPy.EReplaceMeshOption_ZUp, False)
+    if os.path.exists(f["fixed"][:-4] + "_inner.obj"):  # inner bits that poked through, pulled under the outer
+        clothes[inner].GetMeshes()[0].ReplaceMesh(f["fixed"][:-4] + "_inner.obj", RLPy.EReplaceMeshOption_ZUp, False)
 
 
 def main(mode):

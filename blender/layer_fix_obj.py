@@ -90,6 +90,53 @@ for _ in range(6):  # spread the push so the hem stays smooth; never pull a push
             new.append(dv)
     disp = new
 
+# second pass, seen from the INNER garment: small parts (belt loops, fly, folds) that stick out between the outer
+# garment's vertices still show through -> pull those INNER points back under the outer garment (hidden there, so
+# the outer garment stays smooth). Written to <out>_inner.obj; cc5\layer_fix.py replaces the inner mesh with it.
+np_ = [ov[i] + disp[i] for i in range(len(ov))]
+obvh = BVHTree.FromPolygons(np_, of)
+idisp = [Vector() for _ in iv]
+under = [False] * len(iv)
+pokes = 0
+for k, q in enumerate(iv):
+    d = Vector((q.x - cx, q.y - cy, 0.0))
+    if d.length < 1e-6:
+        continue
+    d.normalize()
+    inside = obvh.ray_cast(q - d * reach, d, reach * 2)  # first outer surface along the line, from the centre side
+    out_hit = obvh.ray_cast(q + d * 0.01, d, reach)
+    back = obvh.ray_cast(q, -d, reach)
+    under[k] = out_hit[0] is not None or back[0] is not None
+    if out_hit[0] is None and back[0] is not None:  # outer garment is inside this point: it pokes through
+        idisp[k] = (back[0] - d * offset) - q
+        pokes += 1
+inbr = [set() for _ in iv]
+for f in ifc:
+    for k in range(len(f)):
+        x, y = f[k], f[(k + 1) % len(f)]
+        inbr[x].add(y); inbr[y].add(x)
+for _ in range(3):  # soften around the pulled points, only where the outer garment covers it
+    new = []
+    for i, dv in enumerate(idisp):
+        if under[i] and inbr[i]:
+            avg = sum((idisp[j] for j in inbr[i]), Vector()) / len(inbr[i])
+            new.append(dv if dv.length >= avg.length else dv * 0.5 + avg * 0.5)
+        else:
+            new.append(dv)
+    idisp = new
+print("POKES", pokes)
+if pokes:
+    vi = 0
+    with open(out[:-4] + "_inner.obj", "w", encoding="utf-8") as w:
+        for line in open(inner_posed, encoding="utf-8", errors="ignore"):
+            if line.startswith("v "):
+                p = iv[vi] + idisp[vi]
+                rest = line.split()[4:]
+                w.write("v %.6f %.6f %.6f%s\n" % (p.x, p.y, p.z, (" " + " ".join(rest)) if rest else ""))
+                vi += 1
+            else:
+                w.write(line)
+
 vi = 0
 with open(out, "w", encoding="utf-8") as w:
     for line in open(outer_posed, encoding="utf-8", errors="ignore"):
