@@ -1,0 +1,41 @@
+{
+ "note": "Garments the app may pick (all worn in กรงกตัญญู without breaking). Thai rural modern: no button shirts, no plaid skirts. sex m/f/any; ages child adult middle old baby; fabric=true -> gets a new AI fabric; layer = shirt in/out of this bottom; bad=true to stop using one.",
+ "tops": [
+  {"spec": "63b0a4", "name": "เสื้อยืดคอกลม", "sex": "any", "ages": ["child", "adult", "middle", "old"], "fabric": true},
+  {"spec": "MO:Painter\\Shirt.ccCloth", "name": "เสื้อคอวีแขนสั้นตัวยาว", "sex": "f", "ages": ["adult", "middle"], "fabric": true},
+  {"spec": "MO:Old\\Shirt.ccCloth", "name": "เสื้อแขนยาวหญิงสูงวัย", "sex": "f", "ages": ["middle", "old"], "fabric": true},
+  {"spec": "04f1fc", "name": "เสื้อหม้อฮ่อมแขนยาว", "sex": "f", "ages": ["adult", "middle", "old"], "fabric": false},
+  {"spec": "MO:Underbelly\\Shirt.ccCloth", "name": "เสื้อแขนสั้นหญิงสาว", "sex": "f", "ages": ["adult"], "fabric": true},
+  {"spec": "MO:Billybob\\Vest.ccCloth", "name": "เสื้อกล้าม", "sex": "m", "ages": ["adult", "middle", "old"], "fabric": false},
+  {"spec": "MO:Sweat\\Top 01.ccCloth", "name": "เสื้อแขนยาวคอกลมผู้ชาย", "sex": "m", "ages": ["adult", "middle", "old"], "fabric": false}
+ ],
+ "bottoms": [
+  {"spec": "f909f8", "name": "กางเกงขายาวผู้หญิง", "sex": "f", "ages": ["adult", "middle", "old"], "fabric": true, "layer": "out", "kind": "trousers"},
+  {"spec": "185f00", "name": "ผ้าถุง", "sex": "f", "ages": ["middle", "old"], "fabric": true, "layer": "out", "kind": "sarong"},
+  {"spec": "55e2cd", "name": "ผ้าถุงยาว", "sex": "f", "ages": ["old"], "fabric": true, "layer": "out", "kind": "sarong"},
+  {"spec": "RC:Pants\\Pants(28).ccCloth", "name": "ผ้าถุงทรงกระบอก", "sex": "f", "ages": ["adult", "middle", "old"], "fabric": true, "layer": "out", "kind": "sarong"},
+  {"spec": "56a4c7", "name": "ยีนส์ผู้หญิง", "sex": "f", "ages": ["adult"], "fabric": false, "layer": "in", "kind": "trousers"},
+  {"spec": "47ae0874", "name": "กางเกงขายาวผู้ชาย", "sex": "m", "ages": ["adult", "middle", "old"], "fabric": true, "layer": "out", "kind": "trousers"},
+  {"spec": "0374dd", "name": "ยีนส์ผู้ชาย", "sex": "m", "ages": ["adult"], "fabric": false, "layer": "out", "kind": "trousers"},
+  {"spec": "f7c187", "name": "กางเกงขายาวสีดำ", "sex": "m", "ages": ["adult", "middle"], "fabric": false, "layer": "out", "kind": "trousers"},
+  {"spec": "1790c8", "name": "กางเกงเล + ผ้าขาวม้า", "sex": "m", "ages": ["middle", "old"], "fabric": false, "layer": "in", "kind": "trousers"},
+  {"spec": "MO:Pyjamas\\Pants 01.ccCloth", "name": "กางเกงขายาวลายทาง", "sex": "m", "ages": ["middle", "old"], "fabric": false, "layer": "out", "kind": "trousers"},
+  {"spec": "9b1c4f", "name": "กางเกงขาสั้นเด็ก", "sex": "m", "ages": ["child"], "fabric": false, "layer": "out", "kind": "shorts"},
+  {"spec": "0ce08ad1", "name": "กางเกงสามส่วนเด็ก", "sex": "any", "ages": ["child"], "fabric": true, "layer": "out", "kind": "shorts"}
+ ],
+ "full": [
+  {"spec": "0352c8", "name": "ชุดเด็กอ่อน", "sex": "any", "ages": ["baby"]}
+ ],
+ "shoes": [
+  {"spec": "MO:Oahu\\Flip Flops.ccShoes", "name": "รองเท้าแตะหูหนีบ", "sex": "any", "ages": ["child", "adult", "middle", "old"]},
+  {"spec": "MO:Oahu\\Sandals 02.ccShoes", "name": "รองเท้าแตะรัดส้น", "sex": "any", "ages": ["middle", "old"]},
+  {"spec": "MO:Dash\\Shoes 01.ccShoes", "name": "รองเท้ารัดส้นผู้หญิง", "sex": "f", "ages": ["adult", "middle"]},
+  {"spec": "MO:Casual 01\\Shoes.ccShoes", "name": "รองเท้าผ้าใบ", "sex": "m", "ages": ["adult", "middle"]},
+  {"spec": "MO:Casual 03\\Shoes.ccShoes", "name": "รองเท้าหนังลำลอง", "sex": "m", "ages": ["adult"]}
+ ],
+ "clash": [
+  ["63b0a4", "MO:Owen\\Pants.ccCloth"],
+  ["MO:Billybob\\Vest.ccCloth", "MO:Pyjamas\\Pants 01.ccCloth"],
+  ["MO:Sweat\\Top 01.ccCloth", "MO:Pyjamas\\Pants 01.ccCloth"]
+ ]
+}

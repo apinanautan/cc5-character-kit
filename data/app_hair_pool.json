@@ -1,0 +1,263 @@
+{
+ "colors": {
+  "child": [
+   18,
+   16,
+   15
+  ],
+  "adult": [
+   18,
+   16,
+   15
+  ],
+  "middle": [
+   105,
+   102,
+   98
+  ],
+  "old": [
+   205,
+   203,
+   200
+  ]
+ },
+ "note": "checked=false: not looked at in CC5 yet; mark bad ones with \"bad\": true",
+ "hairs": [
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Slicked Back.rlHair",
+   "name": "ผมหวีเสยเรียบ (ชาย)",
+   "groups": [
+    "male_adult",
+    "male_old"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Layered Pixie.rlHair",
+   "name": "ผมซอยสั้นปรกหน้า (ชาย)",
+   "groups": [
+    "male_adult",
+    "male_child"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+   "name": "ผมหน้าม้าปัดข้าง (ชาย)",
+   "groups": [
+    "male_adult",
+    "male_child"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Spiky Fringe.rlHair",
+   "name": "ผมสั้นตั้งหน้าม้า (ชาย)",
+   "groups": [
+    "male_adult",
+    "male_child"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+   "name": "ผมสั้นคลาสสิก (ชาย)",
+   "groups": [
+    "male_adult",
+    "male_old"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Short blowback.rlHair",
+   "name": "ผมสั้นเสยหลัง (ชาย)",
+   "groups": [
+    "male_adult",
+    "male_old"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+   "name": "ผมสั้นแสกข้าง (ชาย)",
+   "groups": [
+    "male_adult"
+   ],
+   "note": "textures missing (A:\u0003D projects) -> cannot dye gray/white; loads ~6 min",
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Fringe Hairstyle.rlHair",
+   "name": "ผมทรงกะลาหน้าม้า (ชาย)",
+   "groups": [
+    "male_child",
+    "male_adult"
+   ],
+   "note": "textures missing (A:\u0003D projects) -> cannot dye gray/white; loads ~6 min",
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Slicked Back Hairstyle.rlHair",
+   "name": "ผมหวีเสยยาวนิด (ชาย)",
+   "groups": [
+    "male_adult"
+   ],
+   "note": "textures missing (A:\u0003D projects) -> cannot dye gray/white; loads ~6 min",
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\07_Classic side part.rlHair",
+   "name": "ผมแสกข้างผู้ใหญ่ (ชาย)",
+   "groups": [
+    "male_old",
+    "male_adult"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\10_Male pattern bald.rlHair",
+   "name": "ผมบาง หัวล้านกลาง (ชายแก่)",
+   "groups": [
+    "male_old"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\06_Ear length Bob.rlHair",
+   "name": "ผมบ็อบติ่งหู (หญิง)",
+   "groups": [
+    "female_child",
+    "female_adult"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\08_Ponytail with bangs.rlHair",
+   "name": "ผมหางม้ามีหน้าม้า (หญิง)",
+   "groups": [
+    "female_child",
+    "female_adult"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\03_Cute braid long hair.rlHair",
+   "name": "ผมยาวถักเปีย (หญิง)",
+   "groups": [
+    "female_child",
+    "female_adult"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\05_Shoulder length hair.rlHair",
+   "name": "ผมยาวประบ่า (หญิง)",
+   "groups": [
+    "female_adult"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\02_Wavy short Bob.rlHair",
+   "name": "ผมบ็อบลอนสั้น (หญิง)",
+   "groups": [
+    "female_adult",
+    "female_old"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+   "name": "ผมมวยต่ำ (หญิง)",
+   "groups": [
+    "female_adult",
+    "female_old"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\01_Center part curtains.rlHair",
+   "name": "ผมแสกกลางยาวระคอ (หญิง)",
+   "groups": [
+    "female_adult"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Two ponytails.rlHair",
+   "name": "ผมมัดแกละสองข้าง (หญิง)",
+   "groups": [
+    "female_child"
+   ],
+   "checked": true
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Two pigtail braids.rlHair",
+   "name": "ผมถักเปียสองข้าง (หญิง)",
+   "groups": [
+    "female_child"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Blender Hair Samples\\Side ponytail.rlHair",
+   "name": "ผมหางม้าข้าง (หญิง)",
+   "groups": [
+    "female_child",
+    "female_adult"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Hair Builder 2 - eGirl\\Short middle part.rlHair",
+   "name": "ผมสั้นแสกกลาง (หญิง)",
+   "groups": [
+    "female_adult",
+    "female_child"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Half up short.rlHair",
+   "name": "ผมครึ่งหัวสั้น (หญิง)",
+   "groups": [
+    "female_adult",
+    "female_child"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Large bun.rlHair",
+   "name": "ผมมวยใหญ่ (หญิง)",
+   "groups": [
+    "female_adult",
+    "female_old"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Hair Builder 2 - eGirl\\Long middle part.rlHair",
+   "name": "ผมยาวแสกกลาง (หญิง)",
+   "groups": [
+    "female_adult"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Hair Builder 2 - eGirl\\Side straight ponytail.rlHair",
+   "name": "ผมหางม้าตรงข้าง (หญิง)",
+   "groups": [
+    "female_adult"
+   ],
+   "checked": false
+  },
+  {
+   "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Side part bang_mid.rlHair",
+   "name": "ผมแสกข้างประบ่า (หญิง)",
+   "groups": [
+    "female_adult"
+   ],
+   "checked": false
+  }
+ ]
+}

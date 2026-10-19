@@ -60,6 +60,6 @@ def resolve_item(spec, wardrobe=None):
 
 def load_story(name):
     path = name if name.endswith(".json") else os.path.join(REPO, "stories", name + ".json")
-    s = json.load(open(path, encoding="utf-8"))
+    s = json.load(open(path, encoding="utf-8-sig"))
     s["out_dir"] = os.path.expandvars(s.get("out_dir", os.path.join(CFG["out_root"], s["title"])))
     return s
