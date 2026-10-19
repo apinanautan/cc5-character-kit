@@ -51,8 +51,14 @@ def main(a):
         out = os.path.join(OUTBOX, cid + ".json")
         t = time.time()
         from start_cc5 import cc5_pids, popups, press, VK_RETURN
+        dead = 0
         while not os.path.exists(out):
             time.sleep(2)
+            dead = dead + 1 if not cc5_pids() else 0
+            if dead > 15:  # CC5 closed/crashed while running this command
+                os.path.exists(p) and os.remove(p)
+                print("ERROR CC5 closed or crashed while running " + os.path.basename(script))
+                sys.exit(2)
             for h in popups(cc5_pids()):  # modal warnings (missing hair textures etc.) block CC5 -> OK them
                 press(h, VK_RETURN)
             if time.time() - t > 3600:

@@ -102,8 +102,10 @@ def cc5_up(restart=False):
 
 
 def tidmunz_up(log):
-    out = subprocess.run(["tasklist", "/FO", "CSV", "/NH"], capture_output=True, text=True).stdout.lower()
-    if "tidmunz" in out:
+    # the program runs as pythonw.exe from its .venv; its window title says Tidmunz
+    out = subprocess.run(["tasklist", "/V", "/FO", "CSV", "/NH"], capture_output=True, text=True,
+                         encoding="utf-8", errors="replace", creationflags=NOWIN).stdout.lower()
+    if "tidmunz" in out or "snapgen" in out:
         return
     exe = os.path.join(os.path.expanduser("~"), "Desktop", "Tidmunz Studio.exe")
     if os.path.exists(exe):
@@ -217,7 +219,12 @@ class Runner:
         if not m:
             return "skip", ""
         where = {"แขน": "arm", "หน้า": "face", "ขา": "leg"}.get(m.group(1), "arm")
-        code, out = cc5_run(os.path.join("cc5", "scar.py"), 900, job=job, where=where)
+        spot = {"arm": [600, 1130, 230, 300], "face": [560, 1150, 150, 120], "leg": [560, 1300, 200, 260]}[where]
+        tex = os.path.join(self.job_dir(job), "scar_%s.png" % where)
+        code, out = _run([os.path.join("tools", "scar_overlay.py"), tex] + [str(v) for v in spot] + [str(random.randint(1, 999))])
+        if not os.path.exists(tex):
+            return "fail", "วาดแผลไม่ได้: " + out[-150:]
+        code, out = cc5_run(os.path.join("cc5", "scar.py"), 900, job=job, where=where, tex=tex)
         if "OK scar" in out:
             self.on_update("image", self.png(job, c))
             return "ok", where
@@ -279,7 +286,9 @@ class Runner:
                 self.log("พัก: เปิด CC5 ใหม่")
                 cc5_up(restart=True)
                 self.exported_since_restart = 0
-        self.log("เสร็จทุกตัวแล้ว")
+        st = load(self.path).get("status", {})
+        bad = [story["characters"][j]["name"] for j in jobs if any(str(v).startswith("fail") for v in st.get(j, {}).values())]
+        self.log("จบรอบ: " + ("มีตัวที่พัง %d ตัว: %s (เลือกแล้วกด ทำใหม่)" % (len(bad), ", ".join(bad)) if bad else "เสร็จครบทุกตัว"))
         self.on_update("done", None)
 
 

@@ -62,8 +62,13 @@ def key(*vks):
 
 def set_clipboard(text):
     k32.GlobalAlloc.restype = wintypes.HGLOBAL
+    k32.GlobalAlloc.argtypes = [wintypes.UINT, ctypes.c_size_t]
     k32.GlobalLock.restype = ctypes.c_void_p
+    k32.GlobalLock.argtypes = [wintypes.HGLOBAL]
+    k32.GlobalUnlock.argtypes = [wintypes.HGLOBAL]
+    u32.SetClipboardData.restype = wintypes.HANDLE
     u32.SetClipboardData.argtypes = [wintypes.UINT, wintypes.HANDLE]
+    u32.OpenClipboard.argtypes = [wintypes.HWND]
     data = ctypes.create_unicode_buffer(text)
     size = ctypes.sizeof(data)
     for _ in range(10):
