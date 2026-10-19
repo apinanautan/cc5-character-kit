@@ -44,7 +44,7 @@ def build(here):
     av = RLPy.RScene.GetAvatars()[0]
 
     def strip():
-        keep_hair = job.get("load_project")  # re-dress keeps the project's hair (some hairs load ~6 min)
+        keep_hair = job.get("load_project") and not job.get("new_hair")  # new_hair: swap it; re-dress keeps the project's hair (some hairs load ~6 min)
         for o in list(av.GetClothes()) + ([] if keep_hair else list(av.GetHairs())) + list(av.GetAccessories()):
             RLPy.RScene.RemoveObject(o)
 
@@ -62,7 +62,7 @@ def build(here):
     if job.get("morphs"):
         step("morphs", morphs)
     for item in job["items"]:
-        if job.get("load_project") and item.lower().endswith((".rlhair", ".cchair", ".ihair")):
+        if job.get("load_project") and not job.get("new_hair") and item.lower().endswith((".rlhair", ".cchair", ".ihair")):
             continue  # the loaded project already has its hair
         def load(item=item):
             before = set(o.GetName() for o in av.GetClothes())
