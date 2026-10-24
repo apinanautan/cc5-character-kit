@@ -30,6 +30,8 @@ def _diffuse(path):
 
 
 def make(garment, fabric):
+    if os.path.basename(fabric).startswith("school_"):
+        return fabric  # school uniforms: plain new fabric, never the garment's old print (plaid showed through)
     os.makedirs(CACHE, exist_ok=True)
     key = hashlib.md5((garment + "|" + fabric).encode("utf-8")).hexdigest()[:12]
     out = os.path.join(CACHE, key + ".png")

@@ -15,7 +15,13 @@ POSES = r"C:\Users\Public\Documents\Reallusion\Reallusion Templates\Animation\Po
 log = []
 RLPy.RFileIO.LoadFile(os.path.join(d, name + ".ccProject"))
 av = RLPy.RScene.GetAvatars()[0]
-if A.get("remove", "top") == "top":  # take off the old top (upper.txt) so only the new one shows
+SHOE = ("flop", "sandal", "sandle", "shoe", "boot")
+if A.get("remove") == "all":  # new top AND bottom: take off every old garment except shoes
+    for c in av.GetClothes():
+        if not any(k in c.GetName().lower() for k in SHOE):
+            RLPy.RScene.RemoveObject(c)
+            log.append("removed " + c.GetName())
+elif A.get("remove", "top") == "top":  # take off the old top (upper.txt) so only the new one shows
     up = os.path.join(d, "upper.txt")
     names = open(up, encoding="utf-8").read().splitlines() if os.path.exists(up) else []
     for c in av.GetClothes():
@@ -24,10 +30,12 @@ if A.get("remove", "top") == "top":  # take off the old top (upper.txt) so only 
             log.append("removed " + c.GetName())
 RLPy.RScene.SelectObject(av)
 RLPy.RFileIO.LoadFile(os.path.join(POSES, "T-Pose.rlPose"))
-before = set(o.GetName() for o in av.GetAccessories())
-r = av.LoadAccessoryWithTransferSkinWeight(A["obj"], A.get("template", "Default"))
-new = [o.GetName() for o in av.GetAccessories() if o.GetName() not in before]
-log.append("load %s -> %s, new accessories %s" % (os.path.basename(A["obj"]), "error" if r.IsError() else "ok", new))
+for obj in A["obj"].split(";"):  # several fitted garments: obj=a.obj;b.obj
+    before = set(o.GetName() for o in av.GetAccessories())
+    r = av.LoadAccessoryWithTransferSkinWeight(obj, A.get("template", "Default"))
+    new = [o.GetName() for o in av.GetAccessories() if o.GetName() not in before]
+    log.append("load %s -> %s, new accessories %s (avatar has %d accessories, %d clothes)" % (
+        os.path.basename(obj), "error" if r.IsError() else "ok", new, len(av.GetAccessories()), len(av.GetClothes())))
 
 
 def shot(png):

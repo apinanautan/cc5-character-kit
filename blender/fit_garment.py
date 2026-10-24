@@ -66,14 +66,18 @@ if kind == "top":
         v.co = Vector(((p.x - (gmin.x + gmax.x) / 2) * sx + cx,
                        (p.y - (tmin.y + tmax.y) / 2) * sy + cy,
                        (p.z - top_z) * sz + neck_z))
-else:  # bottom (skirt/trousers): waistband at hip_z + a bit, width from hips
-    hips = [p for p in bv if abs(p.z - hip_z) < H * 0.02 and abs(p.x) < (bmax.x - bmin.x) * 0.2]
-    hw = max(p.x for p in hips) - min(p.x for p in hips)
-    s = hw * 1.08 / max(gmax.x - gmin.x, 1e-6)
+else:  # bottom (skirt/trousers): waistband on the natural waist, width from the waist
+    waist_z = bmin.z + H * 0.60
+    waist = [p for p in bv if abs(p.z - waist_z) < H * 0.01 and abs(p.x) < (bmax.x - bmin.x) * 0.2]
+    ww = max(p.x for p in waist) - min(p.x for p in waist)
+    band = [p for p in gv if p.z > gmax.z - (gmax.z - gmin.z) * 0.05]
+    bw = max(p.x for p in band) - min(p.x for p in band)
+    s = ww * 1.06 / max(bw, 1e-6)
+    wcy = sum(p.y for p in waist) / len(waist)
     for v in gar.data.vertices:
         p = v.co
-        v.co = Vector(((p.x - (gmin.x + gmax.x) / 2) * s + cx, (p.y - (gmin.y + gmax.y) / 2) * s + cy,
-                       (p.z - gmax.z) * s + hip_z + H * 0.06))
+        v.co = Vector(((p.x - (gmin.x + gmax.x) / 2) * s + cx, (p.y - (gmin.y + gmax.y) / 2) * s + wcy,
+                       (p.z - gmax.z) * s + waist_z + H * 0.01))
 
 # push out of the skin: nearest body point + its normal; anything closer than gap goes out to gap
 bm = bmesh.new()
@@ -82,7 +86,10 @@ bm.transform(body.matrix_world)
 bvh = BVHTree.FromBMesh(bm)
 disp = [Vector() for _ in gar.data.vertices]
 moved = 0
+crotch_z = bmin.z + H * 0.48
 for i, v in enumerate(gar.data.vertices):
+    if kind == "bottom" and v.co.z < crotch_z:
+        continue  # a skirt hangs free below the hips: pushing it off the legs only tears it
     hit = bvh.find_nearest(v.co, 30.0)
     if hit[0] is None:
         continue
@@ -112,7 +119,7 @@ print("FIT kind=%s chest_w=%.1f neck_z=%.1f moved=%d of %d" % (kind, chest_w, ne
 bpy.ops.object.select_all(action="DESELECT")
 gar.select_set(True)
 bpy.context.view_layer.objects.active = gar
-bpy.ops.wm.obj_export(filepath=out, export_selected_objects=True, forward_axis="Y", up_axis="Z",
+bpy.ops.wm.obj_export(filepath=out, export_selected_objects=True, forward_axis="NEGATIVE_Z", up_axis="Y",
                       export_materials=True, path_mode="COPY", export_normals=True, export_uv=True)
 print("WROTE", out)
 # preview: body + garment, front and side

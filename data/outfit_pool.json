@@ -292,14 +292,24 @@
   [
    "MO:Sweat\\Top 01.ccCloth",
    "MO:Pyjamas\\Pants 01.ccCloth"
+  ],
+  [
+   "b621bb",
+   "9b1c4f"
+  ],
+  [
+   "b621bb",
+   "47ae0874"
   ]
  ],
  "school": {
-  "note": "untested combo (2026-10-24): white collared shirt + navy skirt / shorts",
+  "note": "untested combo (2026-10-24): white collared shirt + navy skirt / shorts; b621bb + 9b1c4f shorts CLASH on adult body (shorts fall off) -> secondary boys use navy trousers 47ae0874; b621bb also drops 47ae0874 -> boys 13+ use Farmer Shirt 02 dyed white",
   "shirt": "b621bb",
   "skirt": "RC:Pants\\Pants(15).ccCloth",
   "shorts": "9b1c4f",
   "shoes_m": "MO:Casual 03\\Shoes.ccShoes",
-  "shoes_f": "MO:Dash\\Shoes 01.ccShoes"
+  "shoes_f": "MO:Dash\\Shoes 01.ccShoes",
+  "trousers_m": "47ae0874",
+  "shirt_m": "MO:Farmer\\Shirt 02.ccCloth"
  }
 }

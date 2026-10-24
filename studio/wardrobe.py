@@ -100,7 +100,8 @@ def school_outfit(sex, age, old=False):
     if sex == "f":
         outfit = [[pool["skirt"], "cotton_navy"], [pool["shirt"], white], [pool["shoes_f"], None]]
     else:
-        outfit = [[pool["shorts"], "cotton_khaki" if age < 13 else "cotton_navy"], [pool["shirt"], white],
+        outfit = [[pool["shorts"], "cotton_khaki"] if age < 13 else [pool.get("trousers_m", pool["shorts"]), "cotton_navy"],
+                  [pool["shirt"] if age < 13 else pool.get("shirt_m", pool["shirt"]), white],
                   [pool["shoes_m"], None]]
     return outfit, "in", []
 

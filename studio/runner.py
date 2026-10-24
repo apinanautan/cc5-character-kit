@@ -221,6 +221,11 @@ class Runner:
             res = os.path.join(self.job_dir(job), "result.txt")
             text = open(res, encoding="utf-8", errors="replace").read() if os.path.exists(res) else out
             fails = [l for l in text.splitlines() if l.startswith("FAIL") or "BATCH FAIL" in l]
+            m = re.search(r"clothes_count: (\d+)", text)
+            if m and not fails and int(m.group(1)) < len(c["outfit"]):
+                return "fail", "ชุดหลุด: ใส่ได้ %s จาก %d ชิ้น (คู่เสื้อกับกางเกงชนกัน) กด สุ่มชุดใหม่" % (m.group(1), len(c["outfit"]))
+            if not os.path.exists(res):
+                fails = ["build.py ไม่ได้ทำงาน (ไม่มี result.txt): " + out[-150:]]
             if not fails and os.path.exists(self.png(job, c)):
                 self.on_update("image", self.png(job, c))
                 return "ok", ""
@@ -281,7 +286,7 @@ class Runner:
     # ---- main loop ----
     def run(self):
         story = load(self.path)
-        jobs = list(story["characters"])
+        jobs = [j for j in story["characters"] if not self.opts.get("only") or j in self.opts["only"]]
         for job in jobs:
             for key, label in STEPS:
                 if self.stop:
@@ -318,7 +323,7 @@ class Runner:
         self.on_update("done", None)
 
 
-def reset(path, job, from_step="fabric"):
+def reset(path, job, from_step="fabric", keep_face=False):
     """Redo a character from a step (app button 'ทำใหม่')."""
     s = load(path)
     keys = [k for k, _ in STEPS]
@@ -326,7 +331,7 @@ def reset(path, job, from_step="fabric"):
     for k in keys[keys.index(from_step):]:
         st.pop(k, None)
     d = os.path.join(kit.JOBS, job)
-    for f in ("result.txt", "upper.txt", "layer_fix.txt") + (("face.png",) if from_step in ("fabric", "face") else ()):
+    for f in ("result.txt", "upper.txt", "layer_fix.txt") + (("face.png",) if from_step in ("fabric", "face") and not keep_face else ()):
         if os.path.exists(os.path.join(d, f)):
             os.remove(os.path.join(d, f))
     save(path, s)
@@ -347,7 +352,7 @@ def reroll(path, job):
                                                   c.get("style", ""), c.get("age", 30))
     c.update(outfit=outfit, layer=layer, fabric_designs=designs)
     save(path, s)
-    reset(path, job, "fabric")
+    reset(path, job, "fabric", keep_face=True)
     s = load(path)
     s["status"][job]["face"] = "ok" if os.path.exists(os.path.join(kit.JOBS, job, "face.png")) else ""
     save(path, s)

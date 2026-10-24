@@ -56,21 +56,21 @@
    "outfit": [
     [
      "f909f8",
-     "gen/2a876d998a"
+     "gen/3f4ada8777"
     ],
     [
-     "MO:Underbelly\\Shirt.ccCloth",
+     "MO:Painter\\Shirt.ccCloth",
      "gen/0dc36beb34"
     ],
     [
-     "MO:Dash\\Shoes 01.ccShoes",
+     "MO:Oahu\\Flip Flops.ccShoes",
      null
     ]
    ],
    "layer": "out",
    "style": "normal",
    "fabric_designs": [
-    "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม",
+    "ผ้าลินินเนื้อหยาบพื้นเรียบ สีฟ้าหม่น",
     "ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน"
    ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Large bun.rlHair",
@@ -218,11 +218,11 @@
    "notes": "",
    "outfit": [
     [
-     "9b1c4f",
+     "47ae0874",
      "cotton_navy"
     ],
     [
-     "b621bb",
+     "MO:Farmer\\Shirt 02.ccCloth",
      "school_white"
     ],
     [
@@ -378,16 +378,16 @@
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "skip: export เอง"
+   "export": "ok: 161 MB"
   },
   "story_1024_1113_02": {
    "plan": "ok",
-   "fabric": "ok: ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม, ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน",
-   "face": "skip: ใช้หัวเดียวกับ สุดา วัย 15 ชุดนักเรียน",
+   "face": "ok",
+   "fabric": "ok: ผ้าลินินเนื้อหยาบพื้นเรียบ สีฟ้าหม่น, ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "skip: export เอง"
+   "export": "ok: 197 MB"
   },
   "story_1024_1113_03": {
    "plan": "ok",
@@ -396,7 +396,7 @@
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "skip: export เอง"
+   "export": "ok: 174 MB"
   },
   "story_1024_1113_04": {
    "plan": "ok",
@@ -405,7 +405,7 @@
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "skip: export เอง"
+   "export": "ok: 178 MB"
   },
   "story_1024_1113_05": {
    "plan": "ok",
@@ -414,22 +414,25 @@
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "skip: export เอง"
+   "export": "ok: 172 MB"
   },
   "story_1024_1113_06": {
    "plan": "ok",
-   "fabric": "ok: ไม่ต้องใช้",
    "face": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "skip: export เอง"
+   "export": "ok: 158 MB"
   },
   "story_1024_1113_07": {
    "plan": "ok",
    "fabric": "ok: ไม่ต้องใช้",
    "face": "skip: ใช้หัวเดียวกับ สมโชค ชุดนักเรียน",
-   "build": "fail: WARNING: bridge not alive — the command waits in the inbox until CC5 runs\nERROR CC5 hung (no heartbeat 35 min) while running build.py - closed it"
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 161 MB"
   },
   "story_1024_1113_08": {
    "plan": "ok",

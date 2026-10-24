@@ -131,6 +131,7 @@ def build(here):
     if os.path.exists(os.path.join(here, "upper.txt")) and not job.get("layer"):
         step("collision", collision)
     log.append("wearing: %r" % ([o.GetName() for o in list(av.GetClothes()) + list(av.GetHairs())],))
+    log.append("clothes_count: %d" % len(av.GetClothes()))  # runner compares this with the outfit (a clash drops pieces)
 
     def frame():
         RLPy.RScene.SelectObject(av)
