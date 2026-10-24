@@ -30,6 +30,8 @@ def _diffuse(path):
 
 
 def make(garment, fabric):
+    if "plain base" in garment.lower():
+        return fabric  # Plain Base garments carry only normal/AO maps (no real colour map): use the fabric as is
     if os.path.basename(fabric).startswith("school_"):
         return fabric  # school uniforms: plain new fabric, never the garment's old print (plaid showed through)
     os.makedirs(CACHE, exist_ok=True)

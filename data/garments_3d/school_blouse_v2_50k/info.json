@@ -1,0 +1,9 @@
+{
+ "desc": "school_blouse_v2 50k",
+ "image": "data/garments_3d/school_blouse_v2/school_blouse_v2_ref_small.jpg",
+ "task": "2e8f5b2c-47e4-4ce7-89bb-ef8d8fe18702",
+ "files": {
+  "obj": "C:\\Users\\Apinan\\Documents\\CC5 Characters\\data\\garments_3d\\school_blouse_v2_50k\\obj",
+  "glb": "C:\\Users\\Apinan\\Documents\\CC5 Characters\\data\\garments_3d\\school_blouse_v2_50k\\model.glb"
+ }
+}

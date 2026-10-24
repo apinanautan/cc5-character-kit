@@ -215,6 +215,7 @@ class Runner:
         code, out = _run([os.path.join("tools", "plan.py"), self.path, job], 600)
         if code:
             return "fail", "เตรียมงานไม่ได้: " + out[-200:]
+        self._reuse_head(job, c)
         cc5_up()
         for attempt in range(2):
             code, out = cc5_run(os.path.join("cc5", "build.py"))
@@ -234,7 +235,20 @@ class Runner:
                 os.remove(res)
             cc5_up(restart=True)
             _run([os.path.join("tools", "plan.py"), self.path, job], 600)
+            self._reuse_head(job, c)
         return "fail", (fails[:1] or [out[-200:]])[0][:200]
+
+    def _reuse_head(self, job, c):
+        """A character built before keeps its head: re-dress its saved project instead of a new Headshot
+        (Headshot is the heaviest step and the one CC5 crashes in)."""
+        d = self.job_dir(job)
+        if os.path.exists(os.path.join(d, c["name"] + ".ccProject")):
+            jf = os.path.join(d, "job.json")
+            data = json.load(open(jf, encoding="utf-8-sig"))
+            if not data.get("load_project"):
+                data["load_project"] = True
+                data["new_hair"] = False
+                json.dump(data, open(jf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     def _open(self, job):
         for attempt in range(3):

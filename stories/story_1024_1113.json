@@ -55,23 +55,23 @@
    "notes": "",
    "outfit": [
     [
-     "f909f8",
-     "gen/3f4ada8777"
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+     "gen/d881b87a11"
     ],
     [
-     "MO:Painter\\Shirt.ccCloth",
-     "gen/0dc36beb34"
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+     "gen/58c354856d"
     ],
     [
-     "MO:Oahu\\Flip Flops.ccShoes",
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
      null
     ]
    ],
    "layer": "out",
    "style": "normal",
    "fabric_designs": [
-    "ผ้าลินินเนื้อหยาบพื้นเรียบ สีฟ้าหม่น",
-    "ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน"
+    "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีเขียวขี้ม้า",
+    "ผ้าฝ้ายพิมพ์ลายเถาวัลย์เล็ก สีกากี"
    ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Large bun.rlHair",
    "hair_rgb": [
@@ -91,21 +91,24 @@
    "notes": "",
    "outfit": [
     [
-     "56a4c7",
-     null
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim fit pants.ccCloth",
+     "gen/2ebd7b915b"
     ],
     [
-     "04f1fc",
-     null
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+     "gen/b3944fcc18"
     ],
     [
-     "MO:Oahu\\Flip Flops.ccShoes",
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
      null
     ]
    ],
-   "layer": "in",
+   "layer": "out",
    "style": "",
-   "fabric_designs": [],
+   "fabric_designs": [
+    "ผ้ายีนส์ฟอกซีด",
+    "ผ้าฝ้ายพิมพ์ลายเถาวัลย์เล็ก สีขาวนวล"
+   ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Side part bang_mid.rlHair",
    "hair_rgb": [
     18,
@@ -133,21 +136,24 @@
    "notes": "",
    "outfit": [
     [
-     "1790c8",
-     null
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+     "gen/faea772ec0"
     ],
     [
-     "MO:Billybob\\Vest.ccCloth",
-     null
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+     "gen/d4328d8600"
     ],
     [
      "MO:Oahu\\Sandals 02.ccShoes",
      null
     ]
    ],
-   "layer": "in",
+   "layer": "out",
    "style": "",
-   "fabric_designs": [],
+   "fabric_designs": [
+    "ผ้าฝ้ายพื้นเรียบ สีขาวนวล",
+    "ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีเลือดหมู"
+   ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
    "hair_rgb": [
     105,
@@ -174,23 +180,23 @@
    "notes": "",
    "outfit": [
     [
-     "RC:Pants\\Pants(28).ccCloth",
-     "gen/10c9ac1101"
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Skirts\\Knee length skirt.ccCloth",
+     "gen/4e3eafef38"
     ],
     [
-     "MO:Old\\Shirt.ccCloth",
-     "gen/6137429009"
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
+     "gen/0d2b2a8f95"
     ],
     [
-     "MO:Dash\\Shoes 01.ccShoes",
+     "MO:Oahu\\Flip Flops.ccShoes",
      null
     ]
    ],
    "layer": "out",
    "style": "",
    "fabric_designs": [
-    "ผ้าถุงลายไทยโบราณ สีชมพูกะปิ",
-    "ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า"
+    "ผ้าถุงปาเต๊ะลายเถาวัลย์ สีแดงอิฐ",
+    "ผ้าพิมพ์ลายใบไม้เล็ก สีม่วงหม่น"
    ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\06_Ear length Bob.rlHair",
    "hair_rgb": [
@@ -259,21 +265,24 @@
    "notes": "",
    "outfit": [
     [
-     "0374dd",
-     null
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Scrub Pants_Base.ccCloth",
+     "gen/da5bdf576e"
     ],
     [
-     "MO:Sweat\\Top 01.ccCloth",
-     null
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+     "gen/7c7b9a0b9a"
     ],
     [
-     "MO:Casual 01\\Shoes.ccShoes",
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
      null
     ]
    ],
    "layer": "out",
    "style": "normal",
-   "fabric_designs": [],
+   "fabric_designs": [
+    "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีกากี",
+    "ผ้ายืดลายทางขวางเล็ก สีน้ำตาลอ่อน"
+   ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Short blowback.rlHair",
    "hair_rgb": [
     18,
@@ -292,12 +301,12 @@
    "notes": "",
    "outfit": [
     [
-     "f7c187",
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
      null
     ],
     [
-     "63b0a4",
-     "gen/8e14d70ea4"
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+     "gen/8691581650"
     ],
     [
      "MO:Oahu\\Sandals 02.ccShoes",
@@ -307,7 +316,7 @@
    "layer": "out",
    "style": "",
    "fabric_designs": [
-    "ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน"
+    "ผ้าฝ้ายพื้นเรียบ สีครีม"
    ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\10_Male pattern bald.rlHair",
    "hair_rgb": [
@@ -335,23 +344,23 @@
    "notes": "",
    "outfit": [
     [
-     "f909f8",
-     "gen/19eb80279a"
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Skirts\\Plain Base\\Professional Outfit\\Pencil skirt_Base.ccCloth",
+     "gen/14d3689cbd"
     ],
     [
-     "MO:Painter\\Shirt.ccCloth",
-     "gen/83a7e8e131"
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
+     "gen/9ddfec1dea"
     ],
     [
-     "MO:Oahu\\Flip Flops.ccShoes",
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
      null
     ]
    ],
    "layer": "out",
    "style": "",
    "fabric_designs": [
-    "ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น",
-    "ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น"
+    "ผ้าถุงลายดอกพิกุล สีขาวนวล",
+    "ผ้าพิมพ์ลายเรขาคณิตเล็ก สีกากี"
    ],
    "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Hair Builder 2 - eGirl\\Long middle part.rlHair",
    "hair_rgb": [
@@ -368,6 +377,87 @@
     "ใบหน้า": "โหนกแก้มสูง ตาชั้นเดียว คางแหลม",
     "prompt_name": "วันดี"
    }
+  },
+  "story_1024_1113_10": {
+   "name": "สุภา ชุดนักเรียน",
+   "sex": "female",
+   "age": 14,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "7. สุภา",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\school_skirt_ai.ccCloth",
+     null
+    ],
+    [
+     "RC:Shirts\\school_blouse_ai.ccCloth",
+     null
+    ],
+    [
+     "RC:Others\\school_socks_f.ccCloth",
+     null
+    ],
+    [
+     "RC:Shoes\\school_shoes.ccShoes",
+     null
+    ]
+   ],
+   "layer": "",
+   "style": "school",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\01_Center part curtains.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 14 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "สุภา ชุดนักเรียน",
+    "สีผิว": "ผิวขาวเหลือง",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้ายาว ปากหนา ตาสองชั้น",
+    "prompt_name": "สุภา ชุดนักเรียน"
+   }
+  },
+  "story_1024_1113_11": {
+   "name": "สุภา ชุดธรรมดา",
+   "sex": "female",
+   "age": 14,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "7. สุภา",
+   "notes": "",
+   "outfit": [
+    [
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+     "gen:ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีน้ำเงินคราม"
+    ],
+    [
+     "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+     "gen:ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวหัวเป็ดหม่น"
+    ],
+    [
+     "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "normal",
+   "fabric_designs": [
+    "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีน้ำเงินคราม",
+    "ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวหัวเป็ดหม่น"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\01_Center part curtains.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "head_from": "story_1024_1113_10"
   }
  },
  "status": {
@@ -378,43 +468,43 @@
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok: 161 MB"
+   "export": "ok: 179 MB"
   },
   "story_1024_1113_02": {
    "plan": "ok",
    "face": "ok",
-   "fabric": "ok: ผ้าลินินเนื้อหยาบพื้นเรียบ สีฟ้าหม่น, ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน",
+   "fabric": "ok: ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีเขียวขี้ม้า, ผ้าฝ้ายพิมพ์ลายเถาวัลย์เล็ก สีกากี",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok: 197 MB"
+   "export": "ok: 170 MB"
   },
   "story_1024_1113_03": {
    "plan": "ok",
-   "fabric": "ok: ไม่ต้องใช้",
    "face": "ok",
+   "fabric": "ok: ผ้ายีนส์ฟอกซีด, ผ้าฝ้ายพิมพ์ลายเถาวัลย์เล็ก สีขาวนวล",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok: 174 MB"
+   "export": "ok: 163 MB"
   },
   "story_1024_1113_04": {
    "plan": "ok",
-   "fabric": "ok: ไม่ต้องใช้",
    "face": "ok",
+   "fabric": "ok: ผ้าฝ้ายพื้นเรียบ สีขาวนวล, ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีเลือดหมู",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok: 178 MB"
+   "export": "ok: 171 MB"
   },
   "story_1024_1113_05": {
    "plan": "ok",
-   "fabric": "ok: ผ้าถุงลายไทยโบราณ สีชมพูกะปิ, ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า",
    "face": "ok",
+   "fabric": "ok: ผ้าถุงปาเต๊ะลายเถาวัลย์ สีแดงอิฐ, ผ้าพิมพ์ลายใบไม้เล็ก สีม่วงหม่น",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok: 172 MB"
+   "export": "ok: 156 MB"
   },
   "story_1024_1113_06": {
    "plan": "ok",
@@ -427,24 +517,30 @@
   },
   "story_1024_1113_07": {
    "plan": "ok",
-   "fabric": "ok: ไม่ต้องใช้",
-   "face": "skip: ใช้หัวเดียวกับ สมโชค ชุดนักเรียน",
+   "face": "skip",
+   "fabric": "ok: ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีกากี, ผ้ายืดลายทางขวางเล็ก สีน้ำตาลอ่อน",
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok: 161 MB"
+   "export": "ok: 155 MB"
   },
   "story_1024_1113_08": {
    "plan": "ok",
-   "fabric": "ok: ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน",
    "face": "ok",
-   "build": "fail: WARNING: bridge not alive — the command waits in the inbox until CC5 runs\nERROR CC5 hung (no heartbeat 68 min) while running build.py - closed it"
+   "fabric": "ok: ผ้าฝ้ายพื้นเรียบ สีครีม",
+   "build": "fail: build.py ไม่ได้ทำงาน (ไม่มี result.txt): ERROR CC5 closed or crashed while running build.py"
   },
   "story_1024_1113_09": {
    "plan": "ok",
-   "fabric": "ok: ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น, ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น",
    "face": "ok",
-   "build": "run"
+   "fabric": "ok: ผ้าถุงลายดอกพิกุล สีขาวนวล, ผ้าพิมพ์ลายเรขาคณิตเล็ก สีกากี",
+   "build": "fail: build.py ไม่ได้ทำงาน (ไม่มี result.txt): ERROR CC5 closed or crashed while running build.py"
+  },
+  "story_1024_1113_10": {
+   "plan": "ok"
+  },
+  "story_1024_1113_11": {
+   "plan": "ok"
   }
  }
 }

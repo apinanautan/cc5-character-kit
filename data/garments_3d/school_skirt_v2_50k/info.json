@@ -1,0 +1,9 @@
+{
+ "desc": "school_skirt_v2 50k",
+ "image": "data/garments_3d/school_skirt_v2/school_skirt_v2_ref_small.jpg",
+ "task": "357e1b90-9379-493e-94e2-fa54e3e20af7",
+ "files": {
+  "obj": "C:\\Users\\Apinan\\Documents\\CC5 Characters\\data\\garments_3d\\school_skirt_v2_50k\\obj",
+  "glb": "C:\\Users\\Apinan\\Documents\\CC5 Characters\\data\\garments_3d\\school_skirt_v2_50k\\model.glb"
+ }
+}

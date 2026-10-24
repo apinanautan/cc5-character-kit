@@ -5,7 +5,7 @@ import json, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
 
-POOL = os.path.join(kit.REPO, "data", "outfit_pool.json")
+POOL = os.path.join(kit.REPO, "data", "base_pool.json")  # CC5 base garments + AI fabrics
 HAIR = os.path.join(kit.REPO, "data", "app_hair_pool.json")
 HISTORY = os.path.join(kit.REPO, "data", "history.json")
 
@@ -97,6 +97,9 @@ def school_outfit(sex, age, old=False):
     """Thai school uniform: white shirt + navy skirt (girls) / shorts (boys: khaki in primary, navy in secondary)."""
     pool = _load(POOL, {})["school"]
     white = "school_white_old" if old else "school_white"
+    if sex == "f" and age >= 13 and pool.get("girl_set"):  # the AI uniform (sailor collar + pleated skirt)
+        outfit = [[spec, None] for spec in pool["girl_set"]]
+        return outfit, "", []
     if sex == "f":
         outfit = [[pool["skirt"], "cotton_navy"], [pool["shirt"], white], [pool["shoes_f"], None]]
     else:

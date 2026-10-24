@@ -1,0 +1,266 @@
+{
+ "note": "BASE pool (2026-10-24): CC5 templates + Plain Base, adult sizes; looks come from AI fabrics. Old library outfits only for children/baby/school.",
+ "tops": [
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+   "name": "เสื้อยืดคอกลม",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+   "name": "เสื้อคอวีผ้าฝ้าย",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
+   "name": "เสื้อแขนกุดหญิง",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "fabric": true
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Close_collar_short_sleeves_shirt_Base.ccCloth",
+   "name": "เสื้อคอปกแขนสั้น",
+   "sex": "any",
+   "ages": [
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "bad": true,
+   "note": "มีกระดุม"
+  },
+  {
+   "spec": "63b0a4",
+   "name": "เสื้อยืดคอกลม",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "fabric": true
+  }
+ ],
+ "bottoms": [
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
+   "name": "ยีนส์",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "fabric": false,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim fit pants.ccCloth",
+   "name": "กางเกงขายาวทรงเข้ารูป",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+   "name": "กางเกงสแล็ค",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+   "name": "กางเกงคาร์โก้",
+   "sex": "m",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Scrub Pants_Base.ccCloth",
+   "name": "กางเกงขายาวหลวม",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Skirts\\Knee length skirt.ccCloth",
+   "name": "กระโปรงยาวคลุมเข่า",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "sarong"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Skirts\\Plain Base\\Professional Outfit\\Pencil skirt_Base.ccCloth",
+   "name": "กระโปรงทรงสอบ",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "sarong"
+  },
+  {
+   "spec": "9b1c4f",
+   "name": "กางเกงขาสั้นเด็ก",
+   "sex": "m",
+   "ages": [
+    "child"
+   ],
+   "fabric": false,
+   "layer": "out",
+   "kind": "shorts"
+  },
+  {
+   "spec": "0ce08ad1",
+   "name": "กางเกงสามส่วนเด็ก",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "shorts"
+  }
+ ],
+ "full": [
+  {
+   "spec": "0352c8",
+   "name": "ชุดเด็กอ่อน",
+   "sex": "any",
+   "ages": [
+    "baby"
+   ]
+  }
+ ],
+ "shoes": [
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+   "name": "รองเท้าผ้าใบ",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle"
+   ]
+  },
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
+   "name": "สนีกเกอร์",
+   "sex": "any",
+   "ages": [
+    "adult"
+   ]
+  },
+  {
+   "spec": "MO:Oahu\\Flip Flops.ccShoes",
+   "name": "รองเท้าแตะหูหนีบ",
+   "sex": "any",
+   "ages": [
+    "child",
+    "adult",
+    "middle",
+    "old"
+   ]
+  },
+  {
+   "spec": "MO:Oahu\\Sandals 02.ccShoes",
+   "name": "รองเท้าแตะรัดส้น",
+   "sex": "any",
+   "ages": [
+    "middle",
+    "old"
+   ]
+  },
+  {
+   "spec": "MO:Oahu\\Flip Flops.ccShoes",
+   "name": "รองเท้าแตะหูหนีบ",
+   "sex": "any",
+   "ages": [
+    "child"
+   ]
+  }
+ ],
+ "clash": [
+  [
+   "63b0a4",
+   "MO:Owen\\Pants.ccCloth"
+  ],
+  [
+   "MO:Billybob\\Vest.ccCloth",
+   "MO:Pyjamas\\Pants 01.ccCloth"
+  ],
+  [
+   "MO:Sweat\\Top 01.ccCloth",
+   "MO:Pyjamas\\Pants 01.ccCloth"
+  ],
+  [
+   "b621bb",
+   "9b1c4f"
+  ],
+  [
+   "b621bb",
+   "47ae0874"
+  ]
+ ],
+ "school": {
+  "note": "untested combo (2026-10-24): white collared shirt + navy skirt / shorts; b621bb + 9b1c4f shorts CLASH on adult body (shorts fall off) -> secondary boys use navy trousers 47ae0874; b621bb also drops 47ae0874 -> boys 13+ use Farmer Shirt 02 dyed white; girls 13+: AI uniform worn by Suda (girl_set, no fabric)",
+  "shirt": "b621bb",
+  "skirt": "RC:Pants\\Pants(15).ccCloth",
+  "shorts": "9b1c4f",
+  "shoes_m": "MO:Casual 03\\Shoes.ccShoes",
+  "shoes_f": "MO:Dash\\Shoes 01.ccShoes",
+  "trousers_m": "47ae0874",
+  "shirt_m": "MO:Farmer\\Shirt 02.ccCloth",
+  "girl_set": [
+   "RC:Pants\\school_skirt_ai.ccCloth",
+   "RC:Shirts\\school_blouse_ai.ccCloth",
+   "RC:Others\\school_socks_f.ccCloth",
+   "RC:Shoes\\school_shoes.ccShoes"
+  ]
+ }
+}

@@ -81,6 +81,9 @@ def build(here):
                 for mesh in cl.GetMeshNames():
                     for mat in comp.GetMaterialNames(mesh):
                         comp.LoadImageToTexture(mesh, mat, RLPy.EMaterialTextureChannel_Diffuse, fab)
+                        # cloth must look like cloth (Plain Base garments come shiny): no gloss, no metal
+                        comp.AddGlossinessKey(RLPy.RKey(), mesh, mat, 0.0)
+                        comp.RemoveMaterialTexture(mesh, mat, RLPy.EMaterialTextureChannel_Metallic)
                         comp.AddDiffuseKey(RLPy.RKey(), mesh, mat, RLPy.RRgb(1, 1, 1))
                 cl.Update()
             return "fabric"
