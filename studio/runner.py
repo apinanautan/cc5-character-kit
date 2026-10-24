@@ -313,7 +313,7 @@ class Runner:
                 self.log("%s: %s -> %s %s" % (c["name"], label, res, msg))
                 if res == "fail":
                     break
-            if self.exported_since_restart >= 2:  # CC5 slows down / crashes after a few loads
+            if self.exported_since_restart >= 1:  # fresh CC5 for every character: its RAM grows to 15-18 GB otherwise
                 self.log("พัก: เปิด CC5 ใหม่")
                 cc5_up(restart=True)
                 self.exported_since_restart = 0

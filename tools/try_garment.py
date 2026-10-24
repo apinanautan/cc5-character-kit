@@ -25,6 +25,8 @@ def step(label, cmd, timeout=1800):
 
 subprocess.run([py, os.path.join(kit.REPO, "tools", "start_cc5.py")])
 step("body T-pose", [py, cc5, "run", "cc5/export_body_tpose.py", "job=" + job, "out=" + body])
+# keep RAM low (this PC blue-screens under heavy memory load): close CC5 while Blender works, reopen after
+subprocess.run(["taskkill", "/IM", "CharacterCreator.exe", "/F"], capture_output=True)
 fitted, kinds = [], []
 for spec in specs:
     name, _, kind = spec.partition(":")
@@ -34,6 +36,7 @@ for spec in specs:
     step("fit " + name, [kit.BLENDER, "-b", "--python", os.path.join(kit.REPO, "blender", "fit_garment.py"), "--",
                          os.path.join(g, "model.glb"), body, f, kind])
     fitted.append(f); kinds.append(kind)
+subprocess.run([py, os.path.join(kit.REPO, "tools", "start_cc5.py")])
 remove = "all" if {"top", "bottom"} <= set(kinds) else "top" if "top" in kinds else "none"
 save = "try_" + "_".join(s.partition(":")[0] for s in specs)
 step("wear in CC5", [py, cc5, "run", "cc5/wear_garment.py", "job=" + job, "obj=" + ";".join(fitted),
