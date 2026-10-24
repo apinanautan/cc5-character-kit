@@ -83,8 +83,9 @@
    "groups": [
     "male_adult"
    ],
-   "note": "textures missing (A:\u0003D projects) -> cannot dye gray/white; loads ~6 min",
-   "checked": true
+   "note": "73MB, hangs CC5 on load (2026-10-24)",
+   "checked": true,
+   "bad": true
   },
   {
    "path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Fringe Hairstyle.rlHair",

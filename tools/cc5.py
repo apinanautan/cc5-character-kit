@@ -55,6 +55,13 @@ def main(a):
         while not os.path.exists(out):
             time.sleep(2)
             dead = dead + 1 if not cc5_pids() else 0
+            ok, age = alive()
+            if age is not None and age > 900 and cc5_pids():  # no heartbeat for 15 min = CC5 hung: kill it
+                import subprocess
+                subprocess.run(["taskkill", "/F", "/IM", "CharacterCreator.exe"], capture_output=True)
+                print("ERROR CC5 hung (no heartbeat %.0f min) while running %s - closed it" % (age / 60, os.path.basename(script)))
+                os.path.exists(p) and os.remove(p)
+                sys.exit(3)
             if dead > 15:  # CC5 closed/crashed while running this command
                 os.path.exists(p) and os.remove(p)
                 print("ERROR CC5 closed or crashed while running " + os.path.basename(script))

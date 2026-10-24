@@ -51,7 +51,9 @@
    "ages": [
     "adult"
    ],
-   "fabric": true
+   "fabric": true,
+   "bad": true,
+   "note": "เสื้อเชิ้ตติดกระดุม ไม่ใช่แนวไทย (2026-10-24)"
   },
   {
    "spec": "MO:Billybob\\Vest.ccCloth",

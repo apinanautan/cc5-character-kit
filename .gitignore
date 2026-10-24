@@ -5,3 +5,5 @@ __pycache__/
 debug.log
 data/fabrics/gen/
 runs/
+data/garments_3d/*/obj/
+data/garments_3d/*/*.glb

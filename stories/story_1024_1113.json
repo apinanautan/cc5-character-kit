@@ -56,11 +56,11 @@
    "outfit": [
     [
      "f909f8",
-     "gen:ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม"
+     "gen/2a876d998a"
     ],
     [
      "MO:Underbelly\\Shirt.ccCloth",
-     "gen:ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน"
+     "gen/0dc36beb34"
     ],
     [
      "MO:Dash\\Shoes 01.ccShoes",
@@ -175,11 +175,11 @@
    "outfit": [
     [
      "RC:Pants\\Pants(28).ccCloth",
-     "gen:ผ้าถุงลายไทยโบราณ สีชมพูกะปิ"
+     "gen/10c9ac1101"
     ],
     [
      "MO:Old\\Shirt.ccCloth",
-     "gen:ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า"
+     "gen/6137429009"
     ],
     [
      "MO:Dash\\Shoes 01.ccShoes",
@@ -233,7 +233,7 @@
    "layer": "in",
    "style": "school",
    "fabric_designs": [],
-   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Short blowback.rlHair",
    "hair_rgb": [
     18,
     16,
@@ -274,7 +274,7 @@
    "layer": "out",
    "style": "normal",
    "fabric_designs": [],
-   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Short blowback.rlHair",
    "hair_rgb": [
     18,
     16,
@@ -297,7 +297,7 @@
     ],
     [
      "63b0a4",
-     "gen:ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน"
+     "gen/8e14d70ea4"
     ],
     [
      "MO:Oahu\\Sandals 02.ccShoes",
@@ -374,29 +374,68 @@
   "story_1024_1113_01": {
    "plan": "ok",
    "fabric": "ok: ไม่ต้องใช้",
-   "face": "fail: RuntimeError: HTTP 502: {\"error\":{\"message\":\"Bridge request failed: ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host\",\"type\":\"bridge_internal_error\""
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "skip: export เอง"
   },
   "story_1024_1113_02": {
    "plan": "ok",
-   "fabric": "run"
+   "fabric": "ok: ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม, ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน",
+   "face": "skip: ใช้หัวเดียวกับ สุดา วัย 15 ชุดนักเรียน",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "skip: export เอง"
   },
   "story_1024_1113_03": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "skip: export เอง"
   },
   "story_1024_1113_04": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "skip: export เอง"
   },
   "story_1024_1113_05": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ผ้าถุงลายไทยโบราณ สีชมพูกะปิ, ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "skip: export เอง"
   },
   "story_1024_1113_06": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "skip: export เอง"
   },
   "story_1024_1113_07": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "skip: ใช้หัวเดียวกับ สมโชค ชุดนักเรียน",
+   "build": "fail: WARNING: bridge not alive — the command waits in the inbox until CC5 runs\nERROR CC5 hung (no heartbeat 35 min) while running build.py - closed it"
   },
   "story_1024_1113_08": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน",
+   "face": "ok",
+   "build": "run"
   },
   "story_1024_1113_09": {
    "plan": "ok"
