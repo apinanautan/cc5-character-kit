@@ -7,3 +7,6 @@ data/fabrics/gen/
 runs/
 data/garments_3d/*/obj/
 data/garments_3d/*/*.glb
+data/garments_3d/*/fit*.obj
+data/garments_3d/*/fit*.mtl
+data/garments_3d/*/tex_*.png

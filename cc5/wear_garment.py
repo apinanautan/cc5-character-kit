@@ -30,12 +30,42 @@ elif A.get("remove", "top") == "top":  # take off the old top (upper.txt) so onl
             log.append("removed " + c.GetName())
 RLPy.RScene.SelectObject(av)
 RLPy.RFileIO.LoadFile(os.path.join(POSES, "T-Pose.rlPose"))
+def texture_of(obj):
+    """diffuse map named in the OBJ's .mtl (Blender copies it next to the OBJ)"""
+    mtl = os.path.splitext(obj)[0] + ".mtl"
+    if os.path.exists(mtl):
+        for line in open(mtl, encoding="utf-8", errors="ignore"):
+            if line.strip().lower().startswith("map_kd"):
+                t = line.split(None, 1)[1].strip()
+                t = t if os.path.isabs(t) else os.path.join(os.path.dirname(obj), t)
+                if os.path.exists(t):
+                    return t
+    return None
+
+
 for obj in A["obj"].split(";"):  # several fitted garments: obj=a.obj;b.obj
+    before_c = set(o.GetName() for o in av.GetClothes())
     before = set(o.GetName() for o in av.GetAccessories())
     r = av.LoadAccessoryWithTransferSkinWeight(obj, A.get("template", "Default"))
     new = [o.GetName() for o in av.GetAccessories() if o.GetName() not in before]
     log.append("load %s -> %s, new accessories %s (avatar has %d accessories, %d clothes)" % (
         os.path.basename(obj), "error" if r.IsError() else "ok", new, len(av.GetAccessories()), len(av.GetClothes())))
+    tex = texture_of(obj)  # CC5 loads the shape but not the AI texture: put it back
+    for c in av.GetClothes():
+        if c.GetName() not in before_c and not tex:
+            comp = c.GetMaterialComponent()
+            for mesh in c.GetMeshNames():
+                for mat in comp.GetMaterialNames(mesh):
+                    comp.SetTwoSidedMaterial(mesh, mat, True)
+        if c.GetName() not in before_c and tex:
+            comp = c.GetMaterialComponent()
+            for mesh in c.GetMeshNames():
+                for mat in comp.GetMaterialNames(mesh):
+                    comp.LoadImageToTexture(mesh, mat, RLPy.EMaterialTextureChannel_Diffuse, tex)
+                    comp.AddDiffuseKey(RLPy.RKey(), mesh, mat, RLPy.RRgb(1, 1, 1))
+                    comp.SetTwoSidedMaterial(mesh, mat, True)  # AI shells have inward-facing parts (collar, hem)
+            c.Update()
+            log.append("texture %s -> %s" % (os.path.basename(tex), c.GetName()))
 
 
 def shot(png):
