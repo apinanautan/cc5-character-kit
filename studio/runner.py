@@ -104,17 +104,34 @@ def cc5_up(restart=False):
     return _run([os.path.join("tools", "start_cc5.py")] + (["--restart"] if restart else []), 900)
 
 
+def tidmunz_running():
+    # Tidmunz Studio = pythonw.exe running snapgen_gui_v2.py (its window title is Thai, so look at command lines)
+    out = subprocess.run(["powershell", "-NoProfile", "-Command",
+                          "(Get-CimInstance Win32_Process -Filter \"Name like 'python%'\" | "
+                          "Where-Object { $_.CommandLine -match 'snapgen_gui' }).Count"],
+                         capture_output=True, text=True, creationflags=NOWIN).stdout.strip()
+    return out.isdigit() and int(out) > 0
+
+
+_tidmunz_started = [0.0]
+
+
 def tidmunz_up(log):
-    # the program runs as pythonw.exe from its .venv; its window title says Tidmunz
-    out = subprocess.run(["tasklist", "/V", "/FO", "CSV", "/NH"], capture_output=True, text=True,
-                         encoding="utf-8", errors="replace", creationflags=NOWIN).stdout.lower()
-    if "tidmunz" in out or "snapgen" in out:
+    if tidmunz_running():
+        return
+    if time.time() - _tidmunz_started[0] < 600:  # launched a moment ago, still starting: never open a second one
+        time.sleep(20)
         return
     exe = os.path.join(os.path.expanduser("~"), "Desktop", "Tidmunz Studio.exe")
     if os.path.exists(exe):
         log("เปิด Tidmunz Studio (ใช้สร้างหน้า/ลายผ้า) ...")
+        _tidmunz_started[0] = time.time()
         subprocess.Popen([exe])
-        time.sleep(45)
+        for _ in range(30):
+            time.sleep(5)
+            if tidmunz_running():
+                time.sleep(30)  # let its ChatGPT bridge come up
+                return
 
 
 class Runner:

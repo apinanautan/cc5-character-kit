@@ -1,0 +1,405 @@
+{
+ "title": "จุดหักเหของชีวิต",
+ "era": "คนไทยต่างจังหวัด ยุคปัจจุบัน",
+ "slug": "story_1024_1113",
+ "out_dir": "C:\\Users\\Apinan\\Desktop\\จุดหักเหของชีวิต",
+ "characters": {
+  "story_1024_1113_01": {
+   "name": "สุดา วัย 15 ชุดนักเรียน",
+   "sex": "female",
+   "age": 15,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "1. สุดา",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\Pants(15).ccCloth",
+     "cotton_navy"
+    ],
+    [
+     "b621bb",
+     "school_white_old"
+    ],
+    [
+     "MO:Dash\\Shoes 01.ccShoes",
+     null
+    ]
+   ],
+   "layer": "in",
+   "style": "school_old",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Large bun.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 15 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "สุดา วัย 15 ชุดนักเรียน (ลูกสาวคนเดียวของนายเต็ม)",
+    "สีผิว": "ผิวสองสี",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้ายาว คางสั้น ตาเล็กเรียว",
+    "prompt_name": "สุดา วัย 15 ชุดนักเรียน"
+   }
+  },
+  "story_1024_1113_02": {
+   "name": "สุดา วัย 15 ชุดธรรมดา",
+   "sex": "female",
+   "age": 15,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "1. สุดา",
+   "notes": "",
+   "outfit": [
+    [
+     "f909f8",
+     "gen:ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม"
+    ],
+    [
+     "MO:Underbelly\\Shirt.ccCloth",
+     "gen:ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน"
+    ],
+    [
+     "MO:Dash\\Shoes 01.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "normal",
+   "fabric_designs": [
+    "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม",
+    "ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Large bun.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "head_from": "story_1024_1113_01"
+  },
+  "story_1024_1113_03": {
+   "name": "สุดา วัยสาว",
+   "sex": "female",
+   "age": 24,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "1. สุดา",
+   "notes": "",
+   "outfit": [
+    [
+     "56a4c7",
+     null
+    ],
+    [
+     "04f1fc",
+     null
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "layer": "in",
+   "style": "",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Side part bang_mid.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 24 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "สุดา วัยสาว (ลูกสาวคนเดียวของนายเต็ม)",
+    "สีผิว": "ผิวสองสี",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้ายาว คางสั้น ตาเล็กเรียว",
+    "prompt_name": "สุดา วัยสาว",
+    "ref": "story_1024_1113_01"
+   }
+  },
+  "story_1024_1113_04": {
+   "name": "นายเต็ม",
+   "sex": "male",
+   "age": 45,
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "2. นายเต็ม + นางดวง",
+   "notes": "",
+   "outfit": [
+    [
+     "1790c8",
+     null
+    ],
+    [
+     "MO:Billybob\\Vest.ccCloth",
+     null
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "layer": "in",
+   "style": "",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+   "hair_rgb": [
+    105,
+    102,
+    98
+   ],
+   "face": {
+    "อายุ": "ประมาณ 45 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "นายเต็ม (พ่อแม่ของสุดา ทั้งสองคนเป็นคนรับจ้างทั่วไป)",
+    "สีผิว": "ผิวสีน้ำผึ้ง",
+    "ทรงผม": "ผมดอกเลาสีเทา",
+    "ใบหน้า": "หน้าเหลี่ยม ตาชั้นเดียว จมูกแบนเล็ก",
+    "prompt_name": "นายเต็ม"
+   }
+  },
+  "story_1024_1113_05": {
+   "name": "นางดวง",
+   "sex": "female",
+   "age": 45,
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "2. นายเต็ม + นางดวง",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\Pants(28).ccCloth",
+     "gen:ผ้าถุงลายไทยโบราณ สีชมพูกะปิ"
+    ],
+    [
+     "MO:Old\\Shirt.ccCloth",
+     "gen:ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า"
+    ],
+    [
+     "MO:Dash\\Shoes 01.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าถุงลายไทยโบราณ สีชมพูกะปิ",
+    "ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\06_Ear length Bob.rlHair",
+   "hair_rgb": [
+    105,
+    102,
+    98
+   ],
+   "face": {
+    "อายุ": "ประมาณ 45 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "นางดวง (พ่อแม่ของสุดา ทั้งสองคนเป็นคนรับจ้างทั่วไป)",
+    "สีผิว": "ผิวสีน้ำผึ้ง",
+    "ทรงผม": "ผมดอกเลาสีเทา",
+    "ใบหน้า": "แก้มป่อง ปากหนา จมูกแบนเล็ก",
+    "prompt_name": "นางดวง"
+   }
+  },
+  "story_1024_1113_06": {
+   "name": "สมโชค ชุดนักเรียน",
+   "sex": "male",
+   "age": 17,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "5. สมโชค",
+   "notes": "",
+   "outfit": [
+    [
+     "9b1c4f",
+     "cotton_navy"
+    ],
+    [
+     "b621bb",
+     "school_white"
+    ],
+    [
+     "MO:Casual 03\\Shoes.ccShoes",
+     null
+    ]
+   ],
+   "layer": "in",
+   "style": "school",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 17 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "สมโชค ชุดนักเรียน",
+    "สีผิว": "ผิวสองสี",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้าเหลี่ยม ตากลมโต คางสั้น",
+    "prompt_name": "สมโชค ชุดนักเรียน"
+   }
+  },
+  "story_1024_1113_07": {
+   "name": "สมโชค ชุดธรรมดา",
+   "sex": "male",
+   "age": 17,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "5. สมโชค",
+   "notes": "",
+   "outfit": [
+    [
+     "0374dd",
+     null
+    ],
+    [
+     "MO:Sweat\\Top 01.ccCloth",
+     null
+    ],
+    [
+     "MO:Casual 01\\Shoes.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "normal",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "head_from": "story_1024_1113_06"
+  },
+  "story_1024_1113_08": {
+   "name": "นายสิทธิ์",
+   "sex": "male",
+   "age": 45,
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "6. นายสิทธิ์ + วันดี",
+   "notes": "",
+   "outfit": [
+    [
+     "f7c187",
+     null
+    ],
+    [
+     "63b0a4",
+     "gen:ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน"
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\10_Male pattern bald.rlHair",
+   "hair_rgb": [
+    105,
+    102,
+    98
+   ],
+   "face": {
+    "อายุ": "ประมาณ 45 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "นายสิทธิ์",
+    "สีผิว": "ผิวสีน้ำผึ้ง",
+    "ทรงผม": "ผมดอกเลาสีเทา",
+    "ใบหน้า": "หน้ากลม ปากหนา คางแหลม",
+    "prompt_name": "นายสิทธิ์"
+   }
+  },
+  "story_1024_1113_09": {
+   "name": "วันดี",
+   "sex": "female",
+   "age": 45,
+   "age_group": "middle",
+   "body": "neutral",
+   "folder": "6. นายสิทธิ์ + วันดี",
+   "notes": "",
+   "outfit": [
+    [
+     "f909f8",
+     "gen:ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น"
+    ],
+    [
+     "MO:Painter\\Shirt.ccCloth",
+     "gen:ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น"
+    ],
+    [
+     "MO:Oahu\\Flip Flops.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น",
+    "ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Hair Builder 2 - eGirl\\Long middle part.rlHair",
+   "hair_rgb": [
+    105,
+    102,
+    98
+   ],
+   "face": {
+    "อายุ": "ประมาณ 45 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "วันดี",
+    "สีผิว": "ผิวสีน้ำผึ้ง",
+    "ทรงผม": "ผมดอกเลาสีเทา",
+    "ใบหน้า": "โหนกแก้มสูง ตาชั้นเดียว คางแหลม",
+    "prompt_name": "วันดี"
+   }
+  }
+ },
+ "status": {
+  "story_1024_1113_01": {
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "fail: RuntimeError: HTTP 502: {\"error\":{\"message\":\"Bridge request failed: ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host\",\"type\":\"bridge_internal_error\""
+  },
+  "story_1024_1113_02": {
+   "plan": "ok",
+   "fabric": "run"
+  },
+  "story_1024_1113_03": {
+   "plan": "ok"
+  },
+  "story_1024_1113_04": {
+   "plan": "ok"
+  },
+  "story_1024_1113_05": {
+   "plan": "ok"
+  },
+  "story_1024_1113_06": {
+   "plan": "ok"
+  },
+  "story_1024_1113_07": {
+   "plan": "ok"
+  },
+  "story_1024_1113_08": {
+   "plan": "ok"
+  },
+  "story_1024_1113_09": {
+   "plan": "ok"
+  }
+ }
+}
