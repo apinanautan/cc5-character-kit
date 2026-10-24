@@ -33,19 +33,22 @@ def create_story(title, rows, out_root=None):
         job = "%s_%02d" % (slug, i + 1)
         sex, age = r["sex"] if r["sex"] in ("m", "f") else "m", int(r["age"])
         group = planner.age_group(age)
-        outfit, layer, designs = wardrobe.pick_outfit(sex, group, used, before, r.get("notes", ""))
+        outfit, layer, designs = wardrobe.pick_outfit(sex, group, used, before, r.get("notes", ""),
+                                                      r.get("outfit", ""), age)
         hair, rgb = wardrobe.pick_hair(sex, group, used, before)
-        person = planner.base_name(r["name"])
+        person = r.get("person") or planner.base_name(r["name"])
         c = {"name": r["name"], "sex": "male" if sex == "m" else "female", "age": age, "age_group": group,
              "body": "baby" if group == "baby" else "child" if group == "child" else "neutral",
              "folder": r.get("folder", ""), "notes": r.get("notes", ""), "outfit": outfit, "layer": layer,
+             "style": r.get("outfit", ""),
              "fabric_designs": designs}
         if hair:
             c["hair"] = hair
             c["hair_rgb"] = rgb
         hair_txt = {"child": "ผมดำ", "adult": "ผมดำ", "middle": "ผมดอกเลาสีเทา", "old": "ผมขาว"}.get(group, "")
         c["face"] = {"อายุ": "ทารกอายุประมาณ 1 ขวบ" if group == "baby" else "ประมาณ %d ปี" % age,
-                     "เพศ": "ชาย" if sex == "m" else "หญิง", "บทบาท": r["name"],
+                     "เพศ": "ชาย" if sex == "m" else "หญิง",
+                     "บทบาท": r["name"] + (" (" + r["role"] + ")" if r.get("role") else ""),
                      "สีผิว": random.choice(SKIN if group != "old" else SKIN[:2] + SKIN[4:]),
                      "ทรงผม": hair_txt, "ใบหน้า": " ".join([random.choice(FACE)] + random.sample(FEATURE, 2)),
                      "prompt_name": r["name"]}
@@ -317,7 +320,8 @@ def reroll(path, job):
             used["bottoms"].append(o["outfit"][0][0])
             used["fabrics"] += o.get("fabric_designs", [])
     outfit, layer, designs = wardrobe.pick_outfit("m" if c["sex"] == "male" else "f", c["age_group"], used,
-                                                  wardrobe.used_before(s.get("slug", "")), c.get("notes", ""))
+                                                  wardrobe.used_before(s.get("slug", "")), c.get("notes", ""),
+                                                  c.get("style", ""), c.get("age", 30))
     c.update(outfit=outfit, layer=layer, fabric_designs=designs)
     save(path, s)
     reset(path, job, "fabric")

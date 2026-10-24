@@ -93,15 +93,32 @@ def _design(kind, sex, group, taken, before, avoid_colors=()):
     return _least_used(fresh, before)
 
 
-def pick_outfit(sex, group, story_used, before, notes=""):
+def school_outfit(sex, age, old=False):
+    """Thai school uniform: white shirt + navy skirt (girls) / shorts (boys: khaki in primary, navy in secondary)."""
+    pool = _load(POOL, {})["school"]
+    white = "school_white_old" if old else "school_white"
+    if sex == "f":
+        outfit = [[pool["skirt"], "cotton_navy"], [pool["shirt"], white], [pool["shoes_f"], None]]
+    else:
+        outfit = [[pool["shorts"], "cotton_khaki" if age < 13 else "cotton_navy"], [pool["shirt"], white],
+                  [pool["shoes_m"], None]]
+    return outfit, "in", []
+
+
+def pick_outfit(sex, group, story_used, before, notes="", style="", age=30):
     """-> outfit list [[spec, fabric|None], ...], layer, designs."""
     pool = _load(POOL, {})
     sex = sex if sex in ("m", "f") else "m"
+    if style.startswith("school") and group != "baby":
+        return school_outfit(sex, age, style == "school_old")
     if group == "baby":
         full = [i for i in pool["full"] if _fits(i, sex, group)]
         return [[random.choice(full)["spec"], None]], "", []
     bottoms = [b for b in pool["bottoms"] if _fits(b, sex, group)]
     tops = [t for t in pool["tops"] if _fits(t, sex, group)]
+    if age < 20:  # teenagers: trousers/jeans and young tops, no sarong or old-lady blouses
+        bottoms = [b for b in bottoms if b["kind"] != "sarong"] or bottoms
+        tops = [t for t in tops if t["spec"] not in (r"MO:Old\Shirt.ccCloth", "04f1fc")] or tops
     if "ท้อง" in notes:  # loose long top over trousers/sarong
         tops = [t for t in tops if t["spec"] in ("04f1fc", "MO:Painter\\Shirt.ccCloth", "63b0a4")] or tops
     # women: about half in trousers, half in sarong (when both fit the age)
