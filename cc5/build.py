@@ -30,6 +30,8 @@ def build(here):
             log.append("FAIL %s\n%s" % (label, traceback.format_exc()))
 
     def headshot():
+        if not RLPy.RScene.GetAvatars():  # CC5 can start with an empty scene: Headshot then crashes in its SDK
+            RLPy.RFileIO.LoadFile(r"C:\Users\Public\Documents\Reallusion\Reallusion Templates\Actor\Character\Base\Neutral_M.ccAvatar")
         import RLPy2  # Load Headshot only when needed; existing-project re-dress skips the AI module.
         skin = RLPy2.RArrayListWString(3, "None"); skin[0] = "Soft Skin"
         mask = RLPy2.RArrayListWString(4, "None"); mask[0] = "No Mask"

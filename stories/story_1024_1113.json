@@ -434,11 +434,11 @@
    "outfit": [
     [
      "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
-     "gen:ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีน้ำเงินคราม"
+     "gen/e2048992e6"
     ],
     [
      "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
-     "gen:ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวหัวเป็ดหม่น"
+     "gen/328445a80c"
     ],
     [
      "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
@@ -528,19 +528,37 @@
    "plan": "ok",
    "face": "ok",
    "fabric": "ok: ผ้าฝ้ายพื้นเรียบ สีครีม",
-   "build": "fail: build.py ไม่ได้ทำงาน (ไม่มี result.txt): ERROR CC5 closed or crashed while running build.py"
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 161 MB"
   },
   "story_1024_1113_09": {
    "plan": "ok",
    "face": "ok",
    "fabric": "ok: ผ้าถุงลายดอกพิกุล สีขาวนวล, ผ้าพิมพ์ลายเรขาคณิตเล็ก สีกากี",
-   "build": "fail: build.py ไม่ได้ทำงาน (ไม่มี result.txt): ERROR CC5 closed or crashed while running build.py"
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 163 MB"
   },
   "story_1024_1113_10": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok: มีหน้าแล้ว",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 162 MB"
   },
   "story_1024_1113_11": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีน้ำเงินคราม, ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวหัวเป็ดหม่น",
+   "face": "skip: ใช้หัวเดียวกับ สุภา ชุดนักเรียน",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 150 MB"
   }
  }
 }
