@@ -336,11 +336,11 @@
    "outfit": [
     [
      "f909f8",
-     "gen:ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น"
+     "gen/19eb80279a"
     ],
     [
      "MO:Painter\\Shirt.ccCloth",
-     "gen:ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น"
+     "gen/83a7e8e131"
     ],
     [
      "MO:Oahu\\Flip Flops.ccShoes",
@@ -435,10 +435,13 @@
    "plan": "ok",
    "fabric": "ok: ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน",
    "face": "ok",
-   "build": "run"
+   "build": "fail: WARNING: bridge not alive — the command waits in the inbox until CC5 runs\nERROR CC5 hung (no heartbeat 68 min) while running build.py - closed it"
   },
   "story_1024_1113_09": {
-   "plan": "ok"
+   "plan": "ok",
+   "fabric": "ok: ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น, ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น",
+   "face": "ok",
+   "build": "run"
   }
  }
 }

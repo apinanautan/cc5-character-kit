@@ -101,7 +101,13 @@ def cc5_run(script, timeout=3600, **args):
 
 
 def cc5_up(restart=False):
-    return _run([os.path.join("tools", "start_cc5.py")] + (["--restart"] if restart else []), 900)
+    hb = os.path.join(kit.JOBS, "bridge", "heartbeat.txt")
+    try:
+        stale = time.time() - os.path.getmtime(hb) > 60
+    except OSError:
+        stale = True
+    # CC5 open but not answering (hung after a crash/heavy load) -> restart it instead of queueing work behind it
+    return _run([os.path.join("tools", "start_cc5.py")] + (["--restart"] if restart or stale else []), 900)
 
 
 def tidmunz_running():
