@@ -1,6 +1,6 @@
 # Pick outfit, hair and new fabric designs for each character, never repeating inside a story and
 # avoiding what earlier stories used (data/history.json).
-import json, os, random, sys
+import hashlib, json, os, random, sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
@@ -90,7 +90,13 @@ def _design(kind, sex, group, taken, before, avoid_colors=()):
     colors = [c for c in colors if c not in avoid_colors] or colors
     opts = [p if ("คราม" in p or "ยีนส์" in p) else p + " " + c for p in PATTERNS[fam] for c in colors]
     fresh = [o for o in opts if o not in taken] or opts
-    return _least_used(fresh, before)
+    # reuse a fabric we already made (no new AI image) when no earlier story wore it; else a new design
+    have = [o for o in fresh if o not in before and os.path.exists(os.path.join(kit.FABRICS, "gen", _hash(o) + ".png"))]
+    return random.choice(have) if have else _least_used(fresh, before)
+
+
+def _hash(design):  # same name as studio/fabric_ai.name_of
+    return hashlib.md5(design.encode("utf-8")).hexdigest()[:10]
 
 
 def school_outfit(sex, age, old=False):

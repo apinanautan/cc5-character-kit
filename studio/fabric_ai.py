@@ -1,6 +1,6 @@
 # Make a new seamless fabric texture from a Thai description (through Tidmunz Studio's image generator).
 #   path = fabric_ai.make("ผ้าถุงปาเต๊ะลายดอก สีกรมท่า")  -> data/fabrics/gen/<hash>.png (cached)
-import hashlib, os, sys
+import hashlib, os, subprocess, sys
 from PIL import Image, ImageOps
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -41,6 +41,8 @@ def make(design):
     t.paste(small, (0, 0)); t.paste(ImageOps.mirror(small), (512, 0))
     t.paste(ImageOps.flip(small), (0, 512)); t.paste(ImageOps.flip(ImageOps.mirror(small)), (512, 512))
     t.save(out)
+    open(out[:-4] + ".txt", "w", encoding="utf-8").write(design)  # its description, for the wardrobe DB
+    subprocess.run([sys.executable, os.path.join(kit.REPO, "tools", "build_wardrobe_db.py")], capture_output=True)
     try:
         os.remove(p)
     except OSError:

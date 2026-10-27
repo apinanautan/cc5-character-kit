@@ -1,0 +1,1340 @@
+{
+ "note": "ฐานข้อมูลเสื้อผ้า+ลายผ้า (สร้างโดย tools/build_wardrobe_db.py). garments = ทรงที่เปลี่ยนลายได้; uniforms = ชุดตายตัว (ชุดนักเรียน ฯลฯ) ใช้ทั้งชุดไม่เปลี่ยนลาย; fabrics = ลายผ้าที่มีแล้ว ใช้ซ้ำก่อนสร้างใหม่",
+ "garments": [
+  {
+   "id": "Basic T-shirts",
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+   "type": "top",
+   "name": "เสื้อยืดคอกลม",
+   "shape": "เสื้อยืดคอกลม แขนสั้นถึงกลางต้นแขน ตัวตรงหลวมเล็กน้อย ยาวคลุมสะโพก ผ้ายืดคอตตอน (แม่แบบ CC5)",
+   "source": "แม่แบบ CC5",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา",
+    "จุดหักเหของชีวิต / นายเต็ม",
+    "จุดหักเหของชีวิต / นายสิทธิ์"
+   ]
+  },
+  {
+   "id": "V Neck Scrub Shirt_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+   "type": "top",
+   "name": "เสื้อคอวีผ้าฝ้าย",
+   "shape": "เสื้อคอวี แขนสั้น ตัวตรงหลวม ไม่มีกระดุม ทรงเสื้อสครับ/เสื้ออยู่บ้าน (Plain Base)",
+   "source": "Plain Base",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัยสาว",
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "Sleeves Tops_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
+   "type": "top",
+   "name": "เสื้อแขนกุดหญิง",
+   "shape": "เสื้อผู้หญิงคอกลมกว้าง แขนสามส่วนเข้ารูป ชายเสื้อปล่อย (Plain Base)",
+   "source": "Plain Base",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "retexture": true,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / นางดวง",
+    "จุดหักเหของชีวิต / วันดี"
+   ]
+  },
+  {
+   "id": "Close_collar_short_sleeves_shirt_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Close_collar_short_sleeves_shirt_Base.ccCloth",
+   "type": "top",
+   "name": "เสื้อคอปกแขนสั้น",
+   "shape": "เสื้อเชิ้ตคอปก แขนสั้น ติดกระดุมหน้า (Plain Base) — ไม่ใช้ เพราะมีกระดุม",
+   "source": "Plain Base",
+   "sex": "any",
+   "ages": [
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "",
+   "layer": "",
+   "status": "bad",
+   "used_in": []
+  },
+  {
+   "id": "63b0a4",
+   "spec": "63b0a4",
+   "type": "top",
+   "name": "เสื้อยืดคอกลม",
+   "shape": "",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "retexture": true,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / นายสมจิต วัย 40",
+    "กรงกตัญญู / ญาติ ชาย",
+    "กรงกตัญญู / ญาติ หญิง",
+    "กรงกตัญญู / อรวรรณ วัยประถม",
+    "กรงกตัญญู / บรรพจ",
+    "กรงกตัญญู / ลูกชายอรวรรณ 4-5 ขวบ",
+    "กรงกตัญญู / เพื่อนบ้าน หญิง",
+    "กรงกตัญญู / คนแก่ ชาย",
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน"
+   ]
+  },
+  {
+   "id": "Slim Jeans",
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
+   "type": "bottom",
+   "name": "ยีนส์",
+   "shape": "กางเกงยีนส์ขายาวทรงกระบอกเล็ก สีน้ำเงินฟอก มีลายยีนส์ในตัว (แม่แบบ CC5) — ไม่เปลี่ยนลาย",
+   "source": "แม่แบบ CC5",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "retexture": false,
+   "kind": "trousers",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / นายสิทธิ์"
+   ]
+  },
+  {
+   "id": "Slim fit pants",
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim fit pants.ccCloth",
+   "type": "bottom",
+   "name": "กางเกงขายาวทรงเข้ารูป",
+   "shape": "กางเกงขายาวทรงเข้ารูป ผ้าเรียบ เอวปกติ (แม่แบบ CC5)",
+   "source": "แม่แบบ CC5",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "trousers",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัยสาว"
+   ]
+  },
+  {
+   "id": "Slacks_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+   "type": "bottom",
+   "name": "กางเกงสแล็ค",
+   "shape": "กางเกงสแล็คขายาว ทรงตรง มีจีบหน้า เอวคาด (Plain Base)",
+   "source": "Plain Base",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "trousers",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "Cargo Pants_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+   "type": "bottom",
+   "name": "กางเกงคาร์โก้",
+   "shape": "กางเกงคาร์โก้ขายาว มีกระเป๋าข้างขา ทรงหลวม (Plain Base)",
+   "source": "Plain Base",
+   "sex": "m",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "retexture": true,
+   "kind": "trousers",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / นายเต็ม"
+   ]
+  },
+  {
+   "id": "Scrub Pants_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Scrub Pants_Base.ccCloth",
+   "type": "bottom",
+   "name": "กางเกงขายาวหลวม",
+   "shape": "กางเกงขายาวหลวม เอวยางยืด ปลายขาตรง ใส่สบาย คล้ายกางเกงเล/กางเกงอยู่บ้าน (Plain Base)",
+   "source": "Plain Base",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "trousers",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "Knee length skirt",
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Skirts\\Knee length skirt.ccCloth",
+   "type": "bottom",
+   "name": "กระโปรงยาวคลุมเข่า",
+   "shape": "กระโปรงบานยาวคลุมเข่า ทรงเอ เอวพอดี (แม่แบบ CC5) — ใช้เป็นผ้าถุง/กระโปรงชาวบ้าน",
+   "source": "แม่แบบ CC5",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "sarong",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / นางดวง"
+   ]
+  },
+  {
+   "id": "Pencil skirt_Base",
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Skirts\\Plain Base\\Professional Outfit\\Pencil skirt_Base.ccCloth",
+   "type": "bottom",
+   "name": "กระโปรงทรงสอบ",
+   "shape": "กระโปรงทรงสอบยาวเหนือเข่า เข้ารูป (Plain Base) — ใช้เป็นผ้าถุงสั้น/กระโปรงทำงาน",
+   "source": "Plain Base",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": true,
+   "kind": "sarong",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / วันดี"
+   ]
+  },
+  {
+   "id": "9b1c4f",
+   "spec": "9b1c4f",
+   "type": "bottom",
+   "name": "กางเกงขาสั้นเด็ก",
+   "shape": "",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "m",
+   "ages": [
+    "child"
+   ],
+   "retexture": false,
+   "kind": "shorts",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / ลูกชายอรวรรณ 4-5 ขวบ"
+   ]
+  },
+  {
+   "id": "0ce08ad1",
+   "spec": "0ce08ad1",
+   "type": "bottom",
+   "name": "กางเกงสามส่วนเด็ก",
+   "shape": "",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "retexture": true,
+   "kind": "shorts",
+   "layer": "out",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / อรวรรณ วัยประถม"
+   ]
+  },
+  {
+   "id": "0352c8",
+   "spec": "0352c8",
+   "type": "full",
+   "name": "ชุดเด็กอ่อน",
+   "shape": "",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "any",
+   "ages": [
+    "baby"
+   ],
+   "retexture": false,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / ลูกชายอรวรรณ วัยทารก"
+   ]
+  },
+  {
+   "id": "Canvas Shoes",
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+   "type": "shoes",
+   "name": "รองเท้าผ้าใบ",
+   "shape": "รองเท้าผ้าใบหุ้มส้นสีขาวครีม ผูกเชือก (แม่แบบ CC5)",
+   "source": "แม่แบบ CC5",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "retexture": false,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัยสาว",
+    "จุดหักเหของชีวิต / วันดี",
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "Sport sneakers",
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
+   "type": "shoes",
+   "name": "สนีกเกอร์",
+   "shape": "รองเท้าสนีกเกอร์สีขาว (แม่แบบ CC5)",
+   "source": "แม่แบบ CC5",
+   "sex": "any",
+   "ages": [
+    "adult"
+   ],
+   "retexture": false,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "Flip Flops",
+   "spec": "MO:Oahu\\Flip Flops.ccShoes",
+   "type": "shoes",
+   "name": "รองเท้าแตะหูหนีบ",
+   "shape": "รองเท้าแตะหูหนีบ (คลัง Male Outfits/Oahu)",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "any",
+   "ages": [
+    "child",
+    "adult",
+    "middle",
+    "old"
+   ],
+   "retexture": false,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / นายสมจิต วัย 40",
+    "กรงกตัญญู / นางอุไร วัย 40",
+    "กรงกตัญญู / นายสมจิต วัย 70 ซูบผอม",
+    "กรงกตัญญู / อรวรรณ วัยประถม",
+    "กรงกตัญญู / อรวรรณ ตอนท้อง",
+    "กรงกตัญญู / ลูกชายอรวรรณ 4-5 ขวบ",
+    "กรงกตัญญู / เพื่อนบ้าน หญิง",
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน",
+    "จุดหักเหของชีวิต / นางดวง"
+   ]
+  },
+  {
+   "id": "Sandals 02",
+   "spec": "MO:Oahu\\Sandals 02.ccShoes",
+   "type": "shoes",
+   "name": "รองเท้าแตะรัดส้น",
+   "shape": "รองเท้าแตะรัดส้น (คลัง Male Outfits/Oahu)",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "any",
+   "ages": [
+    "middle",
+    "old"
+   ],
+   "retexture": false,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / นายสมจิต วัย 70 แผลไฟลวก",
+    "กรงกตัญญู / นางอุไร วัย 70",
+    "กรงกตัญญู / คนแก่ ชาย",
+    "กรงกตัญญู / คนแก่ หญิง",
+    "จุดหักเหของชีวิต / นายเต็ม",
+    "จุดหักเหของชีวิต / นายสิทธิ์"
+   ]
+  },
+  {
+   "id": "Flip Flops",
+   "spec": "MO:Oahu\\Flip Flops.ccShoes",
+   "type": "shoes",
+   "name": "รองเท้าแตะหูหนีบ",
+   "shape": "รองเท้าแตะหูหนีบ (คลัง Male Outfits/Oahu)",
+   "source": "คลังเสื้อผ้าเดิม",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "retexture": false,
+   "kind": "",
+   "layer": "",
+   "status": "ok",
+   "used_in": [
+    "กรงกตัญญู / นายสมจิต วัย 40",
+    "กรงกตัญญู / นางอุไร วัย 40",
+    "กรงกตัญญู / นายสมจิต วัย 70 ซูบผอม",
+    "กรงกตัญญู / อรวรรณ วัยประถม",
+    "กรงกตัญญู / อรวรรณ ตอนท้อง",
+    "กรงกตัญญู / ลูกชายอรวรรณ 4-5 ขวบ",
+    "กรงกตัญญู / เพื่อนบ้าน หญิง",
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน",
+    "จุดหักเหของชีวิต / นางดวง"
+   ]
+  }
+ ],
+ "uniforms": [
+  {
+   "id": "school_f_secondary",
+   "name": "ชุดนักเรียนหญิงมัธยม (ชุด AI)",
+   "fixed": true,
+   "pieces": [
+    "RC:Pants\\school_skirt_ai.ccCloth",
+    "RC:Shirts\\school_blouse_ai.ccCloth",
+    "RC:Others\\school_socks_f.ccCloth",
+    "RC:Shoes\\school_shoes.ccShoes"
+   ],
+   "detail": "เสื้อขาวคอซอง (ปกทหารเรือ) ผูกโบว์กรมท่า แขนพองจีบปลาย + กระโปรงจีบรอบตัวสีกรมท่ายาวคลุมเข่า + ถุงเท้าขาว + รองเท้าหนังดำ",
+   "for": "หญิงอายุ 13-18",
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดนักเรียน",
+    "จุดหักเหของชีวิต / สุภา ชุดนักเรียน"
+   ]
+  },
+  {
+   "id": "school_m_secondary",
+   "name": "ชุดนักเรียนชายมัธยม",
+   "fixed": true,
+   "pieces": [
+    "MO:Farmer\\Shirt 02.ccCloth",
+    "47ae0874",
+    "MO:Casual 03\\Shoes.ccShoes"
+   ],
+   "detail": "เสื้อเชิ้ตขาวแขนสั้น (ผ้าขาวเรียบ) + กางเกงขายาวกรมท่า + รองเท้าหนังดำ",
+   "for": "ชายอายุ 13-18",
+   "used_in": [
+    "จุดหักเหของชีวิต / สมโชค ชุดนักเรียน"
+   ]
+  }
+ ],
+ "base_characters": [
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\นร หญิงมัธยม 01.iAvatar",
+   "group": "ชุดนักเรียนหญิงมัธยม",
+   "for": "หญิง 15",
+   "detail": "เสื้อขาวคอซอง โบว์กรมท่า แขนพองจีบ + กระโปรงจีบรอบตัวกรมท่าคลุมเข่า + ถุงเท้าขาว + รองเท้าหนังดำ",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\นร หญิงมัธยม 02.iAvatar",
+   "group": "ชุดนักเรียนหญิงมัธยม",
+   "for": "หญิง 14",
+   "detail": "เหมือน 01 (คนละหน้า/รูปร่าง)",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\นร ชายมัธยม 01.iAvatar",
+   "group": "ชุดนักเรียนชายมัธยม",
+   "for": "ชาย 17",
+   "detail": "เชิ้ตขาวแขนสั้น + กางเกงขายาวกรมท่า + รองเท้าหนังดำ",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\นร ชายประถม 01.iAvatar",
+   "group": "ชุดนักเรียนชายประถม",
+   "for": "เด็กชาย 9-10",
+   "detail": "เชิ้ตขาว + กางเกงขาสั้นกากี + เข็มขัด + ถุงเท้าขาว รองเท้าดำ",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\นร ชายประถม 02.iAvatar",
+   "group": "ชุดนักเรียนชายประถม",
+   "for": "เด็กชาย 9-10",
+   "detail": "เหมือน 01 (คนละหน้า)",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\นร ชายประถม 03.iAvatar",
+   "group": "ชุดนักเรียนชายประถม",
+   "for": "เด็กชาย 9-10",
+   "detail": "เหมือน 01 (คนละหน้า)",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\คนงานชาย 01.iAvatar",
+   "group": "คนงาน/ชาวบ้านชาย",
+   "for": "ชายหนุ่ม",
+   "detail": "เชิ้ตเปิดทับเสื้อยืด + กางเกงขายาวสีเข้ม",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\คนงานชาย 02.iAvatar",
+   "group": "คนงาน/ชาวบ้านชาย",
+   "for": "ชายหนุ่ม",
+   "detail": "เชิ้ตเปิดทับเสื้อยืด + กางเกงขายาวสีเข้ม (อีกแบบ)",
+   "ok": true
+  },
+  {
+   "file": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ชุดตายตัว\\ชาวนาแก่ 01.iAvatar",
+   "group": "ชาวนา",
+   "for": "ชายแก่",
+   "detail": "หมวกสาน + เสื้อกรมท่า + ผ้าขาวม้าคาดเอว + กางเกงสามส่วน",
+   "ok": true
+  }
+ ],
+ "fabrics": [
+  {
+   "id": "cotton_charcoal",
+   "file": "data/fabrics/cotton_charcoal.png",
+   "desc": "cotton charcoal",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / ญาติ ชาย",
+    "กรงกตัญญู / อรวรรณ ตอนท้อง"
+   ]
+  },
+  {
+   "id": "cotton_cream",
+   "file": "data/fabrics/cotton_cream.png",
+   "desc": "cotton cream",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / คนแก่ ชาย"
+   ]
+  },
+  {
+   "id": "cotton_khaki",
+   "file": "data/fabrics/cotton_khaki.png",
+   "desc": "cotton khaki",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / นายสมจิต วัย 40",
+    "กรงกตัญญู / เพื่อนบ้าน หญิง"
+   ]
+  },
+  {
+   "id": "cotton_navy",
+   "file": "data/fabrics/cotton_navy.png",
+   "desc": "cotton navy",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / ญาติ หญิง",
+    "กรงกตัญญู / อรวรรณ วัยประถม",
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดนักเรียน",
+    "จุดหักเหของชีวิต / สมโชค ชุดนักเรียน"
+   ]
+  },
+  {
+   "id": "cotton_olive",
+   "file": "data/fabrics/cotton_olive.png",
+   "desc": "cotton olive",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / บรรพจ"
+   ]
+  },
+  {
+   "id": "cotton_rust",
+   "file": "data/fabrics/cotton_rust.png",
+   "desc": "cotton rust",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / ลูกชายอรวรรณ 4-5 ขวบ"
+   ]
+  },
+  {
+   "id": "floral_blue_faded",
+   "file": "data/fabrics/floral_blue_faded.png",
+   "desc": "floral blue faded",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / นางอุไร วัย 70",
+    "กรงกตัญญู / คนแก่ หญิง"
+   ]
+  },
+  {
+   "id": "floral_brown",
+   "file": "data/fabrics/floral_brown.png",
+   "desc": "floral brown",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / นางอุไร วัย 40"
+   ]
+  },
+  {
+   "id": "floral_green",
+   "file": "data/fabrics/floral_green.png",
+   "desc": "floral green",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / เพื่อนบ้าน หญิง"
+   ]
+  },
+  {
+   "id": "floral_maroon",
+   "file": "data/fabrics/floral_maroon.png",
+   "desc": "floral maroon",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / ญาติ หญิง"
+   ]
+  },
+  {
+   "id": "floral_red",
+   "file": "data/fabrics/floral_red.png",
+   "desc": "floral red",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / อรวรรณ วัยประถม",
+    "กรงกตัญญู / อรวรรณ วัยสาว"
+   ]
+  },
+  {
+   "id": "gen/0d2b2a8f95",
+   "file": "data/fabrics/gen/0d2b2a8f95.png",
+   "desc": "ผ้าพิมพ์ลายใบไม้เล็ก สีม่วงหม่น",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / นางดวง",
+    "จุดหักเหของชีวิต / นางดวง"
+   ]
+  },
+  {
+   "id": "gen/0dc36beb34",
+   "file": "data/fabrics/gen/0dc36beb34.png",
+   "desc": "ผ้าพิมพ์ลายเรขาคณิตเล็ก สีน้ำตาลอ่อน",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/10c9ac1101",
+   "file": "data/fabrics/gen/10c9ac1101.png",
+   "desc": "ผ้าถุงลายไทยโบราณ สีชมพูกะปิ",
+   "use": "ผ้าถุง/กระโปรง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/14d3689cbd",
+   "file": "data/fabrics/gen/14d3689cbd.png",
+   "desc": "ผ้าถุงลายดอกพิกุล สีขาวนวล",
+   "use": "ผ้าถุง/กระโปรง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / วันดี",
+    "จุดหักเหของชีวิต / วันดี"
+   ]
+  },
+  {
+   "id": "gen/19eb80279a",
+   "file": "data/fabrics/gen/19eb80279a.png",
+   "desc": "ผ้าฝ้ายพื้นเรียบ สีฟ้าหม่น",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/2474e2c92c",
+   "file": "data/fabrics/gen/2474e2c92c.png",
+   "desc": "ผ้าหม้อห้อมย้อมคราม",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน",
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน"
+   ]
+  },
+  {
+   "id": "gen/2a876d998a",
+   "file": "data/fabrics/gen/2a876d998a.png",
+   "desc": "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีครีม",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/2ebd7b915b",
+   "file": "data/fabrics/gen/2ebd7b915b.png",
+   "desc": "ผ้ายีนส์ฟอกซีด",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัยสาว",
+    "จุดหักเหของชีวิต / สุดา วัยสาว"
+   ]
+  },
+  {
+   "id": "gen/328445a80c",
+   "file": "data/fabrics/gen/328445a80c.png",
+   "desc": "ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวหัวเป็ดหม่น",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "gen/3f4ada8777",
+   "file": "data/fabrics/gen/3f4ada8777.png",
+   "desc": "ผ้าลินินเนื้อหยาบพื้นเรียบ สีฟ้าหม่น",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/4e3eafef38",
+   "file": "data/fabrics/gen/4e3eafef38.png",
+   "desc": "ผ้าถุงปาเต๊ะลายเถาวัลย์ สีแดงอิฐ",
+   "use": "ผ้าถุง/กระโปรง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / นางดวง",
+    "จุดหักเหของชีวิต / นางดวง"
+   ]
+  },
+  {
+   "id": "gen/58c354856d",
+   "file": "data/fabrics/gen/58c354856d.png",
+   "desc": "ผ้าฝ้ายพิมพ์ลายเถาวัลย์เล็ก สีกากี",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "gen/5999b74d26",
+   "file": "data/fabrics/gen/5999b74d26.png",
+   "desc": "ผ้ายืดคอตตอนสีพื้นซีด สีเทาเข้ม",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/6137429009",
+   "file": "data/fabrics/gen/6137429009.png",
+   "desc": "ผ้าพิมพ์ลายดอกพิกุลเล็ก สีเขียวขี้ม้า",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/6147e42351",
+   "file": "data/fabrics/gen/6147e42351.png",
+   "desc": "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีกรมท่า",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/7c7b9a0b9a",
+   "file": "data/fabrics/gen/7c7b9a0b9a.png",
+   "desc": "ผ้ายืดลายทางขวางเล็ก สีน้ำตาลอ่อน",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "gen/83a7e8e131",
+   "file": "data/fabrics/gen/83a7e8e131.png",
+   "desc": "ผ้าฝ้ายพื้นเรียบ สีเหลืองมัสตาร์ดหม่น",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/8691581650",
+   "file": "data/fabrics/gen/8691581650.png",
+   "desc": "ผ้าฝ้ายพื้นเรียบ สีครีม",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / นายสิทธิ์",
+    "จุดหักเหของชีวิต / นายสิทธิ์"
+   ]
+  },
+  {
+   "id": "gen/8e14d70ea4",
+   "file": "data/fabrics/gen/8e14d70ea4.png",
+   "desc": "ผ้าลายทางเล็กแนวตั้ง สีน้ำตาลอ่อน",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "gen/9ddfec1dea",
+   "file": "data/fabrics/gen/9ddfec1dea.png",
+   "desc": "ผ้าพิมพ์ลายเรขาคณิตเล็ก สีกากี",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / วันดี",
+    "จุดหักเหของชีวิต / วันดี"
+   ]
+  },
+  {
+   "id": "gen/b3944fcc18",
+   "file": "data/fabrics/gen/b3944fcc18.png",
+   "desc": "ผ้าฝ้ายพิมพ์ลายเถาวัลย์เล็ก สีขาวนวล",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัยสาว",
+    "จุดหักเหของชีวิต / สุดา วัยสาว"
+   ]
+  },
+  {
+   "id": "gen/cd59f4ae35",
+   "file": "data/fabrics/gen/cd59f4ae35.png",
+   "desc": "ผ้าฝ้ายพื้นเรียบ สีกากี",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน",
+    "ทดลองโปรแกรม / ลุงบุญมี วัย 65 แผลไฟไหม้ที่แขน"
+   ]
+  },
+  {
+   "id": "gen/d4328d8600",
+   "file": "data/fabrics/gen/d4328d8600.png",
+   "desc": "ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีเลือดหมู",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / นายเต็ม",
+    "จุดหักเหของชีวิต / นายเต็ม"
+   ]
+  },
+  {
+   "id": "gen/d881b87a11",
+   "file": "data/fabrics/gen/d881b87a11.png",
+   "desc": "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีเขียวขี้ม้า",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "gen/da5bdf576e",
+   "file": "data/fabrics/gen/da5bdf576e.png",
+   "desc": "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีกากี",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สมโชค ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "gen/e2048992e6",
+   "file": "data/fabrics/gen/e2048992e6.png",
+   "desc": "ผ้าโพลีเอสเตอร์เนื้อเรียบแบบกางเกงแม่ค้า สีน้ำเงินคราม",
+   "use": "กางเกง",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา",
+    "จุดหักเหของชีวิต / สุภา ชุดธรรมดา"
+   ]
+  },
+  {
+   "id": "gen/faea772ec0",
+   "file": "data/fabrics/gen/faea772ec0.png",
+   "desc": "ผ้าฝ้ายพื้นเรียบ สีขาวนวล",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "AI",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / นายเต็ม",
+    "จุดหักเหของชีวิต / นายเต็ม"
+   ]
+  },
+  {
+   "id": "mohom",
+   "file": "data/fabrics/mohom.png",
+   "desc": "mohom",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "pha_sin_stripe",
+   "file": "data/fabrics/pha_sin_stripe.png",
+   "desc": "pha sin stripe",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "pha_thung_batik",
+   "file": "data/fabrics/pha_thung_batik.png",
+   "desc": "pha thung batik",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / นางอุไร วัย 70",
+    "กรงกตัญญู / คนแก่ หญิง"
+   ]
+  },
+  {
+   "id": "pha_thung_green",
+   "file": "data/fabrics/pha_thung_green.png",
+   "desc": "pha thung green",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / นางอุไร วัย 40"
+   ]
+  },
+  {
+   "id": "plaid_blue",
+   "file": "data/fabrics/plaid_blue.png",
+   "desc": "plaid blue",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": true,
+   "used_in": []
+  },
+  {
+   "id": "plaid_brown",
+   "file": "data/fabrics/plaid_brown.png",
+   "desc": "plaid brown",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": true,
+   "used_in": []
+  },
+  {
+   "id": "plaid_red",
+   "file": "data/fabrics/plaid_red.png",
+   "desc": "plaid red",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": true,
+   "used_in": []
+  },
+  {
+   "id": "school_white",
+   "file": "data/fabrics/school_white.png",
+   "desc": "ผ้าขาวเรียบ ชุดนักเรียนใหม่",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สมโชค ชุดนักเรียน"
+   ]
+  },
+  {
+   "id": "school_white_old",
+   "file": "data/fabrics/school_white_old.png",
+   "desc": "ผ้าขาวหม่นออกเหลือง ชุดนักเรียนเก่า",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "จุดหักเหของชีวิต / สุดา วัย 15 ชุดนักเรียน"
+   ]
+  },
+  {
+   "id": "silk_mudmee",
+   "file": "data/fabrics/silk_mudmee.png",
+   "desc": "silk mudmee",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": []
+  },
+  {
+   "id": "stripe_grey",
+   "file": "data/fabrics/stripe_grey.png",
+   "desc": "stripe grey",
+   "use": "เสื้อ/ทั่วไป",
+   "source": "คลังผ้าเดิม",
+   "avoid": false,
+   "used_in": [
+    "กรงกตัญญู / นายสมจิต วัย 40"
+   ]
+  }
+ ],
+ "tops": [
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+   "name": "เสื้อยืดคอกลม",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+   "name": "เสื้อคอวีผ้าฝ้าย",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
+   "name": "เสื้อแขนกุดหญิง",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "fabric": true
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Close_collar_short_sleeves_shirt_Base.ccCloth",
+   "name": "เสื้อคอปกแขนสั้น",
+   "sex": "any",
+   "ages": [
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "bad": true,
+   "note": "มีกระดุม"
+  },
+  {
+   "spec": "63b0a4",
+   "name": "เสื้อยืดคอกลม",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "fabric": true
+  }
+ ],
+ "bottoms": [
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
+   "name": "ยีนส์",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "fabric": false,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim fit pants.ccCloth",
+   "name": "กางเกงขายาวทรงเข้ารูป",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+   "name": "กางเกงสแล็ค",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+   "name": "กางเกงคาร์โก้",
+   "sex": "m",
+   "ages": [
+    "adult",
+    "middle"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Scrub Pants_Base.ccCloth",
+   "name": "กางเกงขายาวหลวม",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "trousers"
+  },
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Skirts\\Knee length skirt.ccCloth",
+   "name": "กระโปรงยาวคลุมเข่า",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "sarong"
+  },
+  {
+   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Skirts\\Plain Base\\Professional Outfit\\Pencil skirt_Base.ccCloth",
+   "name": "กระโปรงทรงสอบ",
+   "sex": "f",
+   "ages": [
+    "adult",
+    "middle",
+    "old"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "sarong"
+  },
+  {
+   "spec": "9b1c4f",
+   "name": "กางเกงขาสั้นเด็ก",
+   "sex": "m",
+   "ages": [
+    "child"
+   ],
+   "fabric": false,
+   "layer": "out",
+   "kind": "shorts"
+  },
+  {
+   "spec": "0ce08ad1",
+   "name": "กางเกงสามส่วนเด็ก",
+   "sex": "any",
+   "ages": [
+    "child"
+   ],
+   "fabric": true,
+   "layer": "out",
+   "kind": "shorts"
+  }
+ ],
+ "full": [
+  {
+   "spec": "0352c8",
+   "name": "ชุดเด็กอ่อน",
+   "sex": "any",
+   "ages": [
+    "baby"
+   ]
+  }
+ ],
+ "shoes": [
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+   "name": "รองเท้าผ้าใบ",
+   "sex": "any",
+   "ages": [
+    "adult",
+    "middle"
+   ]
+  },
+  {
+   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
+   "name": "สนีกเกอร์",
+   "sex": "any",
+   "ages": [
+    "adult"
+   ]
+  },
+  {
+   "spec": "MO:Oahu\\Flip Flops.ccShoes",
+   "name": "รองเท้าแตะหูหนีบ",
+   "sex": "any",
+   "ages": [
+    "child",
+    "adult",
+    "middle",
+    "old"
+   ]
+  },
+  {
+   "spec": "MO:Oahu\\Sandals 02.ccShoes",
+   "name": "รองเท้าแตะรัดส้น",
+   "sex": "any",
+   "ages": [
+    "middle",
+    "old"
+   ]
+  },
+  {
+   "spec": "MO:Oahu\\Flip Flops.ccShoes",
+   "name": "รองเท้าแตะหูหนีบ",
+   "sex": "any",
+   "ages": [
+    "child"
+   ]
+  }
+ ],
+ "clash": [
+  [
+   "63b0a4",
+   "MO:Owen\\Pants.ccCloth"
+  ],
+  [
+   "MO:Billybob\\Vest.ccCloth",
+   "MO:Pyjamas\\Pants 01.ccCloth"
+  ],
+  [
+   "MO:Sweat\\Top 01.ccCloth",
+   "MO:Pyjamas\\Pants 01.ccCloth"
+  ],
+  [
+   "b621bb",
+   "9b1c4f"
+  ],
+  [
+   "b621bb",
+   "47ae0874"
+  ]
+ ],
+ "school": {
+  "note": "untested combo (2026-10-24): white collared shirt + navy skirt / shorts; b621bb + 9b1c4f shorts CLASH on adult body (shorts fall off) -> secondary boys use navy trousers 47ae0874; b621bb also drops 47ae0874 -> boys 13+ use Farmer Shirt 02 dyed white; girls 13+: AI uniform worn by Suda (girl_set, no fabric)",
+  "shirt": "b621bb",
+  "skirt": "RC:Pants\\Pants(15).ccCloth",
+  "shorts": "9b1c4f",
+  "shoes_m": "MO:Casual 03\\Shoes.ccShoes",
+  "shoes_f": "MO:Dash\\Shoes 01.ccShoes",
+  "trousers_m": "47ae0874",
+  "shirt_m": "MO:Farmer\\Shirt 02.ccCloth",
+  "girl_set": [
+   "RC:Pants\\school_skirt_ai.ccCloth",
+   "RC:Shirts\\school_blouse_ai.ccCloth",
+   "RC:Others\\school_socks_f.ccCloth",
+   "RC:Shoes\\school_shoes.ccShoes"
+  ]
+ }
+}
