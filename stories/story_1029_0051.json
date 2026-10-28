@@ -437,7 +437,7 @@
    "build": "ok",
    "scar": "skip",
    "weights": "skip",
-   "export": "ok (export by hand)"
+   "export": "ok: 183 MB"
   },
   "story_1029_0051_07": {
    "plan": "ok",
