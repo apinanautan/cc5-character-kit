@@ -13,7 +13,7 @@ fn = next(n for n in ast.parse(src).body if isinstance(n, ast.FunctionDef) and n
 ns = {}
 exec(ast.get_source_segment(src, fn), ns)
 build = ns["_build_story_face_prompt_from_character"]
-from snapgen_image_gen import generate_image
+generate_image = kit.image_gen()
 
 story = kit.load_story(sys.argv[1])
 only = set(sys.argv[2:])

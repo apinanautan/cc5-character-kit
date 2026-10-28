@@ -4,7 +4,7 @@ from PIL import Image, ImageOps
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
 P = kit.PROGRAM; sys.path[:0] = [P, os.path.join(P, "snapgen_modules")]  # image generation = Tidmunz Studio
-from snapgen_image_gen import generate_image
+generate_image = kit.image_gen()
 OUT = kit.FABRICS  # data/fabrics in the repo
 F = {
  "floral_brown": "ผ้าฝ้ายพิมพ์ลายดอกไม้เล็กสีน้ำตาลบนพื้นครีม แบบเสื้อหญิงชาวบ้านไทยสมัยก่อน",

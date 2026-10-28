@@ -1,6 +1,6 @@
 # Shared paths/helpers for the CC5 character kit. Works in system Python AND inside CC5 (stdlib only).
 # Paths come from config.json (written by install.bat); anything missing falls back to the defaults below.
-import json, os
+import json, sys, os
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 _L = os.environ.get("LOCALAPPDATA", os.path.expanduser("~\\AppData\\Local"))
@@ -32,6 +32,16 @@ def data_file(name):
     """Live copy in snapgen_data if it exists, else the repo snapshot."""
     live = os.path.join(DATA, name)
     return live if os.path.exists(live) else os.path.join(REPO, "data", name)
+
+
+def image_gen():
+    """Tidmunz Studio's generate_image, pointed at the program's own ChatGPT API (Tidmunz must be open).
+    The old Bridge on 127.0.0.1:8000 is gone; the program writes its address to snapgen_data/chrome_relay.json."""
+    sys.path[:0] = [PROGRAM, os.path.join(PROGRAM, "snapgen_modules")]
+    import snapgen_image_gen
+    info = json.load(open(os.path.join(DATA, "chrome_relay.json"), encoding="utf-8"))
+    snapgen_image_gen.set_config(bridge_url="http://127.0.0.1:%s/%s" % (info["port"], info["token"]))
+    return snapgen_image_gen.generate_image
 
 
 def current_job():

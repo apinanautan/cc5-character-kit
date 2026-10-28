@@ -1,0 +1,479 @@
+{
+ "title": "พรจากฟ้า",
+ "era": "นิทานไทยโบราณ นุ่งโจงกระเบน",
+ "slug": "story_1029_0051",
+ "out_dir": "C:\\Users\\Apinan\\Desktop\\พรจากฟ้า",
+ "characters": {
+  "story_1029_0051_01": {
+   "name": "ตา",
+   "sex": "male",
+   "age": 72,
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "1. ตา + ยาย",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 3.ccCloth",
+     null
+    ]
+   ],
+   "layer": "",
+   "style": "",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Short blowback.rlHair",
+   "hair_rgb": [
+    205,
+    203,
+    200
+   ],
+   "face": {
+    "อายุ": "ประมาณ 72 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "ตา (ตาแก่ชาวบ้านป่า สามีของยาย) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมขาว",
+    "ใบหน้า": "โหนกแก้มสูง ตาชั้นเดียว ตาสองชั้น",
+    "prompt_name": "ตา"
+   },
+   "design": "poor old village grandfather, kind; shirtless, worn chong kraben, pha khao ma cloth over the shoulder or at the waist"
+  },
+  "story_1029_0051_02": {
+   "name": "ยาย",
+   "sex": "female",
+   "age": 70,
+   "age_group": "old",
+   "body": "neutral",
+   "folder": "1. ตา + ยาย",
+   "notes": "",
+   "outfit": [
+    [
+     "55e2cd",
+     "gen/2bb2b267c6"
+    ],
+    [
+     "04f1fc",
+     null
+    ],
+    [
+     "MO:Oahu\\Sandals 02.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าซิ่นทอมือลายขวาง สีน้ำตาลเข้ม"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+   "hair_rgb": [
+    205,
+    203,
+    200
+   ],
+   "face": {
+    "อายุ": "ประมาณ 70 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "ยาย (ยายแก่ชาวบ้านป่า ภรรยาของตา) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวสองสี",
+    "ทรงผม": "ผมขาว",
+    "ใบหน้า": "หน้ากลม ตากลมโต ปากบาง",
+    "prompt_name": "ยาย"
+   },
+   "design": "poor old village grandmother, kind; long-sleeved mor hom blouse, long dark pha sin"
+  },
+  "story_1029_0051_03": {
+   "name": "มิ่ง ทารก",
+   "sex": "male",
+   "age": 1,
+   "age_group": "baby",
+   "body": "baby",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "0352c8",
+     null
+    ]
+   ],
+   "layer": "",
+   "style": "",
+   "fabric_designs": [],
+   "face": {
+    "อายุ": "ทารกอายุประมาณ 1 ขวบ",
+    "เพศ": "ชาย",
+    "บทบาท": "มิ่ง ทารก (ทารกชาย ห่อผ้าเก่า) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "",
+    "ใบหน้า": "หน้ายาว คิ้วบาง จมูกโด่งเล็กน้อย",
+    "prompt_name": "มิ่ง ทารก"
+   }
+  },
+  "story_1029_0051_04": {
+   "name": "มั่น ทารก",
+   "sex": "male",
+   "age": 1,
+   "age_group": "baby",
+   "body": "baby",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "0352c8",
+     null
+    ]
+   ],
+   "layer": "",
+   "style": "",
+   "fabric_designs": [],
+   "face": {
+    "อายุ": "ทารกอายุประมาณ 1 ขวบ",
+    "เพศ": "ชาย",
+    "บทบาท": "ทารกชายอายุ 1 ขวบ ใส่เสื้อผ้าฝ้ายเก่า ภาพถ่ายหน้าตรงแบบติดบัตร",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "",
+    "ใบหน้า": "แก้มป่อง ตาเล็กเรียว จมูกโด่งเล็กน้อย",
+    "prompt_name": "มั่น ทารก"
+   }
+  },
+  "story_1029_0051_05": {
+   "name": "มิ่ง 8 ขวบ",
+   "sex": "male",
+   "age": 8,
+   "age_group": "child",
+   "body": "child",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\โจงกระเบน.ccCloth",
+     null
+    ],
+    [
+     "RC:Shirts\\เสื้อชาวบ้าน.ccCloth",
+     "gen/42c4874313"
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีครีม"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 8 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "มิ่ง 8 ขวบ (เด็กชายบ้านป่า ลูกเลี้ยงตายาย) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้ายาว คิ้วบาง จมูกโด่งเล็กน้อย",
+    "prompt_name": "มิ่ง 8 ขวบ",
+    "ref": "story_1029_0051_03"
+   },
+   "design": "poor village boy raised by an old couple; bare chest, small chong kraben"
+  },
+  "story_1029_0051_06": {
+   "name": "มั่น 8 ขวบ",
+   "sex": "male",
+   "age": 8,
+   "age_group": "child",
+   "body": "child",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\โจงกระเบน(1).ccCloth",
+     null
+    ],
+    [
+     "RC:Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+     "gen/e840d7c847"
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีเทาอมเขียว"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Fringe Hairstyle.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 8 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "มั่น 8 ขวบ (เด็กชายบ้านป่า ลูกเลี้ยงตายาย) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "แก้มป่อง ตาเล็กเรียว จมูกโด่งเล็กน้อย",
+    "prompt_name": "มั่น 8 ขวบ",
+    "ref": "story_1029_0051_04"
+   },
+   "design": "poor village boy raised by an old couple (the other brother); bare chest, small chong kraben, different color"
+  },
+  "story_1029_0051_07": {
+   "name": "มิ่ง หนุ่ม",
+   "sex": "male",
+   "age": 22,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\โจงกระเบน(2).ccCloth",
+     null
+    ],
+    [
+     "RC:Shirts\\เสื้อชาวบ้าน.ccCloth",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Slicked Back Hairstyle.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 22 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "มิ่ง หนุ่ม (ชายหนุ่มช่างตัดไม้ ขยัน ซื่อ) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้ายาว คิ้วบาง จมูกโด่งเล็กน้อย",
+    "prompt_name": "มิ่ง หนุ่ม",
+    "ref": "story_1029_0051_05"
+   },
+   "design": "young woodcutter, honest and hardworking (the good brother); sturdy work clothes for cutting wood in the forest, cloth tied at waist"
+  },
+  "story_1029_0051_08": {
+   "name": "มั่น หนุ่ม",
+   "sex": "male",
+   "age": 22,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\โจงกระเบน(1).ccCloth",
+     null
+    ],
+    [
+     "RC:Shirts\\เสื้อชาวนา.ccCloth",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Slicked Back.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 22 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "มั่น หนุ่ม (ชายหนุ่มช่างตัดไม้) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "แก้มป่อง ตาเล็กเรียว จมูกโด่งเล็กน้อย",
+    "prompt_name": "มั่น หนุ่ม",
+    "ref": "story_1029_0051_06"
+   },
+   "design": "young woodcutter (the other brother); work clothes for the forest, different colors from his brother"
+  },
+  "story_1029_0051_09": {
+   "name": "มั่น ตอนร่ำรวย",
+   "sex": "male",
+   "age": 30,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "2. มิ่ง + มั่น",
+   "notes": "",
+   "outfit": [
+    [
+     "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 2.ccCloth",
+     "gen/e68178314c"
+    ],
+    [
+     "RC:Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+     "gen/48f60cb47e"
+    ],
+    [
+     "MO:Casual 03\\Shoes.ccShoes",
+     null
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าไหมไทยลายเล็ก สีน้ำตาลทอง",
+    "ผ้าไหมไทยพื้นเรียบ สีน้ำตาลทองเงา"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Spiky Fringe.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 30 ปี",
+    "เพศ": "ชาย",
+    "บทบาท": "มั่น ตอนร่ำรวย (ชายที่ร่ำรวยขึ้น แต่งตัวดีแบบคนมีเงินสมัยก่อน) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "แก้มป่อง ตาเล็กเรียว จมูกโด่งเล็กน้อย",
+    "prompt_name": "มั่น ตอนร่ำรวย",
+    "ref": "story_1029_0051_08"
+   },
+   "design": "the brother who suddenly became rich and shows off; fine silk chong kraben, silk shirt, sash, a little gold, still old-era Thai"
+  },
+  "story_1029_0051_10": {
+   "name": "นางเอก",
+   "sex": "female",
+   "age": 22,
+   "age_group": "adult",
+   "body": "neutral",
+   "folder": "6. นางเอก ภรรยามิ่ง",
+   "notes": "",
+   "outfit": [
+    [
+     "185f00",
+     "gen/befd417f32"
+    ],
+    [
+     "RC:Shirts\\เสื้อแขนยาวขาว).ccCloth",
+     "gen/fa1d393378"
+    ]
+   ],
+   "layer": "out",
+   "style": "",
+   "fabric_designs": [
+    "ผ้าซิ่นทอมือลายขวาง สีแดงอิฐ",
+    "ผ้าฝ้ายทอมือพื้นเรียบ สีชมพูหม่น"
+   ],
+   "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\03_Cute braid long hair.rlHair",
+   "hair_rgb": [
+    18,
+    16,
+    15
+   ],
+   "face": {
+    "อายุ": "ประมาณ 22 ปี",
+    "เพศ": "หญิง",
+    "บทบาท": "นางเอก (หญิงสาวชาวบ้านหน้าตาธรรมดา ภรรยาของมิ่ง) (นิทานไทยโบราณ ชาวบ้านป่าสมัยก่อน)",
+    "สีผิว": "ผิวคล้ำแดด",
+    "ทรงผม": "ผมดำ",
+    "ใบหน้า": "หน้ายาว ตากลมโต ปากบาง",
+    "prompt_name": "นางเอก"
+   },
+   "design": "plain-looking kind village girl, the hero's wife; simple, neat and pretty, not rich"
+  }
+ },
+ "status": {
+  "story_1029_0051_01": {
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 180 MB"
+  },
+  "story_1029_0051_02": {
+   "plan": "ok",
+   "fabric": "ok: ผ้าซิ่นทอมือลายขวาง สีน้ำตาลเข้ม",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 197 MB"
+  },
+  "story_1029_0051_03": {
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 90 MB"
+  },
+  "story_1029_0051_04": {
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 90 MB"
+  },
+  "story_1029_0051_05": {
+   "plan": "ok",
+   "fabric": "ok: ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีครีม",
+   "face": "ok: มีหน้าแล้ว",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 184 MB"
+  },
+  "story_1029_0051_06": {
+   "plan": "ok",
+   "fabric": "ok: ผ้าฝ้ายทอมือเนื้อหยาบพื้นเรียบ สีเทาอมเขียว",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok (export by hand)"
+  },
+  "story_1029_0051_07": {
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 231 MB"
+  },
+  "story_1029_0051_08": {
+   "plan": "ok",
+   "fabric": "ok: ไม่ต้องใช้",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 181 MB"
+  },
+  "story_1029_0051_09": {
+   "plan": "ok",
+   "fabric": "ok: ผ้าไหมไทยลายเล็ก สีน้ำตาลทอง, ผ้าไหมไทยพื้นเรียบ สีน้ำตาลทองเงา",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 177 MB"
+  },
+  "story_1029_0051_10": {
+   "plan": "ok",
+   "fabric": "ok: ผ้าซิ่นทอมือลายขวาง สีแดงอิฐ, ผ้าฝ้ายทอมือพื้นเรียบ สีชมพูหม่น",
+   "face": "ok",
+   "build": "ok",
+   "scar": "skip",
+   "weights": "skip",
+   "export": "ok: 158 MB"
+  }
+ }
+}

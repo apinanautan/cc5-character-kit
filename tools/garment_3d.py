@@ -15,7 +15,7 @@ out = os.path.join(kit.REPO, "data", "garments_3d", name)
 os.makedirs(out, exist_ok=True)
 img = sys.argv[sys.argv.index("--image") + 1] if "--image" in sys.argv else None
 if not img:
-    from snapgen_image_gen import generate_image
+    generate_image = kit.image_gen()
     prompt = (f"Product photo of ONE garment only: {desc}. Ghost mannequin / invisible mannequin style: the garment keeps "
               "its worn 3D shape but there is NO person, NO mannequin, NO hanger, nothing inside. "
               + ("The garment is shaped for a T-POSE: both sleeves stretched straight out sideways, horizontal, like a "

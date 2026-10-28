@@ -67,6 +67,12 @@ for kind_name, items in (("top", pool["tops"]), ("bottom", pool["bottoms"]), ("f
             "kind": it.get("kind", ""), "layer": it.get("layer", ""),
             "status": "bad" if it.get("bad") else "ok", "used_in": used_g.get(it["spec"], [])})
 
+for it in pool.get("old_thai", []):  # old-Thai pieces (โจงกระเบน ...), tested in CC5, keep their own texture
+    garments.append({"id": key(it["spec"]), "spec": it["spec"], "type": it["type"], "name": it["name"],
+                     "shape": it["name"] + (" — " + it["note"] if it.get("note") else ""), "source": "คลังเสื้อผ้าเดิม (แนวโบราณ)",
+                     "sex": it["sex"], "ages": ["adult", "middle", "old"], "retexture": False, "kind": "old_thai",
+                     "layer": "", "status": "bad" if it.get("bad") else "ok", "used_in": used_g.get(it["spec"], [])})
+
 uniforms = [
     {"id": "school_f_secondary", "name": "ชุดนักเรียนหญิงมัธยม (ชุด AI)", "fixed": True,
      "pieces": pool["school"].get("girl_set", []),

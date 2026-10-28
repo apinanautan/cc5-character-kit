@@ -149,7 +149,8 @@ def build(here):
             RLPy.RGlobal.RenderImage(os.path.join(here, name + "_side.png"))
             RLPy.RScene.GetCurrentCamera().SetCameraLocation(RLPy.ECameraLocationType_Front)
         step("side render", side)
-    step("render", lambda: RLPy.RGlobal.RenderImage(os.path.join(here, name + ".png")))
+    # render twice: the first one can come out before a re-dyed hair shader updates (white hair showed black)
+    step("render", lambda: [RLPy.RGlobal.RenderImage(os.path.join(here, name + ".png")) for _ in range(2)][-1])
 
     def save():
         s = RLPy.RSaveFileSetting(); s.SetSaveType(RLPy.ESaveFileType_Character)

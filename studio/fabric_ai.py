@@ -24,7 +24,7 @@ def make(design):
     os.makedirs(OUT, exist_ok=True)
     P = kit.PROGRAM
     sys.path[:0] = [P, os.path.join(P, "snapgen_modules")]
-    from snapgen_image_gen import generate_image
+    generate_image = kit.image_gen()
     prompt = ("Create one production-ready seamless tileable PBR base-color texture. Material category: ผ้า. "
               f"Requested surface: {design} แบบเสื้อผ้าคนไทยต่างจังหวัดยุคปัจจุบัน. "
               "Muted natural colors like clothes washed many times, no cartoon, no logo, no neon, no plaid/tartan. "

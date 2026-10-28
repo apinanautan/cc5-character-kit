@@ -37,6 +37,34 @@ def cc5_window():
     return best[0] if best else None
 
 
+def save_dialog(h, timeout=40):
+    """The Save As window CC5 opens (class #32770, same process). It can take long when the last
+    folder is on Google Drive, so wait for it instead of a fixed pause."""
+    pid = wintypes.DWORD()
+    u32.GetWindowThreadProcessId(h, ctypes.byref(pid))
+    found = []
+
+    @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+    def cb(w, _):
+        p2 = wintypes.DWORD()
+        u32.GetWindowThreadProcessId(w, ctypes.byref(p2))
+        c = ctypes.create_unicode_buffer(64)
+        u32.GetClassNameW(w, c, 64)
+        if p2.value == pid.value and u32.IsWindowVisible(w) and c.value == "#32770":
+            found.append(w)
+        return True
+
+    t0 = time.time()
+    while time.time() - t0 < timeout:
+        del found[:]
+        u32.EnumWindows(cb, 0)
+        if found:
+            time.sleep(2)  # let the file list finish loading
+            return found[0]
+        time.sleep(0.5)
+    return None
+
+
 def front(h):
     u32.ShowWindow(h, 3)  # maximize
     u32.keybd_event(0x12, 0, 0, 0); u32.keybd_event(0x12, 0, 2, 0)  # Alt tap lets us take the foreground
@@ -110,7 +138,12 @@ def export(target, backup_dir):
     click(FILE); time.sleep(1)
     click(EXPORT); time.sleep(1)
     click(IAVATAR); time.sleep(3)
-    click(OK_BTN); time.sleep(4)
+    click(OK_BTN)
+    dlg = save_dialog(h)
+    if not dlg:
+        key(0x1B); key(0x1B)
+        return False, "หน้าต่าง Save ของ CC5 ไม่ขึ้น"
+    u32.SetForegroundWindow(dlg); time.sleep(0.5)
     click(NAME_BOX); time.sleep(0.3)
     key(0x11, 0x41)  # Ctrl+A
     key(0x11, 0x56)  # Ctrl+V

@@ -7,8 +7,9 @@ from PIL import Image
 BLENDER = r"C:\Program Files\Blender Foundation\Blender 4.2\blender.exe"
 HERE = os.path.dirname(os.path.abspath(__file__))
 P = os.path.join(os.environ["LOCALAPPDATA"], "Tidmunz Studio")
-sys.path[:0] = [P, os.path.join(P, "snapgen_modules")]
-from snapgen_image_gen import generate_image
+sys.path[:0] = [P, os.path.join(P, "snapgen_modules"), os.path.dirname(HERE)]
+import kit
+generate_image = kit.image_gen()
 
 fbx, mesh, out, kind, fabric = sys.argv[1:6]
 os.makedirs(out, exist_ok=True)
