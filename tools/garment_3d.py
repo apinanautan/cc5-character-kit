@@ -18,8 +18,10 @@ if not img:
     generate_image = kit.image_gen()
     prompt = (f"Product photo of ONE garment only: {desc}. Ghost mannequin / invisible mannequin style: the garment keeps "
               "its worn 3D shape but there is NO person, NO mannequin, NO hanger, nothing inside. "
-              + ("The garment is shaped for a T-POSE: both sleeves stretched straight out sideways, horizontal, like a "
-                 "person standing with arms raised to the sides; clear empty space between sleeves and the body. "
+              + ("The garment is shaped for a T-POSE: both sleeves stretched straight out sideways at exactly 90 degrees to "
+                 "the body, perfectly HORIZONTAL (not drooping, not angled down), the whole garment forms a capital "
+                 "letter T, like a person standing with arms raised level to the sides; the underarm seams are flat and "
+                 "horizontal; clear empty space under the sleeves. "
                  if "--tpose" in sys.argv else "") + "Straight front view, "
               "whole garment visible, centered, plain pure white background, soft even studio light, no shadow on the "
               "background, no text, no logo, realistic cotton fabric, simple everyday Thai clothing.")

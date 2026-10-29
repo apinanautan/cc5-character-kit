@@ -1,7 +1,7 @@
 # CC5: dress a finished job in clean base garments (even-quad remesh + UV from Blender/UVgami) instead of its
 # crumpled ones: T-pose, remove the old clothes, load each OBJ with Transfer Skin Weight, put its fabric on,
 # A-pose, render <name>.png, save the project.
-#   tools\cc5.py run cc5\wear_base.py job=<job dir> "items=a.obj|fabric.png;b.obj|fabric.png"
+#   tools\cc5.py run cc5\wear_base.py job=<job dir> "items=a.obj|fabric.png;b.obj|fabric.png" [pose=A-Pose] [keep=1]
 import json, os
 import RLPy
 
@@ -12,9 +12,9 @@ name = json.load(open(os.path.join(d, "job.json"), encoding="utf-8-sig"))["name"
 RLPy.RFileIO.LoadFile(os.path.join(d, name + ".ccProject"))
 av = RLPy.RScene.GetAvatars()[0]
 RLPy.RScene.SelectObject(av)
-RLPy.RFileIO.LoadFile(os.path.join(POSE, "T-Pose.rlPose"))  # the garments were exported in T-pose
+RLPy.RFileIO.LoadFile(os.path.join(POSE, A.get("pose", "T-Pose") + ".rlPose"))  # the pose the garments were fitted in
 for c in list(av.GetClothes()):
-    if not any(s in c.GetName().lower() for s in ("shoe", "sandal", "flip")):
+    if A.get("keep") != "1" and not any(s in c.GetName().lower() for s in ("shoe", "sandal", "flip")):
         RLPy.RScene.RemoveObject(c)
 log = []
 for spec in A["items"].split(";"):

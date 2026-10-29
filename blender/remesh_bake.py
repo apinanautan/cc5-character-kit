@@ -27,6 +27,10 @@ bpy.context.collection.objects.link(new)
 new.data.materials.clear()
 bpy.ops.object.select_all(action="DESELECT")
 bpy.context.view_layer.objects.active = new; new.select_set(True)
+thick = [float(x[6:]) for x in a if x.startswith("thick=")]
+if thick:  # thin AI cloth: make it a solid sheet first so the voxel remesh doesn't punch holes in it
+    so = new.modifiers.new("thick", "SOLIDIFY"); so.thickness = thick[0]; so.offset = 0.0
+    bpy.ops.object.modifier_apply(modifier="thick")
 new.data.remesh_voxel_size = voxel
 bpy.ops.object.voxel_remesh()
 bpy.ops.object.quadriflow_remesh(target_faces=faces, use_preserve_sharp=False, use_mesh_symmetry=False)

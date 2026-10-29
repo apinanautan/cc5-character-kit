@@ -1,4 +1,4 @@
-# Blender (headless, CC5 closed): place an AI-made bottom garment (Hunyuan GLB: Y-up metres) on a CC body in T-pose.
+# Blender (headless, CC5 closed): place an AI-made garment (bottom, or top=shirt) (Hunyuan GLB: Y-up metres) on a CC body in T-pose.
 #   blender -b --python blender\fit_ai_bottom.py -- <model.glb> <body_tpose.obj> <out.obj> <out_tex.png> <preview.png>
 #     [top=0.61] [bottom=0.26]   (waist / hem height as a fraction of body height)
 # Scaled so its waist sits at the body's waist and its hem at the hem line, widened if it would be tighter than the
@@ -15,6 +15,7 @@ opt = dict(x.split("=") for x in a[5:] if "=" in x)
 TOP, BOTTOM = float(opt.get("top", 0.61)), float(opt.get("bottom", 0.26))
 MIRROR = opt.get("mirror", "0") == "1"   # the AI only saw the front: rebuild the back as a mirror of the front
 GAP = 0.4
+PUSH = opt.get("push", "1") == "1"       # push=0: only place it; CC5 Calculate Collision does the rest
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.wm.obj_import(filepath=body_path, forward_axis="Y", up_axis="Z")
@@ -77,7 +78,8 @@ for _ in range(8):
         nxt.append(p if p.length >= avg.length else avg)
     push = nxt
 for v in bm.verts:
-    v.co += push[v.index]
+    if PUSH:
+        v.co += push[v.index]
 bm.to_mesh(me); bm.free()
 
 # close small holes (the AI shell's pin-holes); the big openings (waist, legs) stay open
