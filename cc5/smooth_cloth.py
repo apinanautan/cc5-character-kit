@@ -23,6 +23,7 @@ if A["step"] == "export":
     for n, cl in enumerate(av.GetClothes()):
         RLPy.RFileIO.ExportObjFile(cl, os.path.join(work, "c%d.obj" % n), RLPy.EExport3DFileOption__None)
         log.append("c%d %s" % (n, cl.GetName()))
+    open(os.path.join(work, "names.txt"), "w", encoding="utf-8").write("\n".join(log))
     for o in list(av.GetClothes()) + list(av.GetHairs()) + list(av.GetAccessories()):
         RLPy.RScene.RemoveObject(o)  # not saved: only for the body OBJ
     RLPy.RFileIO.ExportObjFile(av, os.path.join(work, "body.obj"), RLPy.EExport3DFileOption__None)

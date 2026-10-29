@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import kit
 
 job = sys.argv[1]
-it = sys.argv[2] if len(sys.argv) > 2 else "6"
+it = next((a for a in sys.argv[2:] if a.isdigit()), "4")
 d = os.path.join(kit.JOBS, job)
 work = os.path.join(d, "smooth")
 py = sys.executable
@@ -19,15 +19,24 @@ def run(*a, **kw):
     return r
 
 
-run("tools/start_cc5.py")
-run("tools/cc5.py", "run", "cc5/smooth_cloth.py", "job=" + d, "step=export", timeout=1800)
+if "--again" not in sys.argv:  # --again: redo Blender from the c<n>.obj already exported (the untouched cloth)
+    run("tools/start_cc5.py")
+    run("tools/cc5.py", "run", "cc5/smooth_cloth.py", "job=" + d, "step=export", timeout=1800)
 subprocess.run(["taskkill", "/IM", "CharacterCreator.exe", "/F"], capture_output=True)
 print("CC5 closed", flush=True)
-for f in sorted(os.listdir(work)):
-    if f.startswith("c") and f.endswith(".obj") and not f.endswith("_s.obj"):
+upper = open(os.path.join(d, "upper.txt"), encoding="utf-8").read().split() if os.path.exists(os.path.join(d, "upper.txt")) else []
+names = dict(l.split(" ", 1) for l in open(os.path.join(work, "names.txt"), encoding="utf-8").read().splitlines())
+cloth = [f for f in os.listdir(work) if f.startswith("c") and f.endswith(".obj") and not f.endswith("_s.obj")]
+done = []
+for f in sorted(cloth, key=lambda f: names.get(f[:-4], "") in upper):  # bottoms first: the shirt lies over them
+    if True:
+        shirt = names.get(f[:-4], "") in upper  # shirts are laid onto the body; bottoms keep their drape
         r = subprocess.run([kit.BLENDER, "-b", "--python", os.path.join(kit.REPO, "blender", "smooth_obj.py"), "--",
                             os.path.join(work, f), os.path.join(work, f[:-4] + "_s.obj"), it,
-                            os.path.join(work, "body.obj")], capture_output=True, text=True, timeout=1800)
+                            os.path.join(work, "body.obj")] + (["tight"] + ["over=" + o for o in done] if shirt else []),
+                           capture_output=True, text=True, timeout=3600)
+        if not shirt:
+            done.append(os.path.join(work, f[:-4] + "_s.obj"))
         print(f, [l for l in r.stdout.splitlines() if l.startswith(("SMOOTHED", "FIT"))] or r.stderr[-300:], flush=True)
 run("tools/start_cc5.py")
 run("tools/cc5.py", "run", "cc5/smooth_cloth.py", "job=" + d, "step=apply", timeout=1800)
