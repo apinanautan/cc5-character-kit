@@ -61,3 +61,6 @@ Before all tasks, read PROJECT_MEMORY.md at project root FIRST. Avoid scanning t
 
 ## Color-coded Word progress tracker (2026-11-08)
 Read PROJECT_MEMORY.md first. After each verified iAvatar export, regenerate a story Word tracker when its generator exists. For ดวงเมียน้อย run python runs/duang_mia_noi/generate_character_status.py. Red entries require actual exported files, black entries mean absent/pending; reuse older background actors only after identifying suitable existing files. Do not regenerate existing main characters to inflate the count. Dated CAST_PLAN sections supersede early-stage notes.
+
+## ChatGPT-only inline image previews (2026-11-08)
+For user previews, prefer a contact-sheet JPG/PNG on the Windows PC. Use connected Remote Desktop Commander read_file to read it, then forward the returned image content item via functions.exec image() into the ChatGPT conversation. This is an in-chat display workflow, not an external public image URL. Do not merely print local paths, invent sandbox links, force downloads, or upload to company Google Drive. Do not publish previews to public GitHub without explicit permission. The user confirmed this ChatGPT-only display style worked previously. If a client fails to render, report the limitation and agree on a private fallback. See docs/CHATGPT_IMAGE_PREVIEW.md.

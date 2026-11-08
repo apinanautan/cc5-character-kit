@@ -46,3 +46,11 @@ Status Word document policy: black text=pending, red text=verified .iAvatar expo
 - 2026-11-08 19:45 ดวงเมียน้อย: finished guarded CC5 export attempt: นาวีชุดนักศึกษา, วินัยวัยมัธยม, นาวีวัยมัธยม, นิวัตน์วัยป5, นาวีวัยประถม, นิวัตน์วัยป2; remaining: none
 
 - 2026-11-08 19:55: ดวงเมียน้อย verified 25/25 iAvatar exports by checking Desktop files. Missing optional background roles: . Word tracker: runs/duang_mia_noi/CHARACTER_STATUS.docx (generator generate_character_status.py). Export status reconciled, not a wardrobe/visual QA signoff.
+
+## ส่งพรีวิวให้เห็นใน ChatGPT โดยตรง (ยืนยัน 2026-11-08)
+- ผู้ใช้เคยเปิดดูรูปในแชต GPT ได้ ต้องการใช้วิธีนี้เวลาอยู่บนมือถือและไม่อยากดาวน์โหลดลงเครื่องหรืออัปโหลด Google Drive ของบริษัท
+- เตรียม PNG/JPG จากเรนเดอร์จริงบนเครื่อง Windows และรวมหลายตัวเป็น contact sheet ได้ (ภาพหลักล่าสุด: docs/duang_main_cast_10_20261108.jpg)
+- วิธีส่งใน ChatGPT: ใช้ Remote Desktop Commander read_file กับพาธรูปบนคอม แล้วส่งต่อ content_items ที่ type=image เป็น image output ในแชตผ่าน functions.exec image() ไม่ใช่พิมพ์พาธ Windows หรือสร้าง sandbox URL ปลอม
+- ภาพลักษณะนี้แสดงในบทสนทนา ChatGPT ที่รองรับ ไม่ใช่ลิงก์สาธารณะหรือไฟล์ที่แอปอื่นเปิดได้อัตโนมัติ; หากแอปไม่แสดงให้แจ้งข้อจำกัด
+- ห้ามเผยแพร่ภาพส่วนตัวขึ้น GitHub public, Google Drive หรือเว็บภายนอกเพียงเพื่อพรีวิวใน GPT เว้นแต่ผู้ใช้อนุญาตชัดเจน
+- ภาพตัวละครหลักที่ส่งเป็นพรีวิวตรวจ ไม่ได้ถือว่าผ่าน QA เสื้อผ้าและทรงผมแล้ว
