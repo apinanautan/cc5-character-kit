@@ -9,6 +9,7 @@ FIRST read PROJECT_MEMORY.md. Log every confirmed project change there. Check on
 3. `docs/APP.md` — โปรแกรม CC5 Character Studio (รายชื่อตัวละคร → .iAvatar)
 4. `docs/WARDROBE.md` — คลังเสื้อผ้า/ชุดตายตัว/ลายผ้าที่มี
 5. `docs/FACE_GUIDE.md` — สร้างรูปใบหน้าตัวละครเอง (เมื่อโปรแกรมติดมันส์สร้างไม่ได้)
+6. `docs/HAIR_GUIDE.md` — ทำทรงผมเองใน Blender (ANA HairCraft Cards) + สิ่งที่ห้ามทำ + งานค้าง
 
 สำคัญที่สุด: ห้ามเปิด CC5 กับ Blender ทำงานหนักพร้อมกัน (เครื่องจอฟ้า) และชุดที่ไม่ดีให้สร้างใหม่ ไม่ต้องนั่งแก้
 

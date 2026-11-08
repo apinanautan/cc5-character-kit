@@ -25,3 +25,5 @@ Status Word document policy: black text=pending, red text=verified .iAvatar expo
 ## Activity log
 - 2026-11-08 — Confirmed .git/config has remote origin and main branch; Git exists at C:\Program Files\Git\cmd\git.exe. No PROJECT_MEMORY.md existed previously.
 - 2026-11-08 — Created single-file project activity index and configured agent/Skill first-read workflow. Actual Git publication status should be appended after verification.
+
+- 2026-11-08: Hair made in Blender with ANA HairCraft Cards: docs/HAIR_GUIDE.md + blender/hair_center_part.py (long straight centre part, tucked behind ears). Temple gap above the ear still open. ANA is buggy on Blender 5.2: set inputs via mod.properties.inputs.Input_x.value.
