@@ -17,17 +17,19 @@ shoes = [i for i in s["items"] if i.lower().endswith(".ccshoes")]
 for f in os.listdir(d):
     if f.startswith("new") and f.lower().endswith(".cccloth"):
         os.remove(os.path.join(d, f))
-items, fabrics = [], {}
+items, fabrics, sources = [], {}, {}
 for n, spec in enumerate(specs):
     it, _, fab = spec.partition("=")
     path = kit.resolve_item(it)
     dst = "new%d%s" % (n, os.path.splitext(path)[1])
     shutil.copy(path, os.path.join(d, dst))
     items.append(dst)
+    sources[dst] = path   # build.py deletes the copy after a good build
     if fab:
         fabrics[dst] = make(path, os.path.join(kit.FABRICS, fab + ".png"))
 s["items"] = items + shoes  # hair stays from the loaded project
 s["fabrics"] = fabrics
+s["sources"] = sources
 s["load_project"] = True
 json.dump(s, open(jf, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 for f in ("result.txt", "upper.txt", "layer_fix.txt"):

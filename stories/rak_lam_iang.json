@@ -1,0 +1,542 @@
+{
+  "title": "รักลำเอียง",
+  "genre": "นิทานแนวปัจจุบัน",
+  "source": "ใบงานจากภาพของผู้ใช้",
+  "scenes": [
+    "บ้านนายสมหวัง/ครอบครัวมีทรัพย์สิน",
+    "ภายในบ้าน",
+    "ในหมู่บ้าน",
+    "บริษัทใหญ่ที่ทำงาน",
+    "ร้านอาหาร",
+    "งานเลี้ยงเปิดกิจการที่กรุงเทพฯ",
+    "โรงพยาบาล",
+    "บ้านพิชัยในกรุงเทพฯ"
+  ],
+  "phases": [
+    "โมเดลและฉาก",
+    "คีย์เฟรม",
+    "แก้ไข/ตัดต่อ/ส่ง"
+  ],
+  "notes": [
+    "ชุดผู้ป่วยเป็นชุดเปลี่ยนของวารีและจีไล",
+    "ลูกชายสองวัยเป็นบุคคลเดียวแต่คนละโมเดล",
+    "ชาวบ้านยังไม่ระบุจำนวน",
+    "ยังไม่มี iAvatar ที่ export เสร็จ"
+  ],
+  "slug": "rak_lam_iang",
+  "era": "คนไทยต่างจังหวัดยุคปัจจุบัน และบางฉากในเมืองกรุงเทพฯ",
+  "era_profile": "modern_rural",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\รักลำเอียง\\นักแสดงไทยฉบับแก้ใหม่",
+  "original_cast_notes": [
+    {
+      "id": "suda",
+      "name": "สุดา",
+      "group": "1",
+      "relation": "พี่สาวของวารี",
+      "age": "วัยสาว",
+      "gender": "female",
+      "appearance": "สวย ผิวขาว แต่งตัวมีสไตล์"
+    },
+    {
+      "id": "waree",
+      "name": "วารี",
+      "group": "2",
+      "relation": "น้องสาวของสุดา",
+      "age": "วัยสาว",
+      "gender": "female",
+      "appearance": "น่ารัก ผิวขาว แต่งตัวธรรมดา"
+    },
+    {
+      "id": "somwang",
+      "name": "นายสมหวัง",
+      "group": "3",
+      "relation": "พ่อของสุดาและวารี",
+      "age": "60-65",
+      "gender": "male",
+      "appearance": "มีที่ดินทรัพย์สิน ครอบครัวมีฐานะพอสมควร"
+    },
+    {
+      "id": "jilai",
+      "name": "นางจีไล",
+      "group": "3 / 3.1",
+      "relation": "แม่ของสุดาและวารี",
+      "age": "60-65",
+      "gender": "female",
+      "appearance": "ครอบครัวมีฐานะพอสมควร"
+    },
+    {
+      "id": "villager_01",
+      "name": "ชาวบ้าน (ตัวแทนคนแรก)",
+      "group": "4",
+      "relation": "ตัวประกอบในหมู่บ้าน",
+      "age": "ยังไม่กำหนด",
+      "gender": "unspecified",
+      "appearance": "จำนวนคนยังไม่ได้ระบุ"
+    },
+    {
+      "id": "pichai",
+      "name": "พิชัย",
+      "group": "5",
+      "relation": "สามีของสุดา",
+      "age": "วัยผู้ใหญ่",
+      "gender": "male",
+      "appearance": "นักธุรกิจอยู่กรุงเทพฯ"
+    },
+    {
+      "id": "manop",
+      "name": "มานพ",
+      "group": "6",
+      "relation": "สามีของวารี",
+      "age": "วัยผู้ใหญ่",
+      "gender": "male",
+      "appearance": "ข้าราชการ"
+    },
+    {
+      "id": "son_infant",
+      "name": "ลูกชายสุดาและพิชัย — ทารก",
+      "group": "7",
+      "relation": "ลูกชายสุดากับพิชัย",
+      "age": "ทารก",
+      "gender": "male",
+      "appearance": "หนึ่งช่วงวัยของลูกชายคนเดียวกัน"
+    },
+    {
+      "id": "son_7",
+      "name": "ลูกชายสุดาและพิชัย — 7 ขวบ",
+      "group": "7",
+      "relation": "ลูกชายสุดากับพิชัย",
+      "age": "7 ขวบ",
+      "gender": "male",
+      "appearance": "ช่วงวัย 7 ขวบของคนเดียวกับทารก"
+    }
+  ],
+  "characters": {
+    "rak_lam_iang_suda": {
+      "name": "สุดา",
+      "sex": "female",
+      "age": 34,
+      "age_group": "adult",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "1.สุดา",
+      "notes": "พี่สาวของวารี; สวย ผิวขาว แต่งตัวมีสไตล์",
+      "outfit": [
+        [
+          "MO:Underbelly\\Shirt.ccCloth",
+          null
+        ],
+        [
+          "56a4c7",
+          null
+        ],
+        [
+          "MO:Dash\\Shoes 01.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "พี่สาวไทยอายุ 34 ปี บุคลิกมั่นใจ แต่งตัวดูดี",
+      "social_tier": "urban_middle_class",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 34 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "พี่สาวไทยอายุ 34 ปี บุคลิกมั่นใจ แต่งตัวดูดี",
+        "สีผิว": "ผิวขาวเหลืองตามธรรมชาติ",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้ารูปไข่ โหนกแก้มปานกลาง คิ้วตรง ดวงตาเรียว จมูกธรรมชาติ ปากได้รูป",
+        "prompt_name": "สุดา"
+      },
+      "story_character_id": "suda",
+      "role": "พี่สาวของวารี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\08_Ponytail with bangs.rlHair",
+      "hair_rgb": [
+        18,
+        17,
+        17
+      ]
+    },
+    "rak_lam_iang_waree": {
+      "name": "วารี",
+      "sex": "female",
+      "age": 30,
+      "age_group": "adult",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "2.วารี",
+      "notes": "น้องสาวของสุดา; น่ารัก ผิวขาว แต่งตัวธรรมดา",
+      "outfit": [
+        [
+          "63b0a4",
+          null
+        ],
+        [
+          "f909f8",
+          null
+        ],
+        [
+          "MO:Oahu\\Flip Flops.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "น้องสาวสุดา คนไทยวัยสาว บุคลิกเรียบง่าย อ่อนโยน",
+      "social_tier": "rural_commoner",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 30 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องสาวสุดา คนไทยวัยสาว บุคลิกเรียบง่าย อ่อนโยน",
+        "สีผิว": "ผิวขาวเหลืองอมอุ่น",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้าค่อนข้างกลม แก้มอิ่ม คิ้วธรรมชาติ ดวงตากลม จมูกเล็ก ปากอิ่ม",
+        "prompt_name": "วารี"
+      },
+      "story_character_id": "waree",
+      "role": "น้องสาวของสุดา",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\06_Ear length Bob.rlHair",
+      "hair_rgb": [
+        27,
+        23,
+        21
+      ]
+    },
+    "rak_lam_iang_somwang": {
+      "name": "นายสมหวัง",
+      "sex": "male",
+      "age": 63,
+      "age_group": "old",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "3.นายสมหวัง",
+      "notes": "พ่อของสุดาและวารี; มีที่ดินทรัพย์สิน ครอบครัวมีฐานะพอสมควร",
+      "outfit": [
+        [
+          "MO:Sweat\\Top 01.ccCloth",
+          null
+        ],
+        [
+          "1790c8",
+          null
+        ],
+        [
+          "MO:Oahu\\Sandals 02.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "พ่อครอบครัวชาวไทยมีที่ดินและฐานะในหมู่บ้าน อายุ 63 ปี",
+      "social_tier": "merchant",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 63 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "พ่อครอบครัวชาวไทยมีที่ดินและฐานะในหมู่บ้าน อายุ 63 ปี",
+        "สีผิว": "ผิวสองสีตามวัย",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้าเหลี่ยมมน มีริ้วรอยวัย 63 ปี คิ้วหนาขึ้นเล็กน้อย จมูกธรรมชาติ ริมฝีปากบาง",
+        "prompt_name": "นายสมหวัง"
+      },
+      "story_character_id": "somwang",
+      "role": "พ่อของสุดาและวารี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\07_Classic side part.rlHair",
+      "hair_rgb": [
+        74,
+        69,
+        62
+      ]
+    },
+    "rak_lam_iang_jilai": {
+      "name": "นางจีไล",
+      "sex": "female",
+      "age": 62,
+      "age_group": "old",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "3.1.นางจีไล",
+      "notes": "แม่ของสุดาและวารี; ครอบครัวมีฐานะพอสมควร",
+      "outfit": [
+        [
+          "MO:Old\\Shirt.ccCloth",
+          null
+        ],
+        [
+          "RC:Pants\\Pants(28).ccCloth",
+          null
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes_A3.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "แม่ชาวไทยสูงวัยของสุดาและวารี อายุ 62 ปี",
+      "social_tier": "rural_commoner",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 62 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "แม่ชาวไทยสูงวัยของสุดาและวารี อายุ 62 ปี",
+        "สีผิว": "ผิวสีน้ำผึ้งอ่อนตามวัย",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "ใบหน้าเหลี่ยมเล็กน้อย ริ้วรอยวัย 62 ปี คิ้วโค้งเป็นธรรมชาติ ดวงตาสุขุม ปากบาง",
+        "prompt_name": "นางจีไล"
+      },
+      "story_character_id": "jilai",
+      "role": "แม่ของสุดาและวารี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        76,
+        73,
+        70
+      ]
+    },
+    "rak_lam_iang_villager_01": {
+      "name": "ชาวบ้าน (ตัวแทนคนแรก)",
+      "sex": "male",
+      "age": 47,
+      "age_group": "middle",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "4.ชาวบ้าน01",
+      "notes": "ตัวประกอบในหมู่บ้าน; จำนวนคนยังไม่ได้ระบุ",
+      "outfit": [
+        [
+          "MO:Billybob\\Vest.ccCloth",
+          null
+        ],
+        [
+          "MO:Pyjamas\\Pants 01.ccCloth",
+          null
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "ชาวบ้านชายไทยวัยกลางคน ตัวประกอบตัวแทนหนึ่งคน (ยังไม่ทราบจำนวนชาวบ้านทั้งหมด)",
+      "social_tier": "rural_commoner",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 47 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ชาวบ้านชายไทยวัยกลางคน ตัวประกอบตัวแทนหนึ่งคน (ยังไม่ทราบจำนวนชาวบ้านทั้งหมด)",
+        "สีผิว": "ผิวสองสีเข้มจากงานกลางแจ้ง",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "ใบหน้ายาวคางเหลี่ยม ผิวมีริ้วรอยแดดตามวัย คิ้วหนา จมูกธรรมชาติ",
+        "prompt_name": "ชาวบ้าน (ตัวแทนคนแรก)"
+      },
+      "story_character_id": "villager_01",
+      "role": "ตัวประกอบในหมู่บ้าน",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        29,
+        27,
+        24
+      ]
+    },
+    "rak_lam_iang_pichai": {
+      "name": "พิชัย",
+      "sex": "male",
+      "age": 38,
+      "age_group": "adult",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "5.พิชัย",
+      "notes": "สามีของสุดา; นักธุรกิจอยู่กรุงเทพฯ",
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar long sleeves shirt\\Open_collar_long_sleeves_shirt_A.ccCloth",
+          null
+        ],
+        [
+          "f7c187",
+          null
+        ],
+        [
+          "MO:Casual 03\\Shoes.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "นักธุรกิจชายไทยวัย 38 ปี ทำงานกรุงเทพฯ สามีสุดา",
+      "social_tier": "merchant",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 38 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "นักธุรกิจชายไทยวัย 38 ปี ทำงานกรุงเทพฯ สามีสุดา",
+        "สีผิว": "ผิวสองสีอ่อน",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้ารูปไข่ค่อนข้างยาว คิ้วเข้ม จมูกโด่งพอดีไม่ฝรั่ง ปากกลาง",
+        "prompt_name": "พิชัย"
+      },
+      "story_character_id": "pichai",
+      "role": "สามีของสุดา",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Slicked Back.rlHair",
+      "hair_rgb": [
+        23,
+        21,
+        20
+      ]
+    },
+    "rak_lam_iang_manop": {
+      "name": "มานพ",
+      "sex": "male",
+      "age": 36,
+      "age_group": "adult",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "6.มานพ",
+      "notes": "สามีของวารี; ข้าราชการ",
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar short sleeves shirt\\Close_collar_short_sleeves_shirt_A.ccCloth",
+          null
+        ],
+        [
+          "47ae0874",
+          null
+        ],
+        [
+          "MO:Casual 01\\Shoes.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "ข้าราชการชายไทยวัย 36 ปี สามีวารี ชุดนี้เป็นลุคประจำวันไม่ใช่เครื่องแบบราชการ",
+      "social_tier": "civil_servant",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 36 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ข้าราชการชายไทยวัย 36 ปี สามีวารี ชุดนี้เป็นลุคประจำวันไม่ใช่เครื่องแบบราชการ",
+        "สีผิว": "ผิวขาวเหลือง",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้าเหลี่ยมมน กรามชัดพอดี คิ้วตรง ตาเรียว จมูกธรรมชาติ",
+        "prompt_name": "มานพ"
+      },
+      "story_character_id": "manop",
+      "role": "สามีของวารี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Classic Side Parted Hairstyle.rlHair",
+      "hair_rgb": [
+        24,
+        22,
+        20
+      ]
+    },
+    "rak_lam_iang_son_infant": {
+      "name": "ลูกชายสุดาและพิชัย — ทารก",
+      "sex": "male",
+      "age": 1,
+      "age_group": "baby",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "baby",
+      "folder": "7.ลูกชายทารก",
+      "notes": "ลูกชายสุดากับพิชัย; หนึ่งช่วงวัยของลูกชายคนเดียวกัน",
+      "outfit": [
+        [
+          "0352c8",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "ลูกชายสุดาและพิชัยตอนอายุประมาณ 1 ปี",
+      "social_tier": "child",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 1 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกชายสุดาและพิชัยตอนอายุประมาณ 1 ปี",
+        "สีผิว": "ผิวขาวเหลืองอ่อนแบบทารก",
+        "ทรงผม": "ศีรษะทารก",
+        "ใบหน้า": "แก้มกลมอิ่ม โครงหน้าทารกไทย ดวงตากลมอ่อนโยน",
+        "prompt_name": "ลูกชายสุดาและพิชัย — ทารก"
+      },
+      "story_character_id": "son_infant",
+      "role": "ลูกชายสุดากับพิชัย"
+    },
+    "rak_lam_iang_son_7": {
+      "name": "ลูกชายสุดาและพิชัย — 7 ขวบ",
+      "sex": "male",
+      "age": 7,
+      "age_group": "child",
+      "age_source": "จากบท",
+      "body": "child",
+      "folder": "7.ลูกชาย7ขวบ",
+      "notes": "ลูกชายสุดากับพิชัย; ช่วงวัย 7 ขวบของคนเดียวกับทารก",
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\school_blouse_ai.ccCloth",
+          null
+        ],
+        [
+          "9b1c4f",
+          null
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers_A1.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "ลูกชายสุดาและพิชัยคนเดียวกันในวัย 7 ขวบ",
+      "social_tier": "child",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 7 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกชายสุดาและพิชัยคนเดียวกันในวัย 7 ขวบ",
+        "สีผิว": "ผิวขาวเหลืองธรรมชาติ",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้ารูปไข่เด็ก แก้มกลม คิ้วเข้มบางเล็กน้อย จมูกธรรมชาติ",
+        "prompt_name": "ลูกชายสุดาและพิชัย — 7 ขวบ",
+        "ref": "rak_lam_iang_son_infant"
+      },
+      "story_character_id": "son_7",
+      "role": "ลูกชายสุดากับพิชัย",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Fringe Hairstyle.rlHair",
+      "hair_rgb": [
+        25,
+        22,
+        20
+      ]
+    }
+  },
+  "status": {
+    "rak_lam_iang_suda": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_waree": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_somwang": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_jilai": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_villager_01": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_pichai": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_manop": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_son_infant": {
+      "plan": "ok"
+    },
+    "rak_lam_iang_son_7": {
+      "plan": "ok"
+    }
+  },
+  "cast_stage": "ready_to_generate_thai_faces",
+  "constraints": [
+    "All real Thai face portraits generated via Tidmunz and Headshot 3; no stock Western face fallback.",
+    "Ages other than explicit 7 years and parents 60-65 are approximations pending cast review.",
+    "One villager is a representative; original script does not establish the total count."
+  ]
+}

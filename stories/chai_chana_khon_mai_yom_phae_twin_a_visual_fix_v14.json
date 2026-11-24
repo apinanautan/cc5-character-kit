@@ -1,0 +1,68 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae_twin_a_visual_fix_v14",
+  "title": "ชัยชนะของคนไม่ยอมแพ้ — แก้แฝด A เสื้อดำและขาเปลือย V14",
+  "era_profile": "modern_rural",
+  "era": "เรื่องชาวบ้านไทยราว พ.ศ. 2519–2529 เสื้อกับกางเกงปกติ ไม่ใช้โจงกระเบนหรือผ้าพันอก",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\ชัยชนะของคนไม่ยอมแพ้\\ตัวละครที่ยังขาด_แก้แฝดA_V14",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_twin_a_visual_fix_v14_twin_a_young": {
+      "name": "ลูกแฝด A — วัยหนุ่ม",
+      "person_id": "twin_a",
+      "sex": "male",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar long sleeves shirt\\Open_collar_long_sleeves_shirt_A.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(4).ccCloth",
+          null
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ลูกแฝด A — วัยหนุ่ม: Layered Pixie ทรงผมเรียบตามอายุ/ฐานะ; ตัวหลักแยกทรง",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกแฝด A · ลูกแฝดชายของอำพรและชัยยศ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวคล้ายอำพร คิ้วตรงคล้ายชัยยศ แนวกรามมน"
+      },
+      "folder": "7.ลูกแฝด",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Layered Pixie.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Twin A Thai country youth circa 1980 with light long-sleeve work shirt and dark cropped practical trousers; visually different from Twin B long plaid shirt and dark slacks; no bare arms or legs"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_twin_a_visual_fix_v14_twin_a_young": {
+      "wardrobe_rework": "PENDING",
+      "visual_qa": "PENDING"
+    }
+  },
+  "approved_shared_clothes": [
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth"
+  ],
+  "wardrobe_reuse_reason": "ผู้ใช้กำหนดให้ใช้ชิ้นผ้าพันอกและโจงกระเบนร่วมกัน เปลี่ยนเป็นสีเอิร์ธโทน สร้างใบหน้าและโมเดลใหม่",
+  "source_story_slug": "chai_chana_khon_mai_yom_phae_remaining3_visual_v13",
+  "wardrobe_revision": "everyday_2525_v1"
+}

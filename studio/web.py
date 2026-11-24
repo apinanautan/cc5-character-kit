@@ -37,6 +37,10 @@ def item_names():
 
 def story_view(path):
     s = runner.load(path)
+    if not isinstance(s.get("characters"),dict) or not isinstance(s.get("status"),dict):
+        return {"path":path,"title":s.get("title",""),"out_dir":s.get("out_dir") or "",
+                "characters":[],"blocked":True,
+                "error":"Story JSON is a planning manifest, not runnable Runner schema. Use production preflight and fix first."}
     names = item_names()
     chars = []
     for job, c in s["characters"].items():
@@ -75,10 +79,41 @@ def stories():
         if "status" not in s:
             continue  # stories made by hand before the app (e.g. krong): not run from here
         st = s.get("status", {})
+        if not isinstance(s.get("characters"),dict) or not isinstance(st,dict):
+            out.append({"path":p,"title":s.get("title",f),
+                        "count":len(s.get("characters",[])),"done":0,
+                        "t":os.path.getmtime(p),"app":False,"blocked":True})
+            continue
         done = sum(1 for j in s["characters"] if str(st.get(j, {}).get("export", "")).startswith(("ok", "skip")))
         out.append({"path": p, "title": s.get("title", f), "count": len(s["characters"]), "done": done,
                     "t": os.path.getmtime(p), "app": "status" in s})
     return sorted(out, key=lambda x: -x["t"])
+
+
+class ProductionFlowSession:
+    """Run code-first production flow behind the existing Studio Start button."""
+    def __init__(self,path,opts,notify):
+        self.path=path
+        self.opts=opts
+        self.notify=notify
+        self.stop=False
+
+    def run(self):
+        try:
+            from types import SimpleNamespace
+            from tools import cc5_production_flow as flow
+            source=flow.story_path(self.path)
+            story=flow.load_json(source)
+            directory=flow.location(source,story)
+            selected=flow.get_jobs(story,self.opts.get('only'))
+            args=SimpleNamespace(approve_cc5_session_control=True,weights=self.opts.get('weights',False))
+            code=flow.run_story(args,source,story,directory,selected,
+                    observer=self.notify,stop_requested=lambda:self.stop)
+            self.notify('log','Full production flow finished with exit status '+str(code))
+        except Exception as exc:
+            self.notify('log','Production flow BLOCKED: '+type(exc).__name__+' '+str(exc)[:250])
+        finally:
+            self.notify('done',None)
 
 
 def api(path, q):
@@ -89,7 +124,11 @@ def api(path, q):
     if path == "/api/parse":
         return planner.parse(q.get("text", ""))
     if path == "/api/create":
-        p = runner.create_story(q["title"], q["rows"], q.get("out_root") or None)
+        try:
+            p = runner.create_story(q["title"], q["rows"], q.get("out_root") or None,
+                                    era_profile=q.get("era_profile"))
+        except (ValueError,KeyError,FileExistsError,RuntimeError) as exc:
+            return {"error":str(exc)}
         STATE["story"] = p
         return story_view(p)
     if path == "/api/story":
@@ -101,20 +140,32 @@ def api(path, q):
     if path == "/api/start":
         if busy():
             return {"ok": False, "msg": "กำลังทำงานอยู่"}
+        if not q.get("approve_cc5_session_control", False):
+            return {"ok": False, "msg": "โปรดบันทึกงาน CC5 ก่อน และยืนยันสิทธิ์ให้ Flow ควบคุมหรือรีสตาร์ต CC5"}
+        opts=q.get("opts", {})
+        if opts.get("export", True) is False:
+            return {"ok": False, "msg": "Full Production Flow ต้องเปิดส่งออก iAvatar"}
+        from tools import cc5_production_flow as flow
+        try:
+            source=flow.story_path(q["path"])
+            story=flow.load_json(source)
+            jobs=flow.get_jobs(story,opts.get("only"))
+            errors,_,_=flow.inspect(source,story,jobs,runtime=True)
+        except Exception as exc:
+            return {"ok": False, "msg": "Flow preflight: "+type(exc).__name__+" "+str(exc)[:190]}
+        if errors:
+            return {"ok": False, "msg": "Flow BLOCKED: "+"; ".join(errors[:2])[:370]}
         STATE["log"] = []
-        r = runner.Runner(q["path"], q.get("opts", {}), on_update)
-        STATE.update(runner=r, story=q["path"], thread=threading.Thread(target=r.run, daemon=True))
+        r = ProductionFlowSession(str(source),opts,on_update)
+        STATE.update(runner=r, story=str(source), thread=threading.Thread(target=r.run, daemon=True))
         STATE["thread"].start()
-        return {"ok": True}
+        return {"ok": True, "workflow":"cc5_production_flow.py"}
     if path == "/api/stop":
         if STATE["runner"]:
             STATE["runner"].stop = True
         return {"ok": True}
     if path == "/api/reroll":
-        if busy():
-            return {"ok": False, "msg": "หยุดก่อน"}
-        runner.reroll(q["path"], q["job"])
-        return story_view(q["path"])
+        return {"ok":False,"msg":"สุ่มชุดถูกปิดแล้ว: ต้องแก้แผน wardrobe_design.json และตรวจบทก่อนสร้างใหม่"}
     if path == "/api/reset":
         if busy():
             return {"ok": False, "msg": "หยุดก่อน"}

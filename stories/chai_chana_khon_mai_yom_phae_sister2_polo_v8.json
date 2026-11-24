@@ -1,0 +1,68 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae_sister2_polo_v8",
+  "title": "ชัยชนะของคนไม่ยอมแพ้ — น้องอำพรคนที่ 2 แก้กางเกงหาย V8",
+  "era_profile": "modern_rural",
+  "era": "เรื่องชาวบ้านไทยราว พ.ศ. 2519–2529 เสื้อกับกางเกงปกติ ไม่ใช้โจงกระเบนหรือผ้าพันอก",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\ชัยชนะของคนไม่ยอมแพ้\\น้องอำพรคน2_ชุดแก้_v8",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_sister2_polo_v8_sister_2_young": {
+      "name": "น้องอำพรคนที่ 2 — วัยสาว",
+      "person_id": "sister_2",
+      "sex": "female",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\เสื้อผ้า\\เสื้อ\\sco.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\เสื้อผ้า\\กางเกง\\jeanni.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Flip Flops.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "03_Cute braid long hair; distinct among eight primary characters",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 2 · น้องสาวคนที่สอง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ารูปไข่ยาว คิ้วตรง"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\03_Cute braid long hair.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Simple faded sky-blue loose short-sleeve old-style polo and long blue denim trousers. Different from sister1 horizontal crew T-shirt and cropped pants; no jagged hem"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_sister2_polo_v8_sister_2_young": {
+      "wardrobe_rework": "PENDING",
+      "visual_qa": "PENDING"
+    }
+  },
+  "approved_shared_clothes": [
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth"
+  ],
+  "wardrobe_reuse_reason": "ผู้ใช้กำหนดให้ใช้ชิ้นผ้าพันอกและโจงกระเบนร่วมกัน เปลี่ยนเป็นสีเอิร์ธโทน สร้างใบหน้าและโมเดลใหม่",
+  "source_story_slug": "chai_chana_khon_mai_yom_phae_maincast_silhouette_v6",
+  "wardrobe_revision": "maincast_distinct_silhouettes_v6"
+}

@@ -128,7 +128,7 @@ body.dr main{padding-right:440px}
 <div class="toast" id="toast"></div>
 <script>
 const STEPS=[["plan","แผน"],["fabric","ลายผ้า"],["face","หน้า"],["build","สร้างตัว"],["scar","แผล"],["weights","แขนเสื้อ"],["export","iAvatar"]];
-let view={mode:"new",rows:[],title:"",path:null,story:null,sel:null,busy:false};
+let view={mode:"new",rows:[],title:"",era_profile:"",path:null,story:null,sel:null,busy:false};
 let opts=JSON.parse(localStorage.getItem("opts")||'{"ai_fabric":true,"weights":false,"export":true}');
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -142,13 +142,23 @@ async function loadStories(){
     <div class="t">${esc(x.title)}</div><div class="m">${x.done}/${x.count} ตัว</div>
     <div class="mini"><i style="width:${x.count?100*x.done/x.count:0}%"></i></div></div>`).join("");
 }
-function newStory(){view={mode:"new",rows:[],title:"",path:null,story:null,sel:null};closeDrawer();render();loadStories()}
+function newStory(){view={mode:"new",rows:[],title:"",era_profile:"",path:null,story:null,sel:null};closeDrawer();render();loadStories()}
 async function openStory(p){view.mode="story";view.path=p;view.sel=null;closeDrawer();view.story=await call("/api/story",{path:p});render();loadStories()}
 
 function render(){
   const m=$("main");
   if(view.mode==="new"){
     m.innerHTML=`<div class="head"><h1><input id="title" placeholder="ชื่อเรื่อง" value="${esc(view.title)}" oninput="view.title=this.value"></h1></div>
+    <div class="card" style="padding:16px">
+      <label for="eraProfile">ยุค / บริบทเรื่อง (ต้องเลือกก่อนวิเคราะห์ชุด)</label>
+      <select id="eraProfile" style="width:100%;padding:9px;margin-top:7px"
+        onchange="view.era_profile=this.value">
+        <option value="">เลือกยุคที่ตรงกับใบงาน</option>
+        <option value="modern_rural">ไทยปัจจุบัน — ชนบท/หมู่บ้าน</option>
+        <option value="modern_urban">ไทยปัจจุบัน — เมือง/กรุงเทพฯ</option>
+      </select>
+      <div class="hint">ยุคโบราณ/ราชสำนัก/ชุดพิเศษต้องเลือกจากคลังเฉพาะยุคที่ตรวจแล้ว ระบบจะไม่สุ่มชุดสมัยใหม่</div>
+    </div>
     <div class="card"><textarea id="list" placeholder="วางรายชื่อตัวละคร บรรทัดละข้อ เช่น
 1 นายสมจิต+นางอุไร วัยเกือบ40+เกือบ70
 1.1 สมจิตวัย70 แผลไฟลวกที่แขน
@@ -157,6 +167,7 @@ function render(){
     <div class="row" style="padding:0 16px 14px"><div class="hint" style="padding:0">ใส่หมายเหตุได้: แผลไฟไหม้ที่แขน/หน้า/ขา · ผอม · ท้อง</div><div class="spacer"></div>
     <button class="btn primary" onclick="parse()">อ่านรายชื่อ</button></div></div>
     ${view.rows.length?editGrid():""}`;
+    m.querySelector("#eraProfile").value=view.era_profile||"";
     return;
   }
   const s=view.story; if(!s){m.innerHTML="";return}
@@ -186,7 +197,7 @@ function card(c){
 }
 function editGrid(){
   return `<div class="row" style="margin:28px 0 14px"><div class="sub">${view.rows.filter(r=>r.use).length} ตัว · คลิกแก้ได้ทุกช่อง</div><div class="spacer"></div>
-    <button class="btn primary" onclick="create()">สร้างเรื่อง · สุ่มชุดให้ทุกตัว</button></div>
+    <button class="btn primary" onclick="create()">วิเคราะห์ชุดตามบทและล็อกทรงผม</button></div>
     <div class="grid">${view.rows.map((r,i)=>`<div class="card ec ${r.use?"":"off"}">
       <div class="row"><input class="name" value="${esc(r.name)}" onchange="view.rows[${i}].name=this.value">
         <button class="x" title="${r.use?"ไม่ทำตัวนี้":"ทำตัวนี้"}" onclick="view.rows[${i}].use=!view.rows[${i}].use;render()">${r.use?"✕":"↺"}</button></div>
@@ -206,10 +217,12 @@ async function create(){
   view.title=($("title")||{}).value||view.title;
   if(!view.title.trim()) return toast("ใส่ชื่อเรื่องก่อน");
   const bad=view.rows.filter(r=>r.use&&!["m","f"].includes(r.sex)); if(bad.length) return toast("เลือกเพศให้ครบ: "+bad.map(r=>r.name).join(", "));
-  const s=await call("/api/create",{title:view.title,rows:view.rows});
+  if(!view.era_profile)return toast("เลือกยุค/บริบทเรื่องก่อน");
+   let s;try{s=await call("/api/create",{title:view.title,rows:view.rows,era_profile:view.era_profile});}
+   catch(e){return;}
   view.mode="story";view.path=s.path;view.story=s;render();loadStories();
 }
-async function start(){const r=await call("/api/start",{path:view.path,opts});if(!r.ok)toast(r.msg);view.busy=true;render();if(opts.export)toast("ตอน Export ห้ามจับเมาส์/คีย์บอร์ด")}
+async function start(){if(!confirm("บันทึกงานใน Character Creator 5 เรียบร้อยแล้วใช่ไหม? Full Production Flow อาจเปลี่ยนฉากหรือรีสตาร์ต CC5 ระหว่างสร้างและส่งออกตัวละคร"))return;const r=await call("/api/start",{path:view.path,opts,approve_cc5_session_control:true});if(!r.ok){toast(r.msg);return;}view.busy=true;render();toast("Production Flow เริ่มทำงาน: หน้า Headshot, เสื้อผ้า, หลายมุม, iAvatar, QA และ ntfy");if(opts.export)toast("ตอน Export ห้ามจับเมาส์/คีย์บอร์ด")}
 async function stop(){await call("/api/stop");toast("จะหยุดหลังขั้นที่กำลังทำ")}
 function openChar(job){view.sel=job;drawer();render()}
 function closeDrawer(){$("drawer").classList.remove("on");document.body.classList.remove("dr");view.sel=null}
@@ -221,7 +234,7 @@ function drawer(){
    <div class="dbody"><h2>${esc(c.name)}</h2><div class="sub">${c.sex==="m"?"ชาย":"หญิง"} · ${c.age} ปี · ${esc(c.folder)}</div>${fails}
    <ul class="list">${c.outfit.map(o=>`<li>${esc(o.name)}${o.fabric?`<small>ลาย ${esc(o.fabric)}</small>`:""}</li>`).join("")}
    ${c.hair?`<li>ผม ${esc(c.hair)}</li>`:""}${c.same_head?`<li>ใช้หัวเดียวกับ ${esc(c.same_head)}</li>`:""}</ul>
-   <div class="actions"><button class="btn" onclick="act('reroll')">สุ่มชุดใหม่</button>
+   <div class="actions"><span class="hint">ชุดและผมล็อกจากใบงานแล้ว — แก้ในแผนชุดก่อนเริ่มสร้างใหม่</span>
    <button class="btn" onclick="act('reset','build')">ทำใหม่ตั้งแต่สร้างตัว</button>
    <button class="btn" onclick="act('reset','fabric')">ทำใหม่ทั้งหมด</button>
    <button class="btn ghost" onclick='call("/api/open",{dir:${esc(JSON.stringify(c.dir))}})'>เปิดโฟลเดอร์</button></div></div>`;

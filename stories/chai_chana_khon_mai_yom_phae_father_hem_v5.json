@@ -1,0 +1,68 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae_father_hem_v5",
+  "title": "ชัยชนะของคนไม่ยอมแพ้ — ซ่อมชายเสื้อพ่ออำพร V5",
+  "era_profile": "modern_rural",
+  "era": "เรื่องชาวบ้านไทยราว พ.ศ. 2519–2529 เสื้อกับกางเกงปกติ ไม่ใช้โจงกระเบนหรือผ้าพันอก",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\ชัยชนะของคนไม่ยอมแพ้\\พ่ออำพร_แก้ชายเสื้อ_v5",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_father_hem_v5_father_main": {
+      "name": "พ่ออำพร — วัยผู้ใหญ่",
+      "person_id": "father",
+      "sex": "male",
+      "age": 42,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Others\\Aaron Outfit Set\\Regular Fit Shirt.ccCloth",
+          "chana_main_v3_father_main_top"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+          "chana_main_v3_father_main_pant"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 02.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "Classic short; distinct among eight primary characters",
+      "face": {
+        "อายุ": "42 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "พ่ออำพร · รับจ้างทั่วไป · คนไทย",
+        "สีผิว": "ผิวสองสีคล้ำแดด",
+        "ใบหน้า": "กรามเหลี่ยมนุ่ม คิ้วเข้ม"
+      },
+      "folder": "2.พ่อและแม่อำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "laborer",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "เสื้อทำงาน Regular Fit เต็มตัว สีคราม กางเกงทำงาน; แทนเสื้อ Farmer ที่ชายเสื้อเป็นหยักผิดรูป"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_father_hem_v5_father_main": {
+      "wardrobe_rework": "PENDING",
+      "visual_qa": "PENDING"
+    }
+  },
+  "approved_shared_clothes": [
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth"
+  ],
+  "wardrobe_reuse_reason": "ผู้ใช้กำหนดให้ใช้ชิ้นผ้าพันอกและโจงกระเบนร่วมกัน เปลี่ยนเป็นสีเอิร์ธโทน สร้างใบหน้าและโมเดลใหม่",
+  "source_story_slug": "chai_chana_khon_mai_yom_phae_maincast_unique_v3",
+  "wardrobe_revision": "maincast_mesh_fault_repair_v4"
+}

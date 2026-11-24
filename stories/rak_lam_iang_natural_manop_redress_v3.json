@@ -1,0 +1,174 @@
+{
+  "title": "รักลำเอียง — มานพแก้ชุดจาก Headshot เดิม",
+  "genre": "นิทานแนวปัจจุบัน",
+  "source": "ใบงานจากภาพของผู้ใช้",
+  "scenes": [
+    "บ้านนายสมหวัง/ครอบครัวมีทรัพย์สิน",
+    "ภายในบ้าน",
+    "ในหมู่บ้าน",
+    "บริษัทใหญ่ที่ทำงาน",
+    "ร้านอาหาร",
+    "งานเลี้ยงเปิดกิจการที่กรุงเทพฯ",
+    "โรงพยาบาล",
+    "บ้านพิชัยในกรุงเทพฯ"
+  ],
+  "phases": [
+    "โมเดลและฉาก",
+    "คีย์เฟรม",
+    "แก้ไข/ตัดต่อ/ส่ง"
+  ],
+  "notes": [
+    "ชุดผู้ป่วยเป็นชุดเปลี่ยนของวารีและจีไล",
+    "ลูกชายสองวัยเป็นบุคคลเดียวแต่คนละโมเดล",
+    "ชาวบ้านยังไม่ระบุจำนวน",
+    "ยังไม่มี iAvatar ที่ export เสร็จ",
+    "Rebuild only two failed garment jobs; preserve source avatars and reference faces."
+  ],
+  "slug": "rak_lam_iang_natural_manop_redress_v3",
+  "era": "คนไทยต่างจังหวัดยุคปัจจุบัน และบางฉากในเมืองกรุงเทพฯ",
+  "era_profile": "modern_rural",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\รักลำเอียง\\ฉบับธรรมชาติ\\แก้งาน_เสื้อผ้า_v2",
+  "original_cast_notes": [
+    {
+      "id": "suda",
+      "name": "สุดา",
+      "group": "1",
+      "relation": "พี่สาวของวารี",
+      "age": "วัยสาว",
+      "gender": "female",
+      "appearance": "สวย ผิวขาว แต่งตัวมีสไตล์"
+    },
+    {
+      "id": "waree",
+      "name": "วารี",
+      "group": "2",
+      "relation": "น้องสาวของสุดา",
+      "age": "วัยสาว",
+      "gender": "female",
+      "appearance": "น่ารัก ผิวขาว แต่งตัวธรรมดา"
+    },
+    {
+      "id": "somwang",
+      "name": "นายสมหวัง",
+      "group": "3",
+      "relation": "พ่อของสุดาและวารี",
+      "age": "60-65",
+      "gender": "male",
+      "appearance": "มีที่ดินทรัพย์สิน ครอบครัวมีฐานะพอสมควร"
+    },
+    {
+      "id": "jilai",
+      "name": "นางจีไล",
+      "group": "3 / 3.1",
+      "relation": "แม่ของสุดาและวารี",
+      "age": "60-65",
+      "gender": "female",
+      "appearance": "ครอบครัวมีฐานะพอสมควร"
+    },
+    {
+      "id": "villager_01",
+      "name": "ชาวบ้าน (ตัวแทนคนแรก)",
+      "group": "4",
+      "relation": "ตัวประกอบในหมู่บ้าน",
+      "age": "ยังไม่กำหนด",
+      "gender": "unspecified",
+      "appearance": "จำนวนคนยังไม่ได้ระบุ"
+    },
+    {
+      "id": "pichai",
+      "name": "พิชัย",
+      "group": "5",
+      "relation": "สามีของสุดา",
+      "age": "วัยผู้ใหญ่",
+      "gender": "male",
+      "appearance": "นักธุรกิจอยู่กรุงเทพฯ"
+    },
+    {
+      "id": "manop",
+      "name": "มานพ",
+      "group": "6",
+      "relation": "สามีของวารี",
+      "age": "วัยผู้ใหญ่",
+      "gender": "male",
+      "appearance": "ข้าราชการ"
+    },
+    {
+      "id": "son_infant",
+      "name": "ลูกชายสุดาและพิชัย — ทารก",
+      "group": "7",
+      "relation": "ลูกชายสุดากับพิชัย",
+      "age": "ทารก",
+      "gender": "male",
+      "appearance": "หนึ่งช่วงวัยของลูกชายคนเดียวกัน"
+    },
+    {
+      "id": "son_7",
+      "name": "ลูกชายสุดาและพิชัย — 7 ขวบ",
+      "group": "7",
+      "relation": "ลูกชายสุดากับพิชัย",
+      "age": "7 ขวบ",
+      "gender": "male",
+      "appearance": "ช่วงวัย 7 ขวบของคนเดียวกับทารก"
+    }
+  ],
+  "characters": {
+    "rak_lam_iang_natural_manop_redress3": {
+      "name": "มานพ",
+      "sex": "male",
+      "age": 36,
+      "age_group": "adult",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "neutral",
+      "folder": "6.มานพ",
+      "notes": "สามีของวารี; ข้าราชการ",
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar short sleeves shirt\\Close_collar_short_sleeves_shirt_A.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Casual 01\\Shoes.ccShoes",
+          null
+        ]
+      ],
+      "layer": "out",
+      "style": "ข้าราชการชายไทยวัย 36 ปี สามีวารี ชุดนี้เป็นลุคประจำวันไม่ใช่เครื่องแบบราชการ",
+      "social_tier": "civil_servant",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 36 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ข้าราชการชายไทยวัย 36 ปี สามีวารี ชุดนี้เป็นลุคประจำวันไม่ใช่เครื่องแบบราชการ",
+        "สีผิว": "ผิวขาวเหลือง",
+        "ทรงผม": "ทรงผมไทยร่วมสมัยตามวัย",
+        "ใบหน้า": "หน้าเหลี่ยมมน กรามชัดพอดี คิ้วตรง ตาเรียว จมูกธรรมชาติ",
+        "prompt_name": "มานพ"
+      },
+      "story_character_id": "manop",
+      "role": "สามีของวารี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        24,
+        22,
+        20
+      ],
+      "natural_design_brief": "ชายไทย 36 ปี ผมสั้นปัดข้างเล็กน้อยแบบธรรมชาติ สุภาพ ไม่ยกทรงสูงหรือย้อนยุค",
+      "natural_clothing_brief": "เสื้อคอปกแขนสั้นและกางเกงขายาวสีเข้ม ชุดปกติไม่ใช่เครื่องแบบ",
+      "previous_story_actor": "rak_lam_iang_manop",
+      "reuse_ccproject": "C:\\Users\\Apinan\\Documents\\CC5 Characters\\runs\\rak_lam_iang_natural_v1\\manop_failed_stage_safeguard_20261114.ccProject"
+    }
+  },
+  "status": {},
+  "cast_stage": "ready_to_generate_thai_faces",
+  "constraints": [
+    "All real Thai face portraits generated via Tidmunz and Headshot 3; no stock Western face fallback.",
+    "Ages other than explicit 7 years and parents 60-65 are approximations pending cast review.",
+    "One villager is a representative; original script does not establish the total count."
+  ],
+  "source_story": "rak_lam_iang",
+  "production_policy": "natural_Thai_art_direction_no_random_no_autopass"
+}

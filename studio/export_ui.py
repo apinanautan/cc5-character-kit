@@ -29,12 +29,19 @@ def cc5_window():
             n = u32.GetWindowTextLengthW(h)
             b = ctypes.create_unicode_buffer(n + 1)
             u32.GetWindowTextW(h, b, n + 1)
-            if b.value.startswith("Character Creator"):
-                best.append(h)
+            # CC5 also opens small Qt warnings titled "Character Creator 5".
+            # Never choose those as the primary application window, or menu
+            # clicks will target the popup and no Save dialog will appear.
+            if b.value.startswith("Character Creator 5 - "):
+                rect = wintypes.RECT()
+                if u32.GetWindowRect(h, ctypes.byref(rect)):
+                    width, height = rect.right - rect.left, rect.bottom - rect.top
+                    if width >= 800 and height >= 500:
+                        best.append((width * height, h))
         return True
 
     u32.EnumWindows(cb, 0)
-    return best[0] if best else None
+    return max(best)[1] if best else None
 
 
 def save_dialog(h, timeout=40):
@@ -124,15 +131,14 @@ def wait_file(path, timeout=600):
 
 
 def export(target, backup_dir):
-    """Export the open CC5 character to target (.iAvatar). An old file is moved to backup_dir first
-    (so CC5 never asks 'replace?'). Returns (ok, message)."""
+    """Export the currently-open CC5 actor, never overwriting or moving existing exports.
+    Returns (ok, message)."""
     h = cc5_window()
     if not h:
         return False, "ไม่เจอหน้าต่าง CC5"
     os.makedirs(os.path.dirname(target), exist_ok=True)
     if os.path.exists(target):
-        os.makedirs(backup_dir, exist_ok=True)
-        shutil.move(target, os.path.join(backup_dir, "old_" + time.strftime("%Y%m%d_%H%M%S_") + os.path.basename(target)))
+        return False, "ไฟล์ iAvatar ปลายทางมีอยู่แล้ว ห้ามเขียนทับหรือย้ายสำรองอัตโนมัติ"
     set_clipboard(target)
     front(h)
     click(FILE); time.sleep(1)

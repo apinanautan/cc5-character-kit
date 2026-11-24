@@ -1,0 +1,53 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae_amphon_pilot",
+  "title": "ชัยชนะของคนไม่ยอมแพ้",
+  "era_profile": "ancient_thai_unspecified",
+  "era": "นิทานไทยย้อนยุคตามภาพกำกับของผู้ใช้ ใช้ผ้าพันอกและโจงกระเบนชาวบ้าน",
+  "out_dir": "C:\\Users\\Apinan\\Documents\\CC5 Characters\\runs\\chai_chana_khon_mai_yom_phae\\exports",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_amphon_pilot_young": {
+      "name": "อำพร — วัยสาว",
+      "person_id": "amphon",
+      "sex": "female",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "source_brief",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมดำเกล้ามวยเรียบสำหรับทำงาน",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "อำพร · ลูกสาวคนโตของครอบครัวรายได้น้อย · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "โครงหน้ารูปไข่ คิ้วทรงยาว แนวกรามมน"
+      },
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "social_tier": "commoner",
+      "layer": "",
+      "occasion": "brickworks"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_amphon_pilot_young": {}
+  }
+}

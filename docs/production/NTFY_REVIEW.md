@@ -1,0 +1,4 @@
+# UNIVERSAL NTFY CHARACTER REVIEW
+Target: https://ntfy.sh/Pic-Gptz
+User has explicitly requested actual images for character previews, not only text status.
+After a face or completed character preview render is ready, send the real PNG as image/png with story+character+variant+view label. Confirm HTTP 2xx, JSON topic Pic-Gptz, nonempty id and attachment. Record minimal per-story dedup receipt keyed by content hash plus character/view. No unsolicited private source files, no invented delivery acknowledgement, no identical duplicate notifications. Images must show the actual generated CC5 render or approved face portrait. Do not call image delivery proof of character QA PASS.

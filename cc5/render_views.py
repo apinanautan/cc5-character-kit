@@ -3,14 +3,19 @@
 import os, sys
 import RLPy
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kit
+from texture_ready import wait_for_textures
 d = os.path.join(kit.JOBS, BRIDGE_ARGS["job"])  # noqa: F821
 av = RLPy.RScene.GetAvatars()[0]
+RLPy.RScene.SelectObject(av)
+camera = RLPy.RScene.GetCurrentCamera()
+wait_for_textures()
 out = []
 for tag, loc in (("front", RLPy.ECameraLocationType_Front), ("left", RLPy.ECameraLocationType_Left),
                  ("back", RLPy.ECameraLocationType_Back), ("right", RLPy.ECameraLocationType_Right)):
     RLPy.RScene.SelectObject(av)
-    RLPy.RScene.GetCurrentCamera().SetCameraLocation(loc)
+    camera.SetCameraLocation(loc)
     p = os.path.join(d, "view_%s.png" % tag)
     RLPy.RGlobal.RenderImage(p)
     out.append(p)

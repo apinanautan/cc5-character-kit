@@ -1,0 +1,26 @@
+{
+ "name": "ชุดเบสตำรวจ (police base outfit)",
+ "made": "2026-11-09",
+ "from_character": "วินัยตำรวจ (story_1108_1311_13), ดวงเมียน้อย",
+ "what": "เสื้อตำรวจแขนยาวสีเขียวมะกอก/น้ำตาลเทา (ปก อินทรธนู กระเป๋าอกสองฝา ป้ายชื่อ แถบยศ ไม่มีเชิ้ตขาว ไม่มีเนกไท) + กางเกงตำรวจจีบหน้าสีเดียวกับเสื้อ + หมวกตำรวจกะบัง + เข็มขัดตำรวจมีซองปืน/วิทยุ + รองเท้าหนังดำ",
+ "why": "บทดวงเมียน้อย: ตำรวจต้องไม่ใช่ชุดที่ใส่เชิ้ตขาวข้างใน 'ตำรวจคือตำรวจ'",
+ "files": {
+  "project": "%LOCALAPPDATA%\Tidmunz Studio\snapgen_data\cc5_bases\police\police_base.ccProject",
+  "iavatar": "%LOCALAPPDATA%\Tidmunz Studio\snapgen_data\cc5_bases\police\police_base.iAvatar",
+  "trousers_texture": "%LOCALAPPDATA%\Tidmunz Studio\snapgen_data\cc5_bases\police\trousers_tex.png",
+  "shoes_texture_black": "%LOCALAPPDATA%\Tidmunz Studio\snapgen_data\cc5_bases\police\shoes_black.png"
+ },
+ "parts": {
+  "cap": "G:\คอมพิวเตอร์เครื่องอื่นๆ\คอมพิวเตอร์ของฉัน\โมชั่น\Prop ของใช้ต่างๆ\เสื้อผ้า-ทรงผม\เสื้อผ้า\หมวก\mu - Pedestran Hat\police.ccAcc (หรือหมวกจากตัว Jaroen)",
+  "belt": "...\Reallusion Custom\Accessory\Others\Others(63).ccAcc",
+  "shoes": "...\Reallusion Custom\Cloth\Shoes\Professional Outfit\Leather Shoes\Leather shoes_C.ccShoes ย้อมดำ (cc5\swap_shoes.py + cc5\probes\set_tex.py)",
+  "shirt_source_model": "data\garments_3d\thai_police_shirt_long\ (GPT image + Hunyuan model.glb), ปรับด้วย blender\fit_police_top.py (sleeveonly=0.9 torso=1.04)",
+  "trousers_source": "ตัวละคร 101.iAvatar เรื่องผีที่น่ากลัวที่สุด (matching pressed khaki) ดึงด้วย cc5\probes\police_export.py pose=A-Pose แล้วใส่ที่ท่า A (ท่า T ทำให้ขากางเกงยืดเป็นแผ่น)"
+ },
+ "how_to_use": [
+  "ตัวละครตำรวจคนใหม่: เปิด police_base.ccProject ใน CC5 แล้วเปลี่ยนหัว/ผม/ใบหน้า (Headshot) ให้เป็นตัวละครนั้น หรือเอา .iAvatar ไปเปลี่ยนหัว",
+  "เสื้อผ้าชุดนี้ผู้ใช้ทำเป็นไฟล์ชุดเอง (ถ้ามี .ccCloth ให้ใส่ไว้ในโฟลเดอร์ cc5_bases\police)"
+ ],
+ "known_issues": ["ชายเสื้อยังไม่ได้ยัดในกางเกงจริง (ต้องตั้งลำดับชั้นผ้าใน CC5)", "เสื้อมีรอยขาวเล็กๆ ที่สีข้างขวา", "ไม่ได้ดูท่า A/ด้านข้างหลังเปลี่ยนสีกางเกง"],
+ "not_done": "ยังไม่ได้ใช้กับวินัยตำรวจฝึกหัด (12) ซึ่งยังเป็นชุดกากีย้อมสีเดิม"
+}

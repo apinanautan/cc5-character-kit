@@ -1,0 +1,52 @@
+[
+ {
+  "name": "เรนเดอร์เสื้อผ้าใน Custom (ของที่คุณทำเอง)",
+  "total": 338,
+  "count_files": [
+   "runs/wardrobe_scan/custom_batch_*/*.png"
+  ]
+ },
+ {
+  "name": "ของเสริมใน Custom (214)",
+  "total": 214,
+  "count_files": [
+   "runs/wardrobe_scan/custacc_batch_*/*.png"
+  ]
+ },
+ {
+  "name": "พร็อพใน Custom (158)",
+  "total": 158,
+  "count_files": [
+   "runs/wardrobe_scan/custprop_batch_*/*.png"
+  ]
+ },
+ {
+  "name": "ทรงผมใน Custom (158)",
+  "total": 158,
+  "count_files": [
+   "runs/wardrobe_scan/custhair_batch_*/[0-9][0-9][0-9].png"
+  ]
+ },
+ {
+  "name": "เปลี่ยนผมตัวละครดวงเมียน้อย + ส่งออกไดรฟ์",
+  "total": 20,
+  "value": 18
+ },
+ {
+  "name": "รูปล่าสุดตัวละครดวงเมียน้อย",
+  "total": 25,
+  "count_files": [
+   "runs/ดวงเมียน้อย_renders/[0-9][0-9][0-9].png"
+  ]
+ },
+ {
+  "name": "แคตตาล็อกทรงผม Custom (Luna)",
+  "total": 158,
+  "count_json_glob": "runs/wardrobe_scan/hair_catalog_part_*.json"
+ },
+ {
+  "name": "ตรวจฉากหน้าห้องเช่า (4 ขั้น)",
+  "total": 4,
+  "value": 4
+ }
+]

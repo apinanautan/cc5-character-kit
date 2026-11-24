@@ -1,0 +1,201 @@
+{
+  "title": "แม่สื่อหรือมือที่สาม",
+  "slug": "mae_sue_rue_mue_thi_sam",
+  "production_stage": "planning",
+  "era": "ประมาณ พ.ศ. 2539 (ปีอ้างอิงจากคำว่า 30 ปีที่แล้ว)",
+  "era_profile": "thai_urban_1990s",
+  "out_dir": "%USERPROFILE%\\Desktop\\แม่สื่อหรือมือที่สาม",
+  "source": "ภาพบรีฟนักแสดงที่ผู้ใช้ให้ในแชต",
+  "lead": "nongrak",
+  "cast_brief": {
+    "nongrak": {
+      "name": "นงรักษ์",
+      "role": "ตัวเอก หญิงสาวช่างเสริมสวย แต่งตัวสวย มีลูกชาย",
+      "age_brief": "สาววัยผู้ใหญ่",
+      "age_for_production": 28,
+      "age_source": "ผู้ใช้ยืนยันในแชต"
+    },
+    "son": {
+      "name": "ลูกชายของนงรักษ์",
+      "role": "ลูกชายของนงรักษ์",
+      "age_brief": "2–3 ขวบ"
+    },
+    "mother": {
+      "name": "แม่ของนงรักษ์",
+      "role": "แม่ของนงรักษ์และยายของเด็ก",
+      "age_brief": "มีอายุ"
+    },
+    "hayato": {
+      "name": "ฮายาโตะ",
+      "role": "ชายหนุ่มชาวญี่ปุ่น",
+      "age_brief": "ชายหนุ่ม"
+    },
+    "pimpha": {
+      "name": "พิมพา",
+      "role": "ช่างเสริมสวยที่ทำงานร่วมกับนงรักษ์",
+      "age_brief": "ยังไม่ระบุ"
+    },
+    "salon_staff": {
+      "name": "ช่างในร้าน",
+      "role": "ช่างผู้หญิงและผู้ชาย 2–3 คน เป็นกลุ่มนักแสดงสมทบ",
+      "age_brief": "ยังไม่ระบุ",
+      "count": [
+        2,
+        3
+      ]
+    },
+    "ek": {
+      "name": "เอก",
+      "role": "ชายหนุ่ม ลูกน้องในร้านตัดผมของนงรักษ์ บรีฟระบุว่าไม่ใช่ชายแท้",
+      "age_brief": "ชายหนุ่ม"
+    },
+    "european_boyfriend": {
+      "name": "แฟนใหม่ของนงรักษ์",
+      "role": "ชายหนุ่มชาวยุโรป",
+      "age_brief": "ชายหนุ่ม"
+    },
+    "salon_friends": {
+      "name": "เพื่อนในวงการเสริมสวย",
+      "role": "กลุ่มเพื่อนช่างเสริมสวยทั้งผู้หญิงและชายหลากหลายทางเพศ",
+      "age_brief": "ยังไม่ระบุ",
+      "count": null
+    }
+  },
+  "characters": {
+    "mae_sue_rue_mue_thi_sam_nongrak_28": {
+      "name": "นงรักษ์",
+      "sex": "female",
+      "age": 28,
+      "age_group": "adult",
+      "body": "neutral",
+      "folder": "นงรักษ์",
+      "occasion": "salon_work",
+      "social_tier": "urban_middle_class",
+      "notes": "ช่างเสริมสวย แต่งตัวเนี้ยบ มีลูกชายวัย 2–3 ขวบ ฉากร้านไทยราว พ.ศ. 2539",
+      "outfit": [
+        [
+          "LIB:Reallusion Custom/Cloth/Shirts/Shirts(33).ccCloth",
+          "cotton_cream"
+        ],
+        [
+          "LIB:เสื้อผ้า/กางเกง/trouser21.ccCloth",
+          null
+        ],
+        [
+          "43d0b5f155a2f835",
+          null
+        ]
+      ],
+      "hair_rgb": [
+        29,
+        22,
+        18
+      ],
+      "layer": "out",
+      "style": "ชุดทำงานร้านเสริมสวยไทยกลางทศวรรษ 1990",
+      "wardrobe_selection": "locked_script_grounded",
+      "face": {
+        "อายุ": "ประมาณ 28 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "นงรักษ์ ช่างเสริมสวยและแม่ลูกหนึ่ง",
+        "สีผิว": "ผิวสีน้ำผึ้งอ่อน มีรายละเอียดผิวตามวัย",
+        "ใบหน้า": "ใบหน้าคนไทยรูปไข่ แก้มมีน้ำหนักพอดี คิ้วธรรมชาติ ขอบปากชัด หน้าตรง ปากปิด ไม่มีเครื่องประดับหรือฟิลเตอร์",
+        "ทรงผม": "สำหรับภาพ Headshot เก็บผมให้เห็นหน้าผากและใบหูทั้งสองข้าง",
+        "prompt_name": "นงรักษ์"
+      }
+    },
+    "mae_sue_rue_mue_thi_sam_son_2": {
+      "name": "ลูกชายของนงรักษ์",
+      "sex": "male",
+      "age": 2,
+      "age_group": "baby",
+      "body": "baby",
+      "folder": "ลูกชายของนงรักษ์",
+      "occasion": "home",
+      "social_tier": "child",
+      "layer": "",
+      "age_source": "อายุแทนช่วง 2–3 ขวบในบรีฟ เลือกวัย 2 ขวบสำหรับรอบแรก",
+      "outfit": [
+        [
+          "LIB:เสื้อผ้า/Childrens Clothing Set 2/Character Creator 3 Template/Cloth/Shirts/Children's clothing Set_K1/T-shirt_K1.ccCloth",
+          "cotton_cream"
+        ],
+        [
+          "LIB:เสื้อผ้า/Childrens Clothing Set 2/Character Creator 3 Template/Cloth/Pants/Children's clothing Set_K1/Pants_K1.ccCloth",
+          "cotton_khaki"
+        ]
+      ],
+      "face": {
+        "อายุ": "ประมาณ 2 ขวบ วัยเตาะแตะ",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกชายของนงรักษ์",
+        "สีผิว": "ผิวไทยน้ำผึ้งอ่อน",
+        "ใบหน้า": "เด็กไทยวัยเตาะแตะ แก้มกลม หน้าตรง ปากปิด ใส่เสื้อยืดผ้าฝ้ายเรียบ",
+        "ทรงผม": "ผมเกรียนสั้นชิดหนังศีรษะแบบเด็กเล็ก ให้เห็นเป็นธรรมชาติและไม่สวมทรงผู้ใหญ่",
+        "prompt_name": "ลูกชายของนงรักษ์"
+      },
+      "staging_job": "mae_sue_rue_mue_thi_sam_son_2_wardrobe_retry1"
+    },
+    "mae_sue_rue_mue_thi_sam_mother_56": {
+      "name": "แม่ของนงรักษ์",
+      "sex": "female",
+      "age": 56,
+      "age_group": "middle",
+      "body": "neutral",
+      "folder": "แม่ของนงรักษ์",
+      "occasion": "home",
+      "social_tier": "urban_middle_class",
+      "age_source": "ประมาณเพื่อการผลิตจากบทว่าแม่มีอายุและลูกสาว 28 ปี ไม่ใช่อายุที่ระบุในบท",
+      "notes": "แม่และยายในครอบครัวไทยช่วง พ.ศ. 2539 ลุคอยู่บ้านเรียบง่าย",
+      "layer": "out",
+      "outfit": [
+        [
+          "LIB:Reallusion Custom/Cloth/Pants/Pants(36).ccCloth",
+          "cotton_cream"
+        ],
+        [
+          "LIB:Reallusion Custom/Cloth/Pants/Pants(29).ccCloth",
+          "cotton_navy"
+        ],
+        [
+          "LIB:!Converted STUFFS/Male Outfits/Oahu/Flip Flops.ccShoes",
+          null
+        ]
+      ],
+      "hair_rgb": [
+        100,
+        95,
+        90
+      ],
+      "face": {
+        "อายุ": "ประมาณ 56 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "แม่ของนงรักษ์และยายของเด็กวัย 2 ขวบ",
+        "สีผิว": "ผิวไทยน้ำผึ้งปานกลาง ผิวตามวัย ริ้วรอยธรรมชาติ",
+        "ใบหน้า": "รูปไข่ค่อนข้างกว้าง แก้มลดความอิ่มตามวัย ตาสองชั้นหลบใน ร่องแก้มและใต้ตาธรรมชาติ มีเค้าโครงสายสัมพันธ์กับนงรักษ์แต่เป็นคนละใบหน้า ปากปิด หน้าตรง",
+        "ทรงผม": "ผมดำแซมหงอกเก็บเรียบ เปิดหน้าผากและหูสองข้างสำหรับ Headshot",
+        "prompt_name": "แม่ของนงรักษ์"
+      }
+    }
+  },
+  "status": {
+    "mae_sue_rue_mue_thi_sam_nongrak_28": {
+      "plan": "ok",
+      "face": "ok",
+      "face_delivery": "ok",
+      "face_review_receipt": "b8hH8K8VVFTb",
+      "build": "review"
+    },
+    "mae_sue_rue_mue_thi_sam_son_2": {
+      "plan": "ok"
+    },
+    "mae_sue_rue_mue_thi_sam_mother_56": {
+      "plan": "ok"
+    }
+  },
+  "production_queue": [
+    "mae_sue_rue_mue_thi_sam_nongrak_28",
+    "mae_sue_rue_mue_thi_sam_son_2",
+    "mae_sue_rue_mue_thi_sam_mother_56"
+  ]
+}

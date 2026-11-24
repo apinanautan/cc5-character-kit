@@ -10,3 +10,8 @@ data/garments_3d/*/*.glb
 data/garments_3d/*/fit*.obj
 data/garments_3d/*/fit*.mtl
 data/garments_3d/*/tex_*.png
+
+# graft's local graph cache — regenerable, not committed (run `graft build`).
+graft/
+.agents/
+.claude/

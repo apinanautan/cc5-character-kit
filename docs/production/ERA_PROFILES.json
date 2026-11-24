@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "scope": "all_stories",
+  "required_axes": ["period", "social_tier", "occupation", "age_group", "scene", "occasion"],
+  "tiers": ["royalty", "nobility", "court_official", "merchant", "civil_servant", "urban_middle_class", "rural_commoner", "laborer", "clergy", "child", "mythic_deity", "mythic_asura"],
+  "profiles": {
+    "modern_urban": {"period": "contemporary", "face": "Thai individual identity matching script", "clothing": "current city casual, work or business as grounded by role", "jewelry": "age/job/occasion appropriate", "avoid": "generic European-stock face or business suits on everyone"},
+    "thai_urban_1990s": {"period": "Thailand in the 1990s (approximately 1990–1999)", "face": "Individual identity and age according to casting, preserve each character's stated nationality", "clothing": "Manually selected urban or town workwear and everyday clothing grounded in period references", "jewelry": "Role- and occasion-appropriate, checked against period references", "avoid": "Contemporary fashion cues or royal and ceremonial garments without story evidence"},
+    "modern_rural": {"period": "contemporary", "face": "individual Thai age-accurate casting", "clothing": "practical Thai everyday attire matching rural setting, income, work", "jewelry": "minimal/practical by role", "avoid": "royal regalia or Western office clothing on every villager"},
+    "early_rattanakosin_commoner": {"period": "early Rattanakosin", "face": "role-accurate Thai face", "clothing": "historically researched wraps and daily garments suited to occupation", "jewelry": "commoner-appropriate", "avoid": "royal crowns or modern Western clothing"},
+    "early_rattanakosin_royal": {"period": "early Rattanakosin", "face": "royal or court Thai identity", "clothing": "court-specific rank and ceremonial clothing; verify year", "jewelry": "historically grounded rank and ceremonial ornaments", "avoid": "universal generic fantasy crowns"},
+    "ayutthaya_commoner": {"period": "Ayutthaya", "face": "Thai/Southeast Asian appropriate to role", "clothing": "subperiod-appropriate commoner cloth by occupation", "jewelry": "class-appropriate", "avoid": "full royal regalia or contemporary clothing"},
+    "ayutthaya_royal": {"period": "Ayutthaya", "face": "court role Thai/Southeast Asian face", "clothing": "historical court and royal wear by precise subperiod", "jewelry": "rank-specific ceremonial ornaments", "avoid": "made-up historical certainty"},
+    "sukhothai_commoner": {"period": "Sukhothai", "face": "regional identity", "clothing": "researched ordinary dress by role", "jewelry": "minimal by class", "avoid": "Rattanakosin court dress"},
+    "sukhothai_royal": {"period": "Sukhothai", "face": "court identity matching story", "clothing": "period-grounded court attire", "jewelry": "rank-specific with sources", "avoid": "unverified crowns of unrelated eras"},
+    "thai_mythic_royal_fantasy": {"period": "fantasy, not historical reconstruction", "face": "Thai cinematic actors or mythical beings by canon", "clothing": "elaborate Thai mythic motifs only for rank and scene", "jewelry": "royal/divine/naga/asura design as plot states", "avoid": "calling fantasy accessories historically authentic"},
+    "ancient_thai_unspecified": {"period": "historical period not yet identified", "face": "grounded Thai look", "clothing": "generic restrained historical styling pending clarification", "jewelry": "hold rank-specific crowns", "avoid": "inventing a dynasty or ceremony"}
+  },
+  "rule": "Era, rank, role, setting and scene must all match. Historical royalty and ordinary ancient villagers are distinct."
+}

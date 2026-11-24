@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "asset_failures": [
+    {
+      "asset_path": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Fringe Hairstyle.rlHair",
+      "asset_size_bytes": 75026208,
+      "asset_mtime_ns": 1677600154614000000,
+      "status": "BLOCKED_CONFIRMED_MISSING_TEXTURES",
+      "evidence": "CC5 missing-three-TGA dialog on 2026-11-14 during kid hair load",
+      "missing_textures": [
+        "A:\\3D\\projects\\reallusion\\male hair\\textures\\tex_short_straight_hair_id.tga",
+        "A:\\3D\\projects\\reallusion\\male hair\\textures\\tex_short_straight_hair_root.tga",
+        "A:\\3D\\projects\\reallusion\\male hair\\textures\\tex_short_straight_hair_specular.tga"
+      ]
+    }
+  ]
+}

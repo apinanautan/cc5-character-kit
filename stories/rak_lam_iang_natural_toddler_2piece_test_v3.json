@@ -1,0 +1,163 @@
+{
+  "title": "รักลำเอียง — ทดลองชุดเด็กวัยหนึ่งปี แบบธรรมชาติ v3",
+  "genre": "นิทานแนวปัจจุบัน",
+  "source": "ใบงานจากภาพของผู้ใช้",
+  "scenes": [
+    "บ้านนายสมหวัง/ครอบครัวมีทรัพย์สิน",
+    "ภายในบ้าน",
+    "ในหมู่บ้าน",
+    "บริษัทใหญ่ที่ทำงาน",
+    "ร้านอาหาร",
+    "งานเลี้ยงเปิดกิจการที่กรุงเทพฯ",
+    "โรงพยาบาล",
+    "บ้านพิชัยในกรุงเทพฯ"
+  ],
+  "phases": [
+    "โมเดลและฉาก",
+    "คีย์เฟรม",
+    "แก้ไข/ตัดต่อ/ส่ง"
+  ],
+  "notes": [
+    "ชุดผู้ป่วยเป็นชุดเปลี่ยนของวารีและจีไล",
+    "ลูกชายสองวัยเป็นบุคคลเดียวแต่คนละโมเดล",
+    "ชาวบ้านยังไม่ระบุจำนวน",
+    "ยังไม่มี iAvatar ที่ export เสร็จ",
+    "Trial of 1-year-old normal T-shirt and shorts on Baby base; must visually check fit and mesh before approval."
+  ],
+  "slug": "rak_lam_iang_natural_toddler_2piece_test_v3",
+  "era": "คนไทยต่างจังหวัดยุคปัจจุบัน และบางฉากในเมืองกรุงเทพฯ",
+  "era_profile": "modern_rural",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\รักลำเอียง\\ฉบับธรรมชาติ\\แก้งาน_เด็กอ่อน_v3",
+  "original_cast_notes": [
+    {
+      "id": "suda",
+      "name": "สุดา",
+      "group": "1",
+      "relation": "พี่สาวของวารี",
+      "age": "วัยสาว",
+      "gender": "female",
+      "appearance": "สวย ผิวขาว แต่งตัวมีสไตล์"
+    },
+    {
+      "id": "waree",
+      "name": "วารี",
+      "group": "2",
+      "relation": "น้องสาวของสุดา",
+      "age": "วัยสาว",
+      "gender": "female",
+      "appearance": "น่ารัก ผิวขาว แต่งตัวธรรมดา"
+    },
+    {
+      "id": "somwang",
+      "name": "นายสมหวัง",
+      "group": "3",
+      "relation": "พ่อของสุดาและวารี",
+      "age": "60-65",
+      "gender": "male",
+      "appearance": "มีที่ดินทรัพย์สิน ครอบครัวมีฐานะพอสมควร"
+    },
+    {
+      "id": "jilai",
+      "name": "นางจีไล",
+      "group": "3 / 3.1",
+      "relation": "แม่ของสุดาและวารี",
+      "age": "60-65",
+      "gender": "female",
+      "appearance": "ครอบครัวมีฐานะพอสมควร"
+    },
+    {
+      "id": "villager_01",
+      "name": "ชาวบ้าน (ตัวแทนคนแรก)",
+      "group": "4",
+      "relation": "ตัวประกอบในหมู่บ้าน",
+      "age": "ยังไม่กำหนด",
+      "gender": "unspecified",
+      "appearance": "จำนวนคนยังไม่ได้ระบุ"
+    },
+    {
+      "id": "pichai",
+      "name": "พิชัย",
+      "group": "5",
+      "relation": "สามีของสุดา",
+      "age": "วัยผู้ใหญ่",
+      "gender": "male",
+      "appearance": "นักธุรกิจอยู่กรุงเทพฯ"
+    },
+    {
+      "id": "manop",
+      "name": "มานพ",
+      "group": "6",
+      "relation": "สามีของวารี",
+      "age": "วัยผู้ใหญ่",
+      "gender": "male",
+      "appearance": "ข้าราชการ"
+    },
+    {
+      "id": "son_infant",
+      "name": "ลูกชายสุดาและพิชัย — ทารก",
+      "group": "7",
+      "relation": "ลูกชายสุดากับพิชัย",
+      "age": "ทารก",
+      "gender": "male",
+      "appearance": "หนึ่งช่วงวัยของลูกชายคนเดียวกัน"
+    },
+    {
+      "id": "son_7",
+      "name": "ลูกชายสุดาและพิชัย — 7 ขวบ",
+      "group": "7",
+      "relation": "ลูกชายสุดากับพิชัย",
+      "age": "7 ขวบ",
+      "gender": "male",
+      "appearance": "ช่วงวัย 7 ขวบของคนเดียวกับทารก"
+    }
+  ],
+  "characters": {
+    "rak_lam_iang_natural_son_infant_fix3": {
+      "name": "ลูกชายสุดาและพิชัย — ทารก",
+      "sex": "male",
+      "age": 1,
+      "age_group": "baby",
+      "age_source": "ประมาณการสำหรับการสร้าง 3D",
+      "body": "baby",
+      "folder": "ลูกชายวัยหนึ่งปี",
+      "notes": "ลูกชายสุดากับพิชัย; หนึ่งช่วงวัยของลูกชายคนเดียวกัน",
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\เสื้อผ้า\\ชาย ทั่วไป\\เด็กชาย 1\\Top.ccCloth",
+          "cotton_cream"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\เสื้อผ้า\\ชาย ทั่วไป\\เด็กชาย 1\\Shorts.ccCloth",
+          "cotton_khaki"
+        ]
+      ],
+      "layer": "",
+      "style": "ลูกชายสุดาและพิชัยตอนอายุประมาณ 1 ปี",
+      "social_tier": "child",
+      "fabric_designs": [],
+      "face": {
+        "อายุ": "ประมาณ 1 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกชายสุดาและพิชัยตอนอายุประมาณ 1 ปี",
+        "สีผิว": "ผิวขาวเหลืองอ่อนแบบทารก",
+        "ทรงผม": "ศีรษะทารก",
+        "ใบหน้า": "แก้มกลมอิ่ม โครงหน้าทารกไทย ดวงตากลมอ่อนโยน",
+        "prompt_name": "ลูกชายสุดาและพิชัย — ทารก"
+      },
+      "story_character_id": "son_infant",
+      "role": "ลูกชายสุดากับพิชัย",
+      "natural_design_brief": "ทารกไทยศีรษะธรรมชาติ ไม่มีผมสวมปลอมและไม่มีทรงผู้ใหญ่",
+      "natural_clothing_brief": "ชุดเด็กอ่อนเรียบเหมาะวัย",
+      "previous_story_actor": "rak_lam_iang_son_infant"
+    }
+  },
+  "status": {},
+  "cast_stage": "ready_to_generate_thai_faces",
+  "constraints": [
+    "All real Thai face portraits generated via Tidmunz and Headshot 3; no stock Western face fallback.",
+    "Ages other than explicit 7 years and parents 60-65 are approximations pending cast review.",
+    "One villager is a representative; original script does not establish the total count."
+  ],
+  "source_story": "rak_lam_iang",
+  "production_policy": "natural_Thai_art_direction_no_random_no_autopass"
+}

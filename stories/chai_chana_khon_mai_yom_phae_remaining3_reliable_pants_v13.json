@@ -1,0 +1,163 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13",
+  "title": "ชัยชนะของคนไม่ยอมแพ้ — แก้ 3 ตัวตกค้างจากรูปจริง V13",
+  "era_profile": "modern_rural",
+  "era": "เรื่องชาวบ้านไทยราว พ.ศ. 2519–2529 เสื้อกับกางเกงปกติ ไม่ใช้โจงกระเบนหรือผ้าพันอก",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\ชัยชนะของคนไม่ยอมแพ้\\3ตัวตกค้าง_ตรวจชุดจริง_v13",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13_twin_a_young": {
+      "name": "ลูกแฝด A — วัยหนุ่ม",
+      "person_id": "twin_a",
+      "sex": "male",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar short sleeves shirt\\Close_collar_short_sleeves_shirt_A.ccCloth",
+          null
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
+          null
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ลูกแฝด A — วัยหนุ่ม: Layered Pixie ทรงผมเรียบตามอายุ/ฐานะ; ตัวหลักแยกทรง",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกแฝด A · ลูกแฝดชายของอำพรและชัยยศ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวคล้ายอำพร คิ้วตรงคล้ายชัยยศ แนวกรามมน"
+      },
+      "folder": "7.ลูกแฝด",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Layered Pixie.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Twin A: faded striped short sleeve button casual shirt; loose older blue jeans, working-class 1980s young man; visibly different from brother and Twin B; simple shirt+trousers, rural Thailand circa 1976-1986; shirt and trousers, no costume, no pajama; technical fit unverified"
+    },
+    "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13_twin_b_young": {
+      "name": "ลูกแฝด B — วัยหนุ่ม",
+      "person_id": "twin_b",
+      "sex": "male",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar long sleeves shirt\\Open_collar_long_sleeves_shirt_C.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Painter\\Pants.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Flip Flops.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ลูกแฝด B — วัยหนุ่ม: Side-swept Fringe ทรงผมเรียบตามอายุ/ฐานะ; ตัวหลักแยกทรง",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกแฝด B · ลูกแฝดชายของอำพรและชัยยศ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวคล้ายอำพร คิ้วตรงคล้ายชัยยศ แนวกรามชัดกว่าแฝด A"
+      },
+      "folder": "7.ลูกแฝด",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Twin B: blue checkered long sleeve shirt and dark straight slacks, everyday young Thai villager, contrast with Twin A; simple shirt+trousers, rural Thailand circa 1976-1986; shirt and trousers, no costume, no pajama; technical fit unverified"
+    },
+    "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13_namphueng_later": {
+      "name": "น้ำผึ้ง — ช่วงน้ำหนักเพิ่มมากและมีโรคเรื้อรัง",
+      "person_id": "namphueng",
+      "sex": "female",
+      "age": 45,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Sleeves tops\\Sleeves Tops_A.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Professional Outfit\\Slacks\\Slacks_A.ccCloth",
+          null
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 02.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "น้ำผึ้ง — ช่วงน้ำหนักเพิ่มมากและมีโรคเรื้อรัง: 02_Wavy short Bob ทรงผมเรียบตามอายุ/ฐานะ; ตัวหลักแยกทรง",
+      "face": {
+        "อายุ": "45 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้ำผึ้ง · หญิงสาวที่มาซื้ออิฐ กิจการรับเหมาสร้างบ้าน · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ใบหน้ากลม คิ้วโค้ง รักษารูปตาเดิมเมื่อสัดส่วนเปลี่ยน"
+      },
+      "folder": "8.น้ำผึ้งและสามี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\02_Wavy short Bob.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "merchant",
+      "body_preset": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Avatar Preset\\Body Morph\\CC3+\\Heavy Female.ccAvatarPreset",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "น้ำผึ้ง 45: modest light loose 3/4 sleeve collarless blouse and sober straight dark trousers; middle-aged merchant, no pajamas, preserve older face; simple shirt+trousers, rural Thailand circa 1976-1986; shirt and trousers, no costume, no pajama; technical fit unverified"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13_twin_a_young": {
+      "wardrobe_rework": "PENDING_3D_BUILD",
+      "visual_qa": "PENDING"
+    },
+    "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13_twin_b_young": {
+      "wardrobe_rework": "PENDING_3D_BUILD",
+      "visual_qa": "PENDING"
+    },
+    "chai_chana_khon_mai_yom_phae_remaining3_reliable_pants_v13_namphueng_later": {
+      "wardrobe_rework": "PENDING_3D_BUILD",
+      "visual_qa": "PENDING"
+    }
+  },
+  "approved_shared_clothes": [
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth"
+  ],
+  "wardrobe_reuse_reason": "ผู้ใช้กำหนดให้ใช้ชิ้นผ้าพันอกและโจงกระเบนร่วมกัน เปลี่ยนเป็นสีเอิร์ธโทน สร้างใบหน้าและโมเดลใหม่",
+  "source_story_slug": "chai_chana_khon_mai_yom_phae_remaining3_visual_v12",
+  "wardrobe_revision": "everyday_2525_v1"
+}

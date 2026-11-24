@@ -1,0 +1,209 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae_maincast_repair_v4",
+  "title": "ชัยชนะของคนไม่ยอมแพ้ — แก้เสื้อขาด/กินกัน รุ่นตรวจ V4",
+  "era_profile": "modern_rural",
+  "era": "เรื่องชาวบ้านไทยราว พ.ศ. 2519–2529 เสื้อกับกางเกงปกติ ไม่ใช้โจงกระเบนหรือผ้าพันอก",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\ชัยชนะของคนไม่ยอมแพ้\\ตัวละครหลัก_แก้เสื้อเสีย_v4",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_chaiyot_young": {
+      "name": "ชัยยศ — วัยหนุ่ม",
+      "person_id": "chaiyot",
+      "sex": "male",
+      "age": 23,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Casual Flannel\\Shirt 01.ccCloth",
+          "chana_main_v3_chaiyot_young_top"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+          "chana_main_v3_chaiyot_young_pant"
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "07_Classic side part; distinct among eight primary characters",
+      "face": {
+        "อายุ": "23 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ชัยยศ · คนรักของอำพร ครอบครัวมีร้านขายของ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "คิ้วตรง สันจมูกชัด และแนวกรามคม"
+      },
+      "folder": "4.ชัยยศ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\07_Classic side part.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "merchant",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Casual Flannel button shirt, intact sleeves/hem; merchant / early 1980s Thai everyday blouse/shirt and trousers; no ripped/cropped sleeves"
+    },
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_father_main": {
+      "name": "พ่ออำพร — วัยผู้ใหญ่",
+      "person_id": "father",
+      "sex": "male",
+      "age": 42,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Farmer\\Shirt 01.ccCloth",
+          "chana_main_v3_father_main_top"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+          "chana_main_v3_father_main_pant"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 02.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "Classic short; distinct among eight primary characters",
+      "face": {
+        "อายุ": "42 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "พ่ออำพร · รับจ้างทั่วไป · คนไทย",
+        "สีผิว": "ผิวสองสีคล้ำแดด",
+        "ใบหน้า": "กรามเหลี่ยมนุ่ม คิ้วเข้ม"
+      },
+      "folder": "2.พ่อและแม่อำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "laborer",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Farmer button shirt, long untorn hem and full sleeves; laborer / early 1980s Thai everyday blouse/shirt and trousers; no ripped/cropped sleeves"
+    },
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_sister_1_young": {
+      "name": "น้องอำพรคนที่ 1 — วัยสาว",
+      "person_id": "sister_1",
+      "sex": "female",
+      "age": 22,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar short sleeves shirt\\Close_collar_short_sleeves_shirt_A.ccCloth",
+          "chana_main_v3_sister_1_young_top"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(9).ccCloth",
+          "chana_main_v3_sister_1_young_pant"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Flip Flops.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "Natural low ponytail, no abnormal high antenna pigtails",
+      "face": {
+        "อายุ": "22 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 1 · น้องสาวคนโตในกลุ่มน้องสามคน · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวแบบครอบครัว ใบหน้ากลมกว่าอำพร"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\08_Ponytail with bangs.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Closed-collar short-sleeved cotton shirt, modest coverage; natural low ponytail / early 1980s Thai everyday blouse/shirt and trousers; no ripped/cropped sleeves"
+    },
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_sister_2_young": {
+      "name": "น้องอำพรคนที่ 2 — วัยสาว",
+      "person_id": "sister_2",
+      "sex": "female",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar long sleeves shirt\\Close_collar_long_sleeves_shirt_B.ccCloth",
+          "chana_main_v3_sister_2_young_top"
+        ],
+        [
+          "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Others\\Mila Outfit Set\\Jeans.ccCloth",
+          "chana_main_v3_sister_2_young_pant"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Flip Flops.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "03_Cute braid long hair; distinct among eight primary characters",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 2 · น้องสาวคนที่สอง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ารูปไข่ยาว คิ้วตรง"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\03_Cute braid long hair.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner",
+      "wardrobe_selection": "locked_script_grounded",
+      "style": "Cotton long-sleeve everyday blouse in place of hospital-like scrub top / early 1980s Thai everyday blouse/shirt and trousers; no ripped/cropped sleeves"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_chaiyot_young": {
+      "wardrobe_rework": "PENDING_ACTUAL_VISUAL_QA",
+      "visual_qa": "PENDING"
+    },
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_father_main": {
+      "wardrobe_rework": "PENDING_ACTUAL_VISUAL_QA",
+      "visual_qa": "PENDING"
+    },
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_sister_1_young": {
+      "wardrobe_rework": "PENDING_ACTUAL_VISUAL_QA",
+      "visual_qa": "PENDING"
+    },
+    "chai_chana_khon_mai_yom_phae_maincast_repair_v4_sister_2_young": {
+      "wardrobe_rework": "PENDING_ACTUAL_VISUAL_QA",
+      "visual_qa": "PENDING"
+    }
+  },
+  "approved_shared_clothes": [
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth"
+  ],
+  "wardrobe_reuse_reason": "ผู้ใช้กำหนดให้ใช้ชิ้นผ้าพันอกและโจงกระเบนร่วมกัน เปลี่ยนเป็นสีเอิร์ธโทน สร้างใบหน้าและโมเดลใหม่",
+  "source_story_slug": "chai_chana_khon_mai_yom_phae_maincast_unique_v3",
+  "wardrobe_revision": "maincast_mesh_fault_repair_v4"
+}

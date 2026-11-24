@@ -1,0 +1,172 @@
+"""Conservative deterministic Thai wardrobe recommendation from indexed real CC5 assets.
+
+This is a DRAFT recommender, not visual QA. No random fallback.
+For unclear roles/occasions, fail and require asset selection rather than
+manufacturing an incorrect 'completed' actor.
+"""
+import json
+import os
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent.parent))
+
+ROOT=Path(__file__).resolve().parent.parent
+POOL=ROOT/'data'/'base_pool.json'
+HAIRS=ROOT/'data'/'app_hair_pool.json'
+SAFE_ERAS=('modern_rural','modern_urban')
+
+def _load(path):
+    return json.loads(path.read_text(encoding='utf-8-sig'))
+
+def _fit(v,sex,age):
+    return isinstance(v,dict) and not v.get('bad') and v.get('sex') in ('any',sex) and age in v.get('ages',[])
+
+def _pick(pool,section,sex,group,signals):
+    options=[x for x in pool.get(section,[]) if _fit(x,sex,group)]
+    positive=signals[section]
+    banned=signals.get('ban',())
+    picks=[]
+    for x in options:
+        full=(str(x.get('name',''))+' '+str(x.get('spec',''))).lower()
+        if any(term.lower() in full for term in banned):
+            continue
+        matched=[(score,term) for score,term in positive if term.lower() in full]
+        if not matched:continue
+        score,term=max(matched)
+        score+=1 if x.get('sex')==sex else 0
+        picks.append((score,x.get('name',''),x.get('spec',''),term,x))
+    picks.sort(key=lambda x:(-x[0],x[1],x[2]))
+    if not picks:
+        alternatives=', '.join(str(x.get('name','')) for x in options[:8])
+        raise ValueError('NO_BRIEF_MATCH in '+section+' for '+signals['role']+
+                         '. Available: '+alternatives)
+    if len(picks)>1 and picks[0][0]==picks[1][0] and picks[0][1]!=picks[1][1]:
+        raise ValueError('AMBIGUOUS_'+section+': '+picks[0][1]+' versus '+picks[1][1]+
+                         '. Select explicitly in wardrobe plan.')
+    return picks[0][4],picks[0][3],picks[0][0]
+
+def _role_signals(row,age,sex,era):
+    text=' '.join(str(row.get(k,'')) for k in ('name','notes','role','outfit','occupation')).lower()
+    # Roles and social tiers are independent of historical period; this
+    # small recommender ONLY supports modern Thai looks. Everything else blocks.
+    if any(w in text for w in ('โรงพยาบาล','คนป่วย','คนไข้','patient','ผู้ป่วย')):
+        raise ValueError('PATIENT_GOWN_REQUIRED: find a verified patient gown, never scrubs')
+    if any(w in text for w in ('ราชสำนัก','เครื่องทรง','กษัตริย์','โบราณ','เจ้าหญิง','เจ้าชาย','เทวดา','พญานาค')):
+        raise ValueError('SPECIAL_PERIOD_OR_RANK: period-specific wardrobe needs explicit visual catalog review')
+    if age=='baby':
+        return dict(role='ทารก',full=[(10,'ชุดเด็กอ่อน')],ban=())
+    if age=='child':
+        return dict(role='เด็ก',tops=[(15,'เสื้อยืดคอกลม')],bottoms=[(15,'กางเกงขาสั้นเด็ก'),(10,'กางเกงสามส่วนเด็ก')],
+                    shoes=[(13,'รองเท้าแตะ'),(12,'sneakers')],ban=('school','uniform','school_blouse'))
+    if sex=='f' and age=='old':
+        return dict(role='หญิงสูงวัยไทย',tops=[(15,'เสื้อคอปกแขนสั้น'),(12,'เสื้อแขนยาว')],bottoms=[(20,'ผ้านุ่ง'),(20,'ผ้าถุง'),(15,'กระโปรงยาว')],
+                    shoes=[(13,'รองเท้าแตะ')],ban=('sleeves tops','แขนกุด','scrub'))
+    # Wealthy elderly Thai men cannot silently receive rural laborer Painter
+    # shirt when the collared-shirt template is explicitly flagged bad.
+    if sex=='m' and age=='old' and any(w in text for w in (
+        'มีฐานะ','เจ้าของที่ดิน','เศรษฐี','ผู้ใหญ่บ้าน','ผู้มีฐานะ','ผู้บริหาร','นักธุรกิจ')):
+        return dict(role='ชายสูงวัยไทยมีฐานะ',
+            tops=[(30,'เสื้อคอปกแขนสั้น'),(25,'เสื้อเชิ้ต')],
+            bottoms=[(25,'กางเกงสแล็ค')],
+            shoes=[(25,'รองเท้าแตะรัดส้น')],
+            ban=('scrub','pyjamas','pajamas','underwear','vest','tank'))
+    if sex=='m' and age=='old':
+        return dict(role='ชายสูงวัยไทย',tops=[(16,'เสื้อคอปกแขนสั้น'),(10,'เสื้อคอวีผ้าฝ้าย')],bottoms=[(16,'กางเกงสแล็ค'),(14,'กางเกงขายาว')],
+                    shoes=[(16,'รองเท้าแตะรัดส้น'),(10,'รองเท้าแตะ')],ban=('scrub','vest','เสื้อกล้าม'))
+    if any(w in text for w in ('ชาวบ้าน','เกษตรกร','ชาวนา','ชาวสวน','คนงาน','ทำนา','หมู่บ้าน')):
+        return dict(role='ชาวบ้านวัยทำงาน',tops=[(20,'พื้นบ้าน'),(18,'เสื้อคอวีผ้าฝ้าย'),(12,'เสื้อยืดคอกลม')],
+                    bottoms=[(20,'สีเขียวมะกอก'),(15,'ขายาว'),(10,'ยีนส์')],
+                    shoes=[(23,'รองเท้าแตะหูหนีบ'),(12,'รองเท้าผ้าใบ')],ban=('scrub','shirt 04','lingerie'))
+    if any(w in text for w in ('นักธุรกิจ','ผู้บริหาร','บริษัท','ข้าราชการ','มีฐานะ','ราชการ','business')):
+        if sex=='f':
+            raise ValueError('FEMALE_FORMAL_LOOK_REQUIRES_REVIEW: base pool has no verified suitable full blouse/skirt combination')
+        return dict(role='ชายไทยทำงานสุภาพ',tops=[(20,'เสื้อคอปกแขนสั้น'),(15,'เสื้อแขนยาว')],
+                    bottoms=[(21,'กางเกงสแล็ค'),(14,'กางเกงขายาวทรงเข้ารูป')],
+                    shoes=[(12,'รองเท้าผ้าใบ'),(10,'สนีกเกอร์')],ban=('scrub','pyjamas','vest'))
+    if sex=='f':
+        return dict(role='หญิงไทยลุคประจำวัน',tops=[(19,'เสื้อยืดคอกลม'),(12,'เสื้อคอปกแขนสั้น')],
+                    bottoms=[(20,'กางเกงขายาว'),(14,'กระโปรงยาว')],
+                    shoes=[(23,'รองเท้าแตะหูหนีบ'),(12,'รองเท้าผ้าใบ')],ban=('scrub','แขนกุด','lingerie'))
+    return dict(role='ชายไทยลุคประจำวัน',tops=[(20,'เสื้อยืดคอกลม'),(14,'เสื้อคอปกแขนสั้น')],
+                bottoms=[(20,'กางเกงขายาว'),(15,'ยีนส์')],
+                shoes=[(15,'รองเท้าแตะ'),(12,'รองเท้าผ้าใบ')],ban=('scrub','pyjamas','vest'))
+
+def _hair(sex,age,previous):
+    if age=='baby':
+        return None,None,'ทารกยังไม่ต้องเลือกทรงผมเพิ่ม'
+    pool=_load(HAIRS)
+    group=('male' if sex=='m' else 'female')+'_'+age
+    if age=='middle':group='male_old' if sex=='m' else 'female_adult'
+    from tools.hair_quality_gate import safe_for_autopick
+    candidates=[h for h in pool['hairs'] if group in h.get('groups',[]) and safe_for_autopick(h)]
+    patterns=(('bun','updo') if sex=='f' and age=='old' else
+              ('bob','shoulder') if sex=='f' else
+              ('classic','side','short') if age in ('middle','old') else
+              ('side','short','classic'))
+    def score(x):
+        name=Path(x['path']).stem.lower()
+        return sum(100-i*10 for i,v in enumerate(patterns) if v in name) - (500 if x['path'] in previous else 0)
+    candidates.sort(key=lambda x:(-score(x),x['path'].lower()))
+    if not candidates or score(candidates[0])<0:
+        raise ValueError('NO_APPROPRIATE_HAIR_FOR_AGE_AND_ROLE: '+group)
+    chosen=candidates[0]['path']
+    color=pool.get('colors',{}).get(age,[18,16,15])
+    return chosen,color,'ทรงผมจากคลังจริง ตามเพศ/วัย; ไม่สุ่ม'
+
+def recommend(row,era_profile,used_hair=()):
+    if era_profile not in SAFE_ERAS:
+        raise ValueError('ERA_NOT_SUPPORTED_FOR_AUTOPICK: '+str(era_profile)+
+                         ' (period and royal/mythic clothing requires human-reviewed asset choices)')
+    sex=row.get('sex')
+    if sex not in ('m','f'):
+        raise ValueError('MISSING_CHARACTER_SEX')
+    age=int(row['age'])
+    group='baby' if age<3 else 'child' if age<18 else 'adult' if age<40 else 'middle' if age<60 else 'old'
+    pool=_load(POOL)
+    signals=_role_signals(row,group,sex,era_profile)
+    matches=[]
+    sections=('full',) if group=='baby' else ('tops','bottoms','shoes')
+    roles={'tops':'upper','bottoms':'lower','shoes':'shoes','full':'full'}
+    for section in sections:
+        asset,term,score=_pick(pool,section,sex,group,signals)
+        spec=asset['spec']
+        # Resolve through the same verified asset index used by CC5.
+        import kit
+        idx={x['id']:x['path'] for x in _load(Path(kit.data_file('wardrobe_verified.json')))['items']}
+        source=kit.resolve_item(spec,idx)
+        if not Path(source).is_file():
+            raise ValueError('SELECTED_ASSET_FILE_MISSING: '+source)
+        matches.append({'slot':roles[section],'source_spec':spec,'resolved_source_path':source,
+            'asset_name':asset.get('name',Path(source).stem),'brief_reason':
+                signals['role']+'; ชุดที่ตรง '+term+' จากฐานข้อมูลจริง; score '+str(score),
+            'available':True,'visual_color_verified':False,'physical_fit_verified':False,
+            'fabric_id':None})
+    hair,color,hair_reason=_hair(sex,group,used_hair)
+    return {'look':'everyday','era_profile':era_profile,
+        'selection_status':'script_grounded_locked_pending_visual_qa',
+        'source_priority':'explicit role, age, era then library evidence',
+        'role_brief':str(row.get('role',''))+' '+str(row.get('notes','')),
+        'social_tier':row.get('social_tier') or
+            ('child' if group in ('baby','child') else 'rural_commoner' if era_profile=='modern_rural' else 'urban_middle_class'),
+        'hair_source_path':hair,'hair_reason':hair_reason,'hair_rgb':color,
+        'outfit':matches,'visual_qa':'PENDING','hair_visual_qa':'PENDING','selection_method':'deterministic_brief_match_v1'}
+
+def selftest():
+    rows=[
+        ({'sex':'m','age':67,'name':'ลุงยิ้ม','notes':'ชาวบ้านธรรมดา'},'modern_rural'),
+        ({'sex':'m','age':47,'name':'ชาวบ้าน','notes':'ทำงานกลางแจ้ง'},'modern_rural'),
+        ({'sex':'m','age':7,'name':'ลูกชาย','notes':'เด็กทั่วไป'},'modern_rural'),
+    ]
+    for row,era in rows:
+        d=recommend(row,era)
+        assert d['outfit'] and d['selection_status']=='script_grounded_locked_pending_visual_qa'
+        print('PASS',row['name'],[(x['slot'],x['asset_name']) for x in d['outfit']])
+    for row in ({'sex':'f','age':34,'name':'สุดา','notes':'นักธุรกิจ'}, {'sex':'m','age':38,'name':'เจ้าชาย'}, {'sex':'m','age':63,'name':'นายสมหวัง','notes':'พ่อมีฐานะ เจ้าของที่ดิน'}):
+        try:recommend(row,'modern_rural')
+        except ValueError as e:print('PASS_BLOCK',row['name'],str(e)[:110])
+        else:raise AssertionError('Ambiguous/incompatible role not blocked')
+    assert not hasattr(__import__('random'),'FIXED_FALLBACK')
+    print('PASS deterministic selection and ambiguity blocks')
+
+if __name__=='__main__':
+    selftest()

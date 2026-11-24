@@ -1,0 +1,1068 @@
+{
+  "slug": "chai_chana_khon_mai_yom_phae",
+  "title": "ชัยชนะของคนไม่ยอมแพ้",
+  "era_profile": "ancient_thai_unspecified",
+  "era": "นิทานไทยย้อนยุคตามภาพกำกับของผู้ใช้ ใช้ผ้าพันอกและโจงกระเบนชาวบ้าน",
+  "out_dir": "C:\\Users\\Apinan\\Desktop\\ชัยชนะของคนไม่ยอมแพ้",
+  "characters": {
+    "chai_chana_khon_mai_yom_phae_amphon_pilot_young": {
+      "name": "อำพร — วัยสาว",
+      "person_id": "amphon",
+      "sex": "female",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "source_brief",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมดำเกล้ามวยเรียบสำหรับทำงาน",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "อำพร · ลูกสาวคนโตของครอบครัวรายได้น้อย · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "โครงหน้ารูปไข่ คิ้วทรงยาว แนวกรามมน"
+      },
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "social_tier": "laborer",
+      "layer": "",
+      "occasion": "brickworks",
+      "folder": "1.อำพร"
+    },
+    "chai_chana_khon_mai_yom_phae_amphon_middle": {
+      "name": "อำพร — วัยกลางคน",
+      "person_id": "amphon",
+      "sex": "female",
+      "age": 42,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมมวยต่ำเรียบ",
+      "face": {
+        "อายุ": "42 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "อำพร · ลูกสาวคนโตของครอบครัวรายได้น้อย · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "โครงหน้ารูปไข่ คิ้วทรงยาว แนวกรามมน",
+        "ref": "chai_chana_khon_mai_yom_phae_amphon_pilot_young"
+      },
+      "folder": "1.อำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "laborer"
+    },
+    "chai_chana_khon_mai_yom_phae_father_main": {
+      "name": "พ่ออำพร — วัยผู้ใหญ่",
+      "person_id": "father",
+      "sex": "male",
+      "age": 42,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นแสกข้าง",
+      "face": {
+        "อายุ": "42 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "พ่ออำพร · รับจ้างทั่วไป · คนไทย",
+        "สีผิว": "ผิวสองสีคล้ำแดด",
+        "ใบหน้า": "กรามเหลี่ยมนุ่ม คิ้วเข้ม"
+      },
+      "folder": "2.พ่อและแม่อำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "laborer"
+    },
+    "chai_chana_khon_mai_yom_phae_mother_main": {
+      "name": "แม่อำพร — วัยผู้ใหญ่",
+      "person_id": "mother",
+      "sex": "female",
+      "age": 38,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมรวบต่ำ",
+      "face": {
+        "อายุ": "38 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "แม่อำพร · รับจ้างทั่วไป · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "โครงหน้ารูปไข่ คิ้วทรงยาวคล้ายอำพร"
+      },
+      "folder": "2.พ่อและแม่อำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "laborer"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_1_young": {
+      "name": "น้องอำพรคนที่ 1 — วัยสาว",
+      "person_id": "sister_1",
+      "sex": "female",
+      "age": 22,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมบ๊อบปลายงุ้ม",
+      "face": {
+        "อายุ": "22 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 1 · น้องสาวคนโตในกลุ่มน้องสามคน · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวแบบครอบครัว ใบหน้ากลมกว่าอำพร"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Shared Templates\\Hair\\Group\\Hair\\Aiden Hairstyle\\A line bob long hair.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_1_middle": {
+      "name": "น้องอำพรคนที่ 1 — วัยกลางคน",
+      "person_id": "sister_1",
+      "sex": "female",
+      "age": 41,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมบ๊อบเลยคาง",
+      "face": {
+        "อายุ": "41 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 1 · น้องสาวคนโตในกลุ่มน้องสามคน · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวแบบครอบครัว ใบหน้ากลมกว่าอำพร",
+        "ref": "chai_chana_khon_mai_yom_phae_sister_1_young"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_2_young": {
+      "name": "น้องอำพรคนที่ 2 — วัยสาว",
+      "person_id": "sister_2",
+      "sex": "female",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมเปียเดียวต่ำ",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 2 · น้องสาวคนที่สอง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ารูปไข่ยาว คิ้วตรง"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Half up short.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_2_middle": {
+      "name": "น้องอำพรคนที่ 2 — วัยกลางคน",
+      "person_id": "sister_2",
+      "sex": "female",
+      "age": 39,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมรวบหางม้าต่ำ",
+      "face": {
+        "อายุ": "39 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้องอำพรคนที่ 2 · น้องสาวคนที่สอง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ารูปไข่ยาว คิ้วตรง",
+        "ref": "chai_chana_khon_mai_yom_phae_sister_2_young"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_brother_young": {
+      "name": "น้องอำพรคนที่ 3 — วัยหนุ่ม",
+      "person_id": "brother",
+      "sex": "male",
+      "age": 18,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นปัดออกข้าง",
+      "face": {
+        "อายุ": "18 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "น้องอำพรคนที่ 3 · น้องชายคนเล็ก · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ากว้าง คิ้วยาว จมูกปลายมน"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_brother_middle": {
+      "name": "น้องอำพรคนที่ 3 — วัยกลางคน",
+      "person_id": "brother",
+      "sex": "male",
+      "age": 37,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นแสกหลวม",
+      "face": {
+        "อายุ": "37 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "น้องอำพรคนที่ 3 · น้องชายคนเล็ก · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ากว้าง คิ้วยาว จมูกปลายมน",
+        "ref": "chai_chana_khon_mai_yom_phae_brother_young"
+      },
+      "folder": "3.น้องอำพร",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_chaiyot_young": {
+      "name": "ชัยยศ — วัยหนุ่ม",
+      "person_id": "chaiyot",
+      "sex": "male",
+      "age": 23,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นหวีข้าง",
+      "face": {
+        "อายุ": "23 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ชัยยศ · คนรักของอำพร ครอบครัวมีร้านขายของ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "คิ้วตรง สันจมูกชัด และแนวกรามคม"
+      },
+      "folder": "4.ชัยยศ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Slicked Back.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "merchant"
+    },
+    "chai_chana_khon_mai_yom_phae_chaiyot_middle": {
+      "name": "ชัยยศ — วัยกลางคน",
+      "person_id": "chaiyot",
+      "sex": "male",
+      "age": 45,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นหวีข้าง มีผมหงอกที่ขมับ",
+      "face": {
+        "อายุ": "45 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ชัยยศ · คนรักของอำพร ครอบครัวมีร้านขายของ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "คิ้วตรง สันจมูกชัด และแนวกรามคม",
+        "ref": "chai_chana_khon_mai_yom_phae_chaiyot_young"
+      },
+      "folder": "4.ชัยยศ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Slicked Back.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "out",
+      "social_tier": "merchant"
+    },
+    "chai_chana_khon_mai_yom_phae_chaiyot_brother_main": {
+      "name": "น้องชายชัยยศ — วัยหนุ่ม",
+      "person_id": "chaiyot_brother",
+      "sex": "male",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นเซตธรรมชาติ",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "น้องชายชัยยศ · น้องชายชัยยศ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "คิ้วตรงคล้ายชัยยศ ใบหน้ากว้างกว่า"
+      },
+      "folder": "5.น้องชายชัยยศ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_worker_a_main": {
+      "name": "คนงานโรงอิฐ A — วัยผู้ใหญ่",
+      "person_id": "worker_a",
+      "sex": "male",
+      "age": 35,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมเกรียน",
+      "face": {
+        "อายุ": "35 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "คนงานโรงอิฐ A · คนงานโรงอิฐ · คนไทย",
+        "สีผิว": "ผิวสองสีคล้ำแดด",
+        "ใบหน้า": "กรามกว้าง ใบหน้าทรงเหลี่ยม"
+      },
+      "folder": "6.คนงานโรงอิฐ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\10_Male pattern bald.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "laborer"
+    },
+    "chai_chana_khon_mai_yom_phae_worker_b_main": {
+      "name": "คนงานโรงอิฐ B — วัยหนุ่ม",
+      "person_id": "worker_b",
+      "sex": "male",
+      "age": 26,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมหยักสั้น",
+      "face": {
+        "อายุ": "26 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "คนงานโรงอิฐ B · คนงานโรงอิฐ · คนไทย",
+        "สีผิว": "ผิวสองสีคล้ำแดด",
+        "ใบหน้า": "หน้ายาว โหนกแก้มชัด"
+      },
+      "folder": "6.คนงานโรงอิฐ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "laborer"
+    },
+    "chai_chana_khon_mai_yom_phae_worker_c_main": {
+      "name": "คนงานโรงอิฐ C — วัยกลางคน",
+      "person_id": "worker_c",
+      "sex": "male",
+      "age": 47,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_charcoal"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นมีหงอกประปราย",
+      "face": {
+        "อายุ": "47 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ชายไทยวัย 47 ปี คนงานชายโรงอิฐ ทำงานกลางแจ้ง",
+        "สีผิว": "ผิวสองสีคล้ำแดด",
+        "ใบหน้า": "ใบหน้าผู้ชายวัย 47 ปี กรามเหลี่ยมปานกลาง คางกว้าง คิ้วหนาตรง กะโหลกและสันคิ้วชัด ผมรองทรงเกรียนสั้น มีตอหนวดอ่อน ไม่แต่งหน้า"
+      },
+      "folder": "6.คนงานโรงอิฐ",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Classic short.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "out",
+      "social_tier": "laborer"
+    },
+    "chai_chana_khon_mai_yom_phae_twin_a_young": {
+      "name": "ลูกแฝด A — วัยหนุ่ม",
+      "person_id": "twin_a",
+      "sex": "male",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นปัดซ้าย",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกแฝด A · ลูกแฝดชายของอำพรและชัยยศ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวคล้ายอำพร คิ้วตรงคล้ายชัยยศ แนวกรามมน"
+      },
+      "folder": "7.ลูกแฝด",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Slicked Back.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_twin_b_young": {
+      "name": "ลูกแฝด B — วัยหนุ่ม",
+      "person_id": "twin_b",
+      "sex": "male",
+      "age": 20,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "cotton_olive"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมสั้นปัดขวา",
+      "face": {
+        "อายุ": "20 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "ลูกแฝด B · ลูกแฝดชายของอำพรและชัยยศ · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ตาทรงยาวคล้ายอำพร คิ้วตรงคล้ายชัยยศ แนวกรามชัดกว่าแฝด A"
+      },
+      "folder": "7.ลูกแฝด",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder 3 - Edgy\\HAIR BUILDER\\Hair\\Group\\Hair Builder 3 - Edgy\\Side-swept Fringe.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_namphueng_young": {
+      "name": "น้ำผึ้ง — วัยสาว",
+      "person_id": "namphueng",
+      "sex": "female",
+      "age": 26,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมแสกข้างรวบเรียบ",
+      "face": {
+        "อายุ": "26 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้ำผึ้ง · หญิงสาวที่มาซื้ออิฐ กิจการรับเหมาสร้างบ้าน · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ใบหน้ากลม คิ้วโค้ง รักษารูปตาเดิมเมื่อสัดส่วนเปลี่ยน"
+      },
+      "folder": "8.น้ำผึ้งและสามี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair Builder CC4\\Reallusion Custom\\Hair\\Group\\Hair\\Hair Builder\\Half up short.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "merchant"
+    },
+    "chai_chana_khon_mai_yom_phae_namphueng_later": {
+      "name": "น้ำผึ้ง — วัย 45 ปี",
+      "person_id": "namphueng",
+      "sex": "female",
+      "age": 45,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "cotton_rust"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "cotton_khaki"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "ผมรวบหลวม",
+      "face": {
+        "อายุ": "45 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "น้ำผึ้ง · หญิงสาวที่มาซื้ออิฐ กิจการรับเหมาสร้างบ้าน · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "คงเอกลักษณ์ใบหน้าและรูปตาจากวัยสาว ปรับตามวัย 45 ปี รูปร่างปกติ",
+        "ref": "chai_chana_khon_mai_yom_phae_namphueng_young"
+      },
+      "folder": "8.น้ำผึ้งและสามี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\09_Classic bun.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "merchant"
+    },
+    "chai_chana_khon_mai_yom_phae_namphueng_husband_main": {
+      "name": "สามีน้ำผึ้ง — วัยผู้ใหญ่",
+      "person_id": "namphueng_husband",
+      "sex": "male",
+      "age": 30,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+          "chana_muted_928472"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+          "chana_muted_616e7a"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "Tapered Quiff Hairstyle",
+      "face": {
+        "อายุ": "30 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "สามีน้ำผึ้ง · สามีน้ำผึ้ง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ายาว คิ้วโค้ง ต่างจากชัยยศ"
+      },
+      "folder": "8.น้ำผึ้งและสามี",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair\\Tapered Quiff Hairstyle.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "out",
+      "social_tier": "merchant"
+    },
+    "chai_chana_khon_mai_yom_phae_neighbor_a_main": {
+      "name": "เพื่อนบ้านน้ำผึ้ง A — วัยผู้ใหญ่",
+      "person_id": "neighbor_a",
+      "sex": "female",
+      "age": 35,
+      "age_group": "adult",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "chana_muted_8f777e"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "chana_muted_696e76"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "Side part wavy",
+      "face": {
+        "อายุ": "35 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "เพื่อนบ้านน้ำผึ้ง A · เพื่อนข้างบ้านน้ำผึ้ง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "ใบหน้ารูปไข่ โหนกแก้มสูง"
+      },
+      "folder": "10.เพื่อนข้างบ้านน้ำผึ้ง",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Hair2\\Group\\Hair\\Side part wavy.rlHair",
+      "hair_rgb": [
+        20,
+        17,
+        14
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner"
+    },
+    "chai_chana_khon_mai_yom_phae_neighbor_b_main": {
+      "name": "เพื่อนบ้านน้ำผึ้ง B — วัยกลางคน",
+      "person_id": "neighbor_b",
+      "sex": "female",
+      "age": 49,
+      "age_group": "middle",
+      "age_source": "provisional",
+      "body": "neutral",
+      "required": true,
+      "outfit": [
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+          "chana_muted_718181"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+          "chana_muted_8b7c76"
+        ],
+        [
+          "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+          null
+        ]
+      ],
+      "hair_design_brief": "08_Ponytail with bangs",
+      "face": {
+        "อายุ": "49 ปี",
+        "เพศ": "หญิง",
+        "บทบาท": "เพื่อนบ้านน้ำผึ้ง B · เพื่อนข้างบ้านน้ำผึ้ง · คนไทย",
+        "สีผิว": "ผิวสองสี",
+        "ใบหน้า": "หน้ากลม คิ้วสั้น"
+      },
+      "folder": "10.เพื่อนข้างบ้านน้ำผึ้ง",
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\ทรงผม\\Prime Hairstyles\\Prime Hairstyles\\Shared Templates\\Hair\\Group\\Hair\\Prime Hairstyles\\08_Ponytail with bangs.rlHair",
+      "hair_rgb": [
+        31,
+        28,
+        25
+      ],
+      "layer": "",
+      "social_tier": "rural_commoner"
+    }
+  },
+  "status": {
+    "chai_chana_khon_mai_yom_phae_amphon_pilot_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_amphon_middle": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_father_main": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_mother_main": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_1_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_1_middle": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_2_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_sister_2_middle": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_brother_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_brother_middle": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_chaiyot_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_chaiyot_middle": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_chaiyot_brother_main": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_worker_a_main": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_worker_b_main": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_worker_c_main": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_twin_a_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_twin_b_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_namphueng_young": {
+      "face": "ok: face PNG verified",
+      "build": "ok: CC5 project and render verified",
+      "export": "ok: iAvatar reopened; visual QA pending"
+    },
+    "chai_chana_khon_mai_yom_phae_namphueng_later": {},
+    "chai_chana_khon_mai_yom_phae_namphueng_husband_main": {},
+    "chai_chana_khon_mai_yom_phae_neighbor_a_main": {},
+    "chai_chana_khon_mai_yom_phae_neighbor_b_main": {}
+  },
+  "approved_shared_clothes": [
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Oahu\\Sandals 01.ccShoes",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(1).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน(2).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+    "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\เสื้อชาวบ้าน(1).ccCloth"
+  ],
+  "wardrobe_reuse_reason": "ผู้ใช้กำหนดให้ใช้ชิ้นผ้าพันอกและโจงกระเบนร่วมกัน เปลี่ยนเป็นสีเอิร์ธโทน สร้างใบหน้าและโมเดลใหม่"
+}

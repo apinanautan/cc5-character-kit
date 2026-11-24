@@ -1,370 +1,846 @@
 {
- "note": "BASE pool (2026-10-24): CC5 templates + Plain Base, adult sizes; looks come from AI fabrics. Old library outfits only for children/baby/school.",
- "tops": [
-  {
-   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
-   "name": "เสื้อยืดคอกลม",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
-   "name": "เสื้อคอวีผ้าฝ้าย",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
-   "name": "เสื้อแขนกุดหญิง",
-   "sex": "f",
-   "ages": [
-    "adult",
-    "middle"
-   ],
-   "fabric": true
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Close_collar_short_sleeves_shirt_Base.ccCloth",
-   "name": "เสื้อคอปกแขนสั้น",
-   "sex": "any",
-   "ages": [
-    "middle",
-    "old"
-   ],
-   "fabric": true,
-   "bad": true,
-   "note": "มีกระดุม"
-  },
-  {
-   "spec": "63b0a4",
-   "name": "เสื้อยืดคอกลม",
-   "sex": "any",
-   "ages": [
-    "child"
-   ],
-   "fabric": true
-  }
- ],
- "bottoms": [
-  {
-   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
-   "name": "ยีนส์",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle"
-   ],
-   "fabric": false,
-   "layer": "out",
-   "kind": "trousers"
-  },
-  {
-   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim fit pants.ccCloth",
-   "name": "กางเกงขายาวทรงเข้ารูป",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "trousers"
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
-   "name": "กางเกงสแล็ค",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "trousers"
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
-   "name": "กางเกงคาร์โก้",
-   "sex": "m",
-   "ages": [
-    "adult",
-    "middle"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "trousers"
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Scrub Pants_Base.ccCloth",
-   "name": "กางเกงขายาวหลวม",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "trousers"
-  },
-  {
-   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Skirts\\Knee length skirt.ccCloth",
-   "name": "กระโปรงยาวคลุมเข่า",
-   "sex": "f",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "sarong"
-  },
-  {
-   "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Skirts\\Plain Base\\Professional Outfit\\Pencil skirt_Base.ccCloth",
-   "name": "กระโปรงทรงสอบ",
-   "sex": "f",
-   "ages": [
-    "adult",
-    "middle",
-    "old"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "sarong"
-  },
-  {
-   "spec": "9b1c4f",
-   "name": "กางเกงขาสั้นเด็ก",
-   "sex": "m",
-   "ages": [
-    "child"
-   ],
-   "fabric": false,
-   "layer": "out",
-   "kind": "shorts"
-  },
-  {
-   "spec": "0ce08ad1",
-   "name": "กางเกงสามส่วนเด็ก",
-   "sex": "any",
-   "ages": [
-    "child"
-   ],
-   "fabric": true,
-   "layer": "out",
-   "kind": "shorts"
-  }
- ],
- "full": [
-  {
-   "spec": "0352c8",
-   "name": "ชุดเด็กอ่อน",
-   "sex": "any",
-   "ages": [
-    "baby"
-   ]
-  }
- ],
- "shoes": [
-  {
-   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
-   "name": "รองเท้าผ้าใบ",
-   "sex": "any",
-   "ages": [
-    "adult",
-    "middle"
-   ]
-  },
-  {
-   "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
-   "name": "สนีกเกอร์",
-   "sex": "any",
-   "ages": [
-    "adult"
-   ]
-  },
-  {
-   "spec": "MO:Oahu\\Flip Flops.ccShoes",
-   "name": "รองเท้าแตะหูหนีบ",
-   "sex": "any",
-   "ages": [
-    "child",
-    "adult",
-    "middle",
-    "old"
-   ]
-  },
-  {
-   "spec": "MO:Oahu\\Sandals 02.ccShoes",
-   "name": "รองเท้าแตะรัดส้น",
-   "sex": "any",
-   "ages": [
-    "middle",
-    "old"
-   ]
-  },
-  {
-   "spec": "MO:Oahu\\Flip Flops.ccShoes",
-   "name": "รองเท้าแตะหูหนีบ",
-   "sex": "any",
-   "ages": [
-    "child"
-   ]
-  }
- ],
- "clash": [
-  [
-   "63b0a4",
-   "MO:Owen\\Pants.ccCloth"
+  "note": "Reusable base clothing and compatible outfit options. No story is currently active.",
+  "tops": [
+    {
+      "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shirts\\Basic T-shirts.ccCloth",
+      "name": "เสื้อยืดคอกลม",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\V Neck Scrub Shirt_Base.ccCloth",
+      "name": "เสื้อคอวีผ้าฝ้าย",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Sleeves Tops_Base.ccCloth",
+      "name": "เสื้อแขนกุดหญิง",
+      "sex": "f",
+      "ages": [
+        "adult",
+        "middle"
+      ],
+      "fabric": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Close_collar_short_sleeves_shirt_Base.ccCloth",
+      "name": "เสื้อคอปกแขนสั้น",
+      "sex": "any",
+      "ages": [
+        "middle",
+        "old"
+      ],
+      "fabric": true,
+      "bad": true,
+      "note": "มีกระดุม"
+    },
+    {
+      "spec": "63b0a4",
+      "name": "เสื้อยืดคอกลม",
+      "sex": "any",
+      "ages": [
+        "child"
+      ],
+      "fabric": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 02.ccCloth",
+      "name": "เสื้อแขนยาวคอกลมสีเทาหม่นลายด่าง มีกระดุมคอเล็ก ชายเสื้อสั้นเหนือสะโพก",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 02.ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 03.ccCloth",
+      "name": "เสื้อแขนยาวคอกลมสีน้ำตาลเทาเรียบ มีกระดุมคอเล็ก",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 03.ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 04.ccCloth",
+      "name": "เสื้อแขนยาวคอกลมสีแดงอิฐผ้าทอหยาบ มีกระดุมคอเล็ก",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Lift & Haul\\Shirt 04.ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Painter\\Shirt.ccCloth",
+      "name": "เสื้อคอวีผ้าฝ้ายสีครีมตัวยาวคลุมสะโพก ชายและขอบคอสีขาว ทรงเสื้อพื้นบ้านหลวม",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Painter\\Shirt.ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Others\\Others(6).ccCloth",
+      "name": "เสื้อคลุมแขนสั้นสีเทาเขียวเข้ม อกเปิดผูกเอวด้วยผ้าคาดสีชมพูแดง ทรงเสื้อหม้อฮ่อม/ผ้าพันเอว",
+      "sex": "m",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Others\\Others(6).ccCloth"
+    }
   ],
-  [
-   "MO:Billybob\\Vest.ccCloth",
-   "MO:Pyjamas\\Pants 01.ccCloth"
+  "bottoms": [
+    {
+      "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim Jeans.ccCloth",
+      "name": "ยีนส์",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle"
+      ],
+      "fabric": false,
+      "layer": "out",
+      "kind": "trousers"
+    },
+    {
+      "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Pants\\Slim fit pants.ccCloth",
+      "name": "กางเกงขายาวทรงเข้ารูป",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "trousers"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Slacks_Base.ccCloth",
+      "name": "กางเกงสแล็ค",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "trousers"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Cargo Pants_Base.ccCloth",
+      "name": "กางเกงคาร์โก้",
+      "sex": "m",
+      "ages": [
+        "adult",
+        "middle"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "trousers"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Plain Base\\Professional Outfit\\Scrub Pants_Base.ccCloth",
+      "name": "กางเกงขายาวหลวม",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "trousers"
+    },
+    {
+      "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Skirts\\Knee length skirt.ccCloth",
+      "name": "กระโปรงยาวคลุมเข่า",
+      "sex": "f",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "sarong"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Skirts\\Plain Base\\Professional Outfit\\Pencil skirt_Base.ccCloth",
+      "name": "กระโปรงทรงสอบ",
+      "sex": "f",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "sarong"
+    },
+    {
+      "spec": "9b1c4f",
+      "name": "กางเกงขาสั้นเด็ก",
+      "sex": "m",
+      "ages": [
+        "child"
+      ],
+      "fabric": false,
+      "layer": "out",
+      "kind": "shorts"
+    },
+    {
+      "spec": "0ce08ad1",
+      "name": "กางเกงสามส่วนเด็ก",
+      "sex": "any",
+      "ages": [
+        "child"
+      ],
+      "fabric": true,
+      "layer": "out",
+      "kind": "shorts"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Blood Hunter\\Pants.ccCloth",
+      "name": "กางเกงขายาวสีกากี คาดเข็มขัดหนัง พับปลายขา ทรงสุภาพ",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Blood Hunter\\Pants.ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Leisure\\Shorts.ccCloth",
+      "name": "กางเกงขาสั้นคาร์โก้สีเขียวเข้ม เหนือเข่า มีกระเป๋าข้าง",
+      "sex": "m",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Leisure\\Shorts.ccCloth",
+      "kind": "shorts",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Owen\\Pants.ccCloth",
+      "name": "กางเกงขายาวคาร์โก้สีเทาซีดมอซอ ปลายขาจั๊ม ผ้าเก่าซีด",
+      "sex": "m",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Owen\\Pants.ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Painter\\Pants.ccCloth",
+      "name": "กางเกงขายาวสีเขียวมะกอกเรียบ ทรงตรง",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Painter\\Pants.ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Pop Style\\Pants.ccCloth",
+      "name": "กางเกงขายาวสีดำ คาดเข็มขัด พับปลายขา",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Pop Style\\Pants.ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(4).ccCloth",
+      "name": "กางเกงขาก๊วยสามส่วนสีเขียวเข้มเกือบดำ ทรงชาวบ้าน",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants(4).ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(9).ccCloth",
+      "name": "กางเกงสามส่วนสีฟ้าอ่อนเรียบ ทรงหลวม (พื้นผิวเรียบแบน)",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants(9).ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\กระโปรง(1).ccCloth",
+      "name": "ผ้านุ่งยาวสีน้ำตาลเรียบ แบบผ้าถุงสอบ ยาวคลุมน่อง ขอบเอวยาง",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\กระโปรง(1).ccCloth",
+      "kind": "sarong",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\กระโปรง.ccCloth",
+      "name": "ผ้าถุงสีแดงอิฐลายทอ มีแถบผ้าลายทองกลางตัว ยาวคลุมข้อเท้า ทรงไทยโบราณ",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\กระโปรง.ccCloth",
+      "kind": "sarong",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(18).ccCloth",
+      "name": "ผ้านุ่งพันตัวสีฟ้าเทอร์ควอยซ์ จับจีบพับทบที่เอว ชายผ้าเฉียง ยาวใต้เข่า",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(18).ccCloth",
+      "kind": "sarong",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(2).ccCloth",
+      "name": "ผ้าถุงยาวสีดำเรียบ ทรงท่อน ยาวคลุมข้อเท้า (พื้นผิวดำแบน)",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(2).ccCloth",
+      "kind": "sarong",
+      "layer": "out"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(28).ccCloth",
+      "name": "กางเกงขาก๊วยสามส่วนสีน้ำตาลเขียวมะกอก จับจีบย่นด้านหลัง ปลายขารัด ทรงชาวบ้านโบราณ",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(28).ccCloth",
+      "kind": "trousers",
+      "layer": "out"
+    }
   ],
-  [
-   "MO:Sweat\\Top 01.ccCloth",
-   "MO:Pyjamas\\Pants 01.ccCloth"
+  "full": [
+    {
+      "spec": "0352c8",
+      "name": "ชุดเด็กอ่อน",
+      "sex": "any",
+      "ages": [
+        "baby"
+      ]
+    }
   ],
-  [
-   "b621bb",
-   "9b1c4f"
+  "shoes": [
+    {
+      "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Canvas Shoes.ccShoes",
+      "name": "รองเท้าผ้าใบ",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle"
+      ]
+    },
+    {
+      "spec": "C:\\Users\\Public\\Documents\\Reallusion\\Reallusion Templates\\Cloth\\Shoes\\Sport sneakers.ccShoes",
+      "name": "สนีกเกอร์",
+      "sex": "any",
+      "ages": [
+        "adult"
+      ]
+    },
+    {
+      "spec": "MO:Oahu\\Flip Flops.ccShoes",
+      "name": "รองเท้าแตะหูหนีบ",
+      "sex": "any",
+      "ages": [
+        "child",
+        "adult",
+        "middle",
+        "old"
+      ]
+    },
+    {
+      "spec": "MO:Oahu\\Sandals 02.ccShoes",
+      "name": "รองเท้าแตะรัดส้น",
+      "sex": "any",
+      "ages": [
+        "middle",
+        "old"
+      ]
+    },
+    {
+      "spec": "MO:Oahu\\Flip Flops.ccShoes",
+      "name": "รองเท้าแตะหูหนีบ",
+      "sex": "any",
+      "ages": [
+        "child"
+      ]
+    }
   ],
-  [
-   "b621bb",
-   "47ae0874"
-  ]
- ],
- "school": {
-  "note": "untested combo (2026-10-24): white collared shirt + navy skirt / shorts; b621bb + 9b1c4f shorts CLASH on adult body (shorts fall off) -> secondary boys use navy trousers 47ae0874; b621bb also drops 47ae0874 -> boys 13+ use Farmer Shirt 02 dyed white; girls 13+: AI uniform worn by Suda (girl_set, no fabric)",
-  "shirt": "b621bb",
-  "skirt": "RC:Pants\\Pants(15).ccCloth",
-  "shorts": "9b1c4f",
-  "shoes_m": "MO:Casual 03\\Shoes.ccShoes",
-  "shoes_f": "MO:Dash\\Shoes 01.ccShoes",
-  "trousers_m": "47ae0874",
-  "shirt_m": "MO:Farmer\\Shirt 02.ccCloth",
-  "girl_set": [
-   "RC:Pants\\school_skirt_ai.ccCloth",
-   "RC:Shirts\\school_blouse_ai.ccCloth",
-   "RC:Others\\school_socks_f.ccCloth",
-   "RC:Shoes\\school_shoes.ccShoes"
-  ]
- },
- "old_thai": [
-  {
-   "spec": "RC:Pants\\โจงกระเบน.ccCloth",
-   "type": "bottom",
-   "name": "โจงกระเบนสีน้ำตาลเข้ม",
-   "sex": "m",
-   "note": "ผ้าเรียบ สั้นเหนือเข่า — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
+  "clash": [
+    [
+      "63b0a4",
+      "MO:Owen\\Pants.ccCloth"
+    ],
+    [
+      "MO:Billybob\\Vest.ccCloth",
+      "MO:Pyjamas\\Pants 01.ccCloth"
+    ],
+    [
+      "MO:Sweat\\Top 01.ccCloth",
+      "MO:Pyjamas\\Pants 01.ccCloth"
+    ],
+    [
+      "b621bb",
+      "9b1c4f"
+    ],
+    [
+      "b621bb",
+      "47ae0874"
+    ]
+  ],
+  "school": {
+    "note": "untested combo (2026-10-24): white collared shirt + navy skirt / shorts; b621bb + 9b1c4f shorts CLASH on adult body (shorts fall off) -> secondary boys use navy trousers 47ae0874; b621bb also drops 47ae0874 -> boys 13+ use Farmer Shirt 02 dyed white; girls 13+: AI uniform worn by Suda (girl_set, no fabric)",
+    "shirt": "b621bb",
+    "skirt": "RC:Pants\\Pants(15).ccCloth",
+    "shorts": "9b1c4f",
+    "shoes_m": "MO:Casual 03\\Shoes.ccShoes",
+    "shoes_f": "MO:Dash\\Shoes 01.ccShoes",
+    "trousers_m": "47ae0874",
+    "shirt_m": "MO:Farmer\\Shirt 02.ccCloth",
+    "girl_set": [
+      "RC:Pants\\school_skirt_ai.ccCloth",
+      "RC:Shirts\\school_blouse_ai.ccCloth",
+      "RC:Others\\school_socks_f.ccCloth",
+      "RC:Shoes\\school_shoes.ccShoes"
+    ]
   },
-  {
-   "spec": "RC:Pants\\โจงกระเบน(1).ccCloth",
-   "type": "bottom",
-   "name": "โจงกระเบนสีดำ ขายาวถึงหน้าแข้ง",
-   "sex": "m",
-   "note": "ใส่กับเสื้อชาวบ้าน(1) ได้ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Pants\\โจงกระเบน(2).ccCloth",
-   "type": "bottom",
-   "name": "โจงกระเบนสีน้ำตาลส้มลายผ้า",
-   "sex": "m",
-   "note": "ใส่กับเสื้อชาวนาได้ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 1.ccCloth",
-   "type": "bottom",
-   "name": "โจงกระเบนสีแดงเลือดหมู",
-   "sex": "any",
-   "note": "ใส่เสื้อทับไม่ได้ (CC5 ถอดออก) ใช้แบบไม่ใส่เสื้อ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 2.ccCloth",
-   "type": "bottom",
-   "name": "โจงกระเบนผ้าไหมสีเขียวมีลาย (คนมีเงิน)",
-   "sex": "m",
-   "note": "เสื้อยาว (Painter) ทะลุ ใช้เสื้อสั้น — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 3.ccCloth",
-   "type": "bottom",
-   "name": "โจงกระเบนสีน้ำตาลเก่ามอมแมม",
-   "sex": "m",
-   "note": "ใส่เสื้อทับไม่ได้ (CC5 ถอดออก) ใช้แบบไม่ใส่เสื้อ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Shirts\\เสื้อชาวบ้าน.ccCloth",
-   "type": "top",
-   "name": "เสื้อชาวบ้านแขนสั้นกระดุมจีน สีน้ำตาล",
-   "sex": "m",
-   "note": "ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Shirts\\เสื้อชาวบ้าน(1).ccCloth",
-   "type": "top",
-   "name": "เสื้อชาวบ้านแขนสั้นกระดุมจีน สีเขียวขี้ม้า",
-   "sex": "m",
-   "note": "ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Shirts\\เสื้อชาวนา.ccCloth",
-   "type": "top",
-   "name": "เสื้อชาวนาสีน้ำเงิน คาดผ้าแดงที่เอว",
-   "sex": "m",
-   "note": "ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "kid": false
-  },
-  {
-   "spec": "RC:Shirts\\เสื้อคนแก่.ccCloth",
-   "type": "top",
-   "name": "เสื้อกั๊กผ้าเก่าสีเทาฟ้า",
-   "sex": "m",
-   "note": "ไม่สวย ยับเป็นก้อน — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
-   "bad": true,
-   "kid": false
-  },
-  {
-   "spec": "RC:Shirts\\เสื้อแขนยาวขาว).ccCloth",
-   "type": "top",
-   "name": "เสื้อผู้หญิงสีขาวแขนสามส่วน กระดุมจีน",
-   "sex": "f",
-   "note": ""
-  },
-  {
-   "spec": "RC:Shirts\\เสื้อหม้อฮ่อม.ccCloth",
-   "type": "top",
-   "name": "เสื้อหม้อฮ่อมแขนสามส่วนสีกรมท่า (หญิงสูงวัย)",
-   "sex": "f",
-   "note": ""
-  },
-  {
-   "spec": "RC:Pants\\Pants(28).ccCloth",
-   "type": "bottom",
-   "name": "กระโปรงจีบรอบสีกรมท่า (ไม่ใช่ผ้าถุง)",
-   "sex": "f",
-   "note": "ชื่อเดิมในคลังผิด"
-  }
- ]
+  "old_thai": [
+    {
+      "spec": "RC:Pants\\โจงกระเบน.ccCloth",
+      "type": "bottom",
+      "name": "โจงกระเบนสีน้ำตาลเข้ม",
+      "sex": "m",
+      "note": "ผ้าเรียบ สั้นเหนือเข่า — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Pants\\โจงกระเบน(1).ccCloth",
+      "type": "bottom",
+      "name": "โจงกระเบนสีดำ ขายาวถึงหน้าแข้ง",
+      "sex": "m",
+      "note": "ใส่กับเสื้อชาวบ้าน(1) ได้ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Pants\\โจงกระเบน(2).ccCloth",
+      "type": "bottom",
+      "name": "โจงกระเบนสีน้ำตาลส้มลายผ้า",
+      "sex": "m",
+      "note": "ใส่กับเสื้อชาวนาได้ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 1.ccCloth",
+      "type": "bottom",
+      "name": "โจงกระเบนสีแดงเลือดหมู",
+      "sex": "any",
+      "note": "ใส่เสื้อทับไม่ได้ (CC5 ถอดออก) ใช้แบบไม่ใส่เสื้อ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 2.ccCloth",
+      "type": "bottom",
+      "name": "โจงกระเบนผ้าไหมสีเขียวมีลาย (คนมีเงิน)",
+      "sex": "m",
+      "note": "เสื้อยาว (Painter) ทะลุ ใช้เสื้อสั้น — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Pants\\โจงกระเบน 1\\โจงกระเบน 3.ccCloth",
+      "type": "bottom",
+      "name": "โจงกระเบนสีน้ำตาลเก่ามอมแมม",
+      "sex": "m",
+      "note": "ใส่เสื้อทับไม่ได้ (CC5 ถอดออก) ใช้แบบไม่ใส่เสื้อ — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Shirts\\เสื้อชาวบ้าน.ccCloth",
+      "type": "top",
+      "name": "เสื้อชาวบ้านแขนสั้นกระดุมจีน สีน้ำตาล",
+      "sex": "m",
+      "note": "ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Shirts\\เสื้อชาวบ้าน(1).ccCloth",
+      "type": "top",
+      "name": "เสื้อชาวบ้านแขนสั้นกระดุมจีน สีเขียวขี้ม้า",
+      "sex": "m",
+      "note": "ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Shirts\\เสื้อชาวนา.ccCloth",
+      "type": "top",
+      "name": "เสื้อชาวนาสีน้ำเงิน คาดผ้าแดงที่เอว",
+      "sex": "m",
+      "note": "ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "kid": false
+    },
+    {
+      "spec": "RC:Shirts\\เสื้อคนแก่.ccCloth",
+      "type": "top",
+      "name": "เสื้อกั๊กผ้าเก่าสีเทาฟ้า",
+      "sex": "m",
+      "note": "ไม่สวย ยับเป็นก้อน — ใส่ตัวเด็กไม่ได้: ผ้ายับเป็นปุ่ม (2026-10-29)",
+      "bad": true,
+      "kid": false
+    },
+    {
+      "spec": "RC:Shirts\\เสื้อแขนยาวขาว).ccCloth",
+      "type": "top",
+      "name": "เสื้อผู้หญิงสีขาวแขนสามส่วน กระดุมจีน",
+      "sex": "f",
+      "note": ""
+    },
+    {
+      "spec": "RC:Shirts\\เสื้อหม้อฮ่อม.ccCloth",
+      "type": "top",
+      "name": "เสื้อหม้อฮ่อมแขนสามส่วนสีกรมท่า (หญิงสูงวัย)",
+      "sex": "f",
+      "note": ""
+    },
+    {
+      "spec": "RC:Pants\\Pants(28).ccCloth",
+      "type": "bottom",
+      "name": "กระโปรงจีบรอบสีกรมท่า (ไม่ใช่ผ้าถุง)",
+      "sex": "f",
+      "note": "ชื่อเดิมในคลังผิด"
+    }
+  ],
+  "accessories": [
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Full-body\\Full-body(1).ccCloth",
+      "name": "ผ้าคาดเอวสีดำพันรอบสะโพก ปลายห้อย ใส่ทับกางเกง/ผ้านุ่ง",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Full-body\\Full-body(1).ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(25).ccCloth",
+      "name": "ผ้าขาวผูกต้นแขน ใช้เป็นผ้าพันแขนไว้ทุกข์หรือผ้าพันแผล",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants(25).ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(12).ccCloth",
+      "name": "ต่างหูห้อยสีทอง ใส่กับตัวละครหญิงสูงวัย/เจ้านาย (ไม่ใช่ชาวบ้านทั่วไป)",
+      "sex": "f",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(12).ccCloth"
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\!Converted STUFFS\\Male Outfits\\Owen\\Neck.ccCloth",
+      "name": "ผ้าพาดคอสีเทาน้ำตาลทรงสามเหลี่ยม คลุมหน้าอกส่วนบน ใส่ทับเสื้อ",
+      "sex": "any",
+      "ages": [
+        "adult",
+        "middle",
+        "old"
+      ],
+      "fabric": null,
+      "added": "2026-11-09",
+      "source": "ทดสอบบนร่าง Neutral 2026-11-09",
+      "note": "ชื่อตั้งจากภาพจริง ไม่ใช่ชื่อในคลัง; ยังไม่ทดสอบเปลี่ยนลายผ้า",
+      "orig": "!Converted STUFFS\\Male Outfits\\Owen\\Neck.ccCloth"
+    }
+  ],
+  "rejected_2026_11_09": [
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(20).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants(20).ccCloth",
+      "reason": "เสื้อกระดุมสีน้ำตาลเขียวยับเป็นก้อนและขาดที่ชายซ้าย",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Pants(21).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Pants(21).ccCloth",
+      "reason": "ชิ้นเดียวกับ 38 ยับและขาด",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\เสื้อเเขนขาว.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\เสื้อเเขนขาว.ccCloth",
+      "reason": "เสื้อคอจีนกระดุมสีชมพูม่วง ทรงแฟชั่น/เสื้อเชิ้ต แขนบิดเบี้ยว",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Pants(24).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Pants(24).ccCloth",
+      "reason": "เสื้อกล้ามดำมีรอยขาดแนวตั้งที่อก",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Open_collar_long_sleeves_shirt_Base.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Plain Base\\Professional Outfit\\Open_collar_long_sleeves_shirt_Base.ccCloth",
+      "reason": "เสื้อเชิ้ตขาวกระดุม ปกเชิ้ต",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar long sleeves shirt\\Close_collar_long_sleeves_shirt_A.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Close collar long sleeves shirt\\Close_collar_long_sleeves_shirt_A.ccCloth",
+      "reason": "เสื้อเชิ้ตเทากระดุม ปกเชิ้ต",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar long sleeves shirt\\Open_collar_long_sleeves_shirt_F.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Professional Outfit\\Open collar long sleeves shirt\\Open_collar_long_sleeves_shirt_F.ccCloth",
+      "reason": "เสื้อเชิ้ตน้ำเงินแต่งหนังส้ม ทรงแฟชั่น",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(1).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(1).ccCloth",
+      "reason": "เสื้อครอปคอวีกระดุมสีน้ำเงินเข้ม ผ้ายับ ชายสั้นเกินไป",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(8).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(8).ccCloth",
+      "reason": "เสื้อดำแขนสามส่วนคอเปิด มีรอยบกพร่องที่ไหล่",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Full-body\\Full-body.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Full-body\\Full-body.ccCloth",
+      "reason": "โจงกระเบนเขียวยับขาดชาย",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(26).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants(26).ccCloth",
+      "reason": "โจงกระเบนดำยับ พื้นผิวดำสนิท มีรอยตัด",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants(27).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants(27).ccCloth",
+      "reason": "มีแผ่นแปลกที่หน้าอก (ผิวลอย) ชุดไม่ครบ",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\กางเกง1.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\กางเกง1.ccCloth",
+      "reason": "โจงกระเบนม่วงลายยับเป็นก้อน",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\โจงกระเบน 1\\Shirts(24).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\โจงกระเบน 1\\Shirts(24).ccCloth",
+      "reason": "โจงกระเบนขาว พื้นผิวเป็นเม็ดสาก",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Pants\\Pants.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Pants\\Pants.ccCloth",
+      "reason": "ผ้านุ่งแดงปักลายจีน คาดเอวหรูหรา ทรงเครื่องแต่งกายการแสดง",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Coats\\Professional Outfit\\Waistcoat\\Waistcoat_A.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Coats\\Professional Outfit\\Waistcoat\\Waistcoat_A.ccCloth",
+      "reason": "เสื้อกั๊กน้ำเงินซาตินกระดุม ทรงสูท",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Coats\\Professional Outfit\\Waistcoat\\Waistcoat_D.ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Coats\\Professional Outfit\\Waistcoat\\Waistcoat_D.ccCloth",
+      "reason": "เสื้อกั๊กแดงลูกไม้ ทรงสูท/แฟชั่น",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(27).ccCloth",
+      "reason": "ผ้าพันอกสีเขียวเข้มแบบเปิดไหล่ ไม่เหมาะเป็นชุดหลัก",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(29).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(29).ccCloth",
+      "reason": "ผ้าถุงดำซ้ำกับ 84 และมีรอยบกพร่อง",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(17).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(17).ccCloth",
+      "reason": "ผ้าสไบขาวพันอกยับ ชายห้อยเลอะ",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(24).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(24).ccCloth",
+      "reason": "ผ้าห่มไหล่ดำชายห้อยยาวผิดรูป",
+      "bad": true
+    },
+    {
+      "spec": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Cloth\\Shirts\\Shirts(3).ccCloth",
+      "orig": "Reallusion Custom\\Cloth\\Shirts\\Shirts(3).ccCloth",
+      "reason": "ผ้าห่มไหล่เขียวมีหนามแหลมที่ชาย (เมชพัง)",
+      "bad": true
+    }
+  ],
+  "note2": "2026-11-09: เพิ่มจากคลังที่ยังไม่เคยใช้ (คัดเข้มหลังดูซูม): เสื้อ+5 กางเกง/ผ้านุ่ง+12 ของเสริม 4 (accessories ห้ามสุ่มเป็นชุดหลัก) ที่ทิ้งอยู่ใน rejected_2026_11_09 (ไม่ได้ลบไฟล์จริง)"
 }

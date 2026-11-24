@@ -116,6 +116,7 @@ def school_outfit(sex, age, old=False):
 
 
 def pick_outfit(sex, group, story_used, before, notes="", style="", age=30):
+    raise RuntimeError("Random garment selection disabled: use cc5_wardrobe_autoplan.recommend and locked look")
     """-> outfit list [[spec, fabric|None], ...], layer, designs."""
     pool = _load(POOL, {})
     sex = sex if sex in ("m", "f") else "m"
@@ -158,6 +159,7 @@ def pick_outfit(sex, group, story_used, before, notes="", style="", age=30):
 
 
 def pick_hair(sex, group, story_used, before):
+    raise RuntimeError("Random hair selection disabled: use cc5_wardrobe_autoplan.recommend and locked look")
     """-> (hair path, rgb) or (None, None) for babies."""
     if group == "baby":
         return None, None

@@ -24,60 +24,106 @@ def slug_of(title):
     return (s or "story") + time.strftime("_%m%d_%H%M")
 
 
-def create_story(title, rows, out_root=None):
-    """rows from planner.parse (edited in the app) -> stories/<slug>.json with outfit/hair/face for everyone."""
-    slug = slug_of(title)
-    used, before = wardrobe.new_story_used(), wardrobe.used_before(slug)
-    chars, jobs_by_person = {}, {}
-    for i, r in enumerate([r for r in rows if r.get("use", True)]):
-        job = "%s_%02d" % (slug, i + 1)
-        sex, age = r["sex"] if r["sex"] in ("m", "f") else "m", int(r["age"])
-        group = planner.age_group(age)
-        outfit, layer, designs = wardrobe.pick_outfit(sex, group, used, before, r.get("notes", ""),
-                                                      r.get("outfit", ""), age)
-        hair, rgb = wardrobe.pick_hair(sex, group, used, before)
-        person = r.get("person") or planner.base_name(r["name"])
-        c = {"name": r["name"], "sex": "male" if sex == "m" else "female", "age": age, "age_group": group,
-             "body": "baby" if group == "baby" else "child" if group == "child" else "neutral",
-             "folder": r.get("folder", ""), "notes": r.get("notes", ""), "outfit": outfit, "layer": layer,
-             "style": r.get("outfit", ""),
-             "fabric_designs": designs}
+def create_story(title, rows, out_root=None, era_profile=None):
+    """Compile a cast into a period-aware, locked, no-random CC5 story."""
+    from tools.cc5_wardrobe_autoplan import recommend, SAFE_ERAS
+    from tools.cc5_production_preflight import inspect_story
+    from tools.cc5_culture_gate import inspect_culture
+    from pathlib import Path
+    if not isinstance(title,str) or not title.strip():
+        raise ValueError("Story title required")
+    if era_profile not in SAFE_ERAS:
+        raise ValueError("Choose a modern rural/urban era. Historical and royal clothing needs period-verified assets.")
+    if not isinstance(rows,list):
+        raise ValueError("Cast must be a list")
+    selected=[r for r in rows if isinstance(r,dict) and r.get("use",True)]
+    if not selected:
+        raise ValueError("No actors selected")
+    slug=slug_of(title)
+    chars,looks,jobs_by_person={}, {}, {}
+    used_hair=[]
+    for i,row in enumerate(selected):
+        name=str(row.get("name","")).strip()
+        if not name:
+            raise ValueError("Actor "+str(i+1)+" has no name")
+        sex=row.get("sex")
+        if sex not in ("m","f"):
+            raise ValueError(name+": choose male or female")
+        age=int(row.get("age",0))
+        if age<0 or age>110:
+            raise ValueError(name+": invalid age")
+        group=planner.age_group(age)
+        job="%s_%02d"%(slug,i+1)
+        try:
+            look=recommend(row,era_profile,used_hair)
+        except (ValueError,KeyError,OSError) as exc:
+            raise ValueError(name+": "+str(exc)) from exc
+        hair=look.get("hair_source_path")
+        if hair: used_hair.append(hair)
+        look["character_name"]=name
+        looks[job]=look
+        person=row.get("person") or planner.base_name(name)
+        c={"name":name,"sex":"male" if sex=="m" else "female",
+           "age":age,"age_group":group,
+           "body":"baby" if group=="baby" else "child" if group=="child" else "neutral",
+           "folder":row.get("folder",""),
+           "notes":row.get("notes",""),
+           "outfit":[[x["resolved_source_path"],x.get("fabric_id")] for x in look["outfit"]],
+           "layer":"out","style":row.get("outfit","") or row.get("role",""),
+           "social_tier":look["social_tier"],"fabric_designs":[],
+           "wardrobe_selection":"locked_script_grounded"}
         if hair:
-            c["hair"] = hair
-            c["hair_rgb"] = rgb
-        hair_txt = {"child": "ผมดำ", "adult": "ผมดำ", "middle": "ผมดอกเลาสีเทา", "old": "ผมขาว"}.get(group, "")
-        c["face"] = {"อายุ": "ทารกอายุประมาณ 1 ขวบ" if group == "baby" else "ประมาณ %d ปี" % age,
-                     "เพศ": "ชาย" if sex == "m" else "หญิง",
-                     "บทบาท": r["name"] + (" (" + r["role"] + ")" if r.get("role") else ""),
-                     "สีผิว": random.choice(SKIN if group != "old" else SKIN[:2] + SKIN[4:]),
-                     "ทรงผม": hair_txt, "ใบหน้า": " ".join([random.choice(FACE)] + random.sample(FEATURE, 2)),
-                     "prompt_name": r["name"]}
-        notes = r.get("notes", "")
-        same = jobs_by_person.get(person, [])
-        prev = min(same, key=lambda j: abs(chars[j]["age"] - age)) if same else None
-        if prev:  # same person again: look alike; about the same age (burn / thin / pregnant) = the very same head
-            pc = chars[prev]
-            c["face"]["ref"] = prev
-            c["face"]["สีผิว"] = pc["face"].get("สีผิว", "") if "face" in pc else c["face"]["สีผิว"]
-            c["face"]["ใบหน้า"] = pc["face"].get("ใบหน้า", "") if "face" in pc else c["face"]["ใบหน้า"]
-            if abs(pc["age"] - age) <= 6 and group == pc["age_group"]:
-                c["head_from"] = pc.get("head_from", prev)
+            c["hair"]=hair
+            c["hair_rgb"]=look.get("hair_rgb")
+        c["face"]={"อายุ":"ประมาณ %d ปี"%age,
+                   "เพศ":"ชาย" if sex=="m" else "หญิง",
+                   "บทบาท":name+" ("+str(row.get("role",""))+") "+str(row.get("notes","")),
+                   "สีผิว":str(row.get("skin") or row.get("skin_tone") or "ตามใบงาน ไม่สุ่มสีผิว"),
+                   "ทรงผม":look.get("hair_reason",""),
+                   "ใบหน้า":str(row.get("face_shape") or row.get("face_details") or
+                         "ใบหน้าคนไทยมีเอกลักษณ์เฉพาะตัว ไม่ยึดรูปตัวอื่น"),
+                   "prompt_name":name}
+        same=jobs_by_person.get(person,[])
+        prev=min(same,key=lambda j:abs(chars[j]["age"]-age)) if same else None
+        if prev:
+            c["face"]["ref"]=prev
+            if abs(chars[prev]["age"]-age)<=6 and group==chars[prev]["age_group"]:
+                c["head_from"]=chars[prev].get("head_from",prev)
                 c.pop("face")
-                if "hair" in pc:
-                    c["hair"], c["hair_rgb"] = pc["hair"], pc.get("hair_rgb")
-        if "ผอม" in notes:
-            c["morphs"] = dict(MORPH_THIN)
-        if "ท้อง" in notes:
-            c["morphs"] = dict(MORPH_PREGNANT)
-        jobs_by_person.setdefault(person, []).append(job)
-        chars[job] = c
-    story = {"title": title, "era": "คนไทยต่างจังหวัด ยุคปัจจุบัน", "slug": slug,
-             "out_dir": os.path.join(out_root or kit.CFG["out_root"], title), "characters": chars,
-             "status": {j: {"plan": "ok"} for j in chars}}
-    path = os.path.join(kit.REPO, "stories", slug + ".json")
-    save(path, story)
-    wardrobe.remember(slug, chars)
-    return path
+        if "ผอม" in str(row.get("notes","")):c["morphs"]=dict(MORPH_THIN)
+        if "ท้อง" in str(row.get("notes","")):c["morphs"]=dict(MORPH_PREGNANT)
+        jobs_by_person.setdefault(person,[]).append(job)
+        chars[job]=c
+    story={"title":title,"slug":slug,
+           "era":"คนไทยชนบทยุคปัจจุบัน" if era_profile=="modern_rural" else "คนไทยเมืองยุคปัจจุบัน",
+           "era_profile":era_profile,
+           "out_dir":os.path.join(out_root or kit.CFG["out_root"],title),
+           "characters":chars,"status":{j:{"plan":"ok"} for j in chars}}
+    errors,_=inspect_story(story)
+    cultural,_,_=inspect_culture(story,list(chars))
+    if errors or cultural:
+        raise ValueError("Cannot start story: "+"; ".join(errors+cultural))
+    lock={"version":1,"story_slug":slug,"era_profile":era_profile,
+          "selection_policy":"deterministic_from_story_and_real_asset_paths; no random fallback",
+          "looks":looks,"unfilled_scene_variants":{},
+          "global_rule_ref":"docs/production/THAI_CHARACTER_MASTER.md"}
+    story_path=Path(kit.REPO)/"stories"/(slug+".json")
+    lock_path=Path(kit.REPO)/"runs"/slug/"wardrobe_design.json"
+    if story_path.exists() or lock_path.exists():
+        raise FileExistsError("Story ID already exists; do not overwrite: "+slug)
+    lock_path.parent.mkdir(parents=True,exist_ok=True)
+    story_path.parent.mkdir(parents=True,exist_ok=True)
+    locked_tmp=lock_path.with_suffix(".json.writing")
+    story_tmp=story_path.with_suffix(".json.writing")
+    try:
+        locked_tmp.write_text(json.dumps(lock,ensure_ascii=False,indent=2),encoding="utf-8")
+        story_tmp.write_text(json.dumps(story,ensure_ascii=False,indent=2),encoding="utf-8")
+        os.replace(locked_tmp,lock_path)
+        os.replace(story_tmp,story_path)
+    finally:
+        for tmp in (locked_tmp,story_tmp):
+            if tmp.exists():tmp.unlink()
+    return str(story_path)
 
 
 def save(path, story):
@@ -181,7 +227,7 @@ class Runner:
                     self.log("สร้างลายผ้า AI ไม่ได้ (%s) ใช้ผ้าในคลังแทน" % str(e)[:80])
             if not path:
                 lib = [os.path.splitext(f)[0] for f in os.listdir(kit.FABRICS) if f.endswith(".png") and "plaid" not in f]
-                item[1] = random.choice(lib)
+                raise RuntimeError("Requested AI fabric unavailable: do not substitute a random texture")
                 notes.append("คลัง:" + item[1])
             changed = True
         if changed:
@@ -300,6 +346,22 @@ class Runner:
     # ---- main loop ----
     def run(self):
         story = load(self.path)
+        # Read-only universal gate before CC5, Tidmunz, or progress is touched.
+        from tools.cc5_production_preflight import inspect_story
+        structural_errors, structural_warnings = inspect_story(story)
+        if not structural_errors:
+            from tools.cc5_culture_gate import inspect_culture
+            style_errors, style_warnings, _ = inspect_culture(story, list(story['characters']))
+            structural_errors.extend(style_errors)
+            structural_warnings.extend(style_warnings)
+        for message in structural_warnings:
+            self.log("PREFLIGHT WARNING: " + message)
+        if structural_errors:
+            for message in structural_errors:
+                self.log("PREFLIGHT BLOCKED: " + message)
+            self.log("No CC5/Tidmunz operation started: invalid story schema.")
+            self.on_update("done", None)
+            return
         jobs = [j for j in story["characters"] if not self.opts.get("only") or j in self.opts["only"]]
         for job in jobs:
             for key, label in STEPS:
@@ -352,21 +414,4 @@ def reset(path, job, from_step="fabric", keep_face=False):
 
 
 def reroll(path, job):
-    """New random outfit/fabric for one character (keeps face)."""
-    s = load(path)
-    c = s["characters"][job]
-    used = wardrobe.new_story_used()
-    for j, o in s["characters"].items():
-        if j != job:
-            used["tops"].append(o["outfit"][1][0] if len(o["outfit"]) > 1 else "")
-            used["bottoms"].append(o["outfit"][0][0])
-            used["fabrics"] += o.get("fabric_designs", [])
-    outfit, layer, designs = wardrobe.pick_outfit("m" if c["sex"] == "male" else "f", c["age_group"], used,
-                                                  wardrobe.used_before(s.get("slug", "")), c.get("notes", ""),
-                                                  c.get("style", ""), c.get("age", 30))
-    c.update(outfit=outfit, layer=layer, fabric_designs=designs)
-    save(path, s)
-    reset(path, job, "fabric", keep_face=True)
-    s = load(path)
-    s["status"][job]["face"] = "ok" if os.path.exists(os.path.join(kit.JOBS, job, "face.png")) else ""
-    save(path, s)
+    raise RuntimeError("Random outfit/hair reroll is disabled. Update verified wardrobe_design.json instead.")

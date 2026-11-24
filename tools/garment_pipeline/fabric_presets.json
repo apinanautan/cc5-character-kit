@@ -1,0 +1,36 @@
+{
+ "_note": "Fabric photos live in the ลายผ้า folder (outfit_flow.py FABRIC_DIR). tile_cm = real size of one repeat on the body. Rules are checked top to bottom; first match wins. Add rules for new occasions here, not in code.",
+ "fabrics": {
+  "aqua_coral_floral": {"file": "Nelmi_SFF_23_Base.jpg", "tile_cm": 30, "look": "ฟ้าอ่อนดอกส้มปะการัง สดใส ยุค 90"},
+  "blush_floral": {"file": "Nelmi_SFF_20_Base.jpg", "tile_cm": 30, "look": "ชมพูอ่อนลายดอกจาง หวาน"},
+  "pastel_floral": {"file": "Nelmi_SFF_01_Base.jpg", "tile_cm": 30, "look": "ชมพู-ม่วงลายดอก"},
+  "teal_floral_bold": {"file": "Nelmi_SFF_24_Base.jpg", "tile_cm": 30, "look": "เขียวน้ำทะเลดอกแดง"},
+  "peach_cotton": {"file": "Fabric_17.jpg", "tile_cm": 12, "look": "พีชเรียบ"},
+  "sky_cotton": {"file": "Fabric_18.jpg", "tile_cm": 12, "look": "ฟ้าเรียบ"},
+  "mint_cotton": {"file": "Fabric_19.jpg", "tile_cm": 12, "look": "มิ้นต์เรียบ"},
+  "white_cotton": {"file": "Fabric_15.jpg", "tile_cm": 12, "look": "ขาวเรียบ"},
+  "teal_cotton": {"file": "Fabric_13.jpg", "tile_cm": 12, "look": "เขียวอมฟ้าเรียบ"},
+  "navy_jersey": {"file": "Fabric_11.jpg", "tile_cm": 12, "look": "กรมท่าเข้ม"},
+  "blue_jersey": {"file": "Fabric_10.jpg", "tile_cm": 12, "look": "น้ำเงินหม่น"},
+  "black_jersey": {"file": "Fabric_14.jpg", "tile_cm": 12, "look": "ดำ"},
+  "olive_cotton": {"file": "Fabric_09.jpg", "tile_cm": 12, "look": "เขียวขี้ม้า"},
+  "maroon_cotton": {"file": "Fabric_12.jpg", "tile_cm": 12, "look": "แดงเลือดหมู"},
+  "khaki_cotton": {"file": "HS_4KF3_Color12.png", "tint_weave": "Fabric_15.jpg", "tile_cm": 12, "look": "กากีอมเขียว ผ้าคอตตอน (ผู้ใช้เลือก)"},
+  "thai_brocade": {"file": "ลายผ้า 2.png", "tile_cm": 10, "look": "ลายไทยทอง-น้ำเงิน"}
+ },
+ "rules": [
+  {"occasion": "salon_work", "sex": "female", "top": "pastel_floral", "button_hex": "F4F1EA",
+   "bottom": {"kind": "skirt", "style": "aline", "hem_k": 1.0, "flare": 4, "fabric": "khaki_cotton"},
+   "why": "ผู้ใช้เลือก 2026-11-25: เสื้อลายดอกชมพู-ม่วง + กระโปรงกากี. ช่างเสริมสวยยุค 90 แต่งตัวสวยแต่ทำงานได้: เสื้อลายดอกสีสดเรียบร้อย + กระโปรงทรงเอคลุมเข่าสีเข้มเลอะไม่เห็น"},
+  {"occasion": "salon_work", "sex": "male", "top": "white_cotton", "button_hex": "E8E4DA",
+   "bottom": {"kind": "keep"}, "why": "ช่างผู้ชายในร้าน เสื้อเชิ้ตสีอ่อน ใช้กางเกงคลังเดิม"},
+  {"occasion": "office", "sex": "female", "top": "white_cotton", "button_hex": "F4F1EA",
+   "bottom": {"kind": "skirt", "style": "pencil", "hem_k": 1.0, "flare": 1, "fabric": "black_jersey"},
+   "why": "ชุดทำงานออฟฟิศ เสื้อขาว + กระโปรงทรงสอบ"},
+  {"occasion": "*", "sex": "female", "top": "blush_floral", "button_hex": "F4F1EA",
+   "bottom": {"kind": "skirt", "style": "aline", "hem_k": 0.95, "flare": 5, "fabric": "blue_jersey"},
+   "why": "ค่าเริ่มต้นหญิง ชุดลำลองไทย"},
+  {"occasion": "*", "sex": "*", "top": "sky_cotton", "button_hex": "E8E4DA",
+   "bottom": {"kind": "keep"}, "why": "ค่าเริ่มต้น"}
+ ]
+}

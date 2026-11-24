@@ -4,12 +4,14 @@
 # collision on the top garment -> render <name>.png -> save <name>.ccProject. Log: <job>\result.txt
 # A job is skipped once it has result.txt (delete it to rebuild). Export the .iAvatar by hand afterwards.
 import importlib, json, os, sys, time, traceback
+from pathlib import Path
 import RLPy
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kit
 import layer_fix
+from tools.job_tidy import tidy
 importlib.reload(kit)
 importlib.reload(layer_fix)
 BODY = {"male": "Male", "female": "Female", "neutral": "Neutral", "child": "Kid", "baby": "Baby"}  # CC5 enum has Kid, not Child
@@ -31,7 +33,10 @@ def build(here):
 
     def headshot():
         if not RLPy.RScene.GetAvatars():  # CC5 can start with an empty scene: Headshot then crashes in its SDK
-            RLPy.RFileIO.LoadFile(r"C:\Users\Public\Documents\Reallusion\Reallusion Templates\Actor\Character\Base\Neutral_M.ccAvatar")
+            public = os.environ.get("PUBLIC") or os.path.expanduser("~")
+            default_base = os.path.join(public, "Documents", "Reallusion", "Reallusion Templates",
+                                        "Actor", "Character", "Base", "Neutral_M.ccAvatar")
+            RLPy.RFileIO.LoadFile(kit.CFG.get("cc5_neutral_base") or default_base)
         import RLPy2  # Load Headshot only when needed; existing-project re-dress skips the AI module.
         skin = RLPy2.RArrayListWString(3, "None"); skin[0] = "Soft Skin"
         mask = RLPy2.RArrayListWString(4, "None"); mask[0] = "No Mask"
@@ -51,6 +56,14 @@ def build(here):
             RLPy.RScene.RemoveObject(o)
 
     step("strip", strip)
+
+    if job.get("body_preset"):
+        def apply_body_preset():
+            RLPy.RScene.SelectObject(av)
+            result = RLPy.RFileIO.LoadFile(job["body_preset"])
+            if result.IsError():
+                raise RuntimeError("CC5 could not apply the body-only preset")
+        step("body preset", apply_body_preset)
 
     def morphs():  # job "morphs": {slider id: weight 0..1}, before clothes so they fit the new body
         sh = av.GetAvatarShapingComponent()
@@ -157,10 +170,22 @@ def build(here):
         return RLPy.RFileIO.SaveFile(av, s, os.path.join(here, name + ".ccProject"))
 
     step("save", save)
+    if not globals().get("BRIDGE_ARGS", {}).get("defer_tidy"):
+        step("tidy", lambda: tidy(here, job, name, log))
     open(os.path.join(here, "result.txt"), "w", encoding="utf-8").write("\n".join(log))
 
 
-for d in open(kit.BATCH, encoding="utf-8").read().splitlines():
+selected = globals().get("BRIDGE_ARGS", {}).get("job")
+if selected:
+    jobs = Path(kit.JOBS).resolve()
+    job_path = jobs / selected
+    if Path(selected).name != selected or job_path.resolve().parent != jobs:
+        raise ValueError("Expected a single job folder under cc5_jobs")
+    batch = [str(job_path)]
+else:
+    with open(kit.BATCH, encoding="utf-8") as batch_file:
+        batch = batch_file.read().splitlines()
+for d in batch:
     d = d.strip()
     if not d:
         continue
@@ -171,4 +196,5 @@ for d in open(kit.BATCH, encoding="utf-8").read().splitlines():
         build(d)
     except Exception as e:
         open(os.path.join(d, "result.txt"), "a", encoding="utf-8").write("\nBATCH FAIL %r" % e)
-open(os.path.join(kit.JOBS, "batch_done.txt"), "w", encoding="utf-8").write(time.strftime("%Y-%m-%d %H:%M:%S"))
+if not selected:
+    open(os.path.join(kit.JOBS, "batch_done.txt"), "w", encoding="utf-8").write(time.strftime("%Y-%m-%d %H:%M:%S"))
