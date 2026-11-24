@@ -113,8 +113,9 @@ def use(store, args):
         raise Blocked("ตรวจงาน CC5 ที่ค้างอยู่ก่อนเปลี่ยนรอบ")
     old = load(store.state_file(story), {})
     actor, age = (None, None)
+    selected_inventory = {}
     if args.actor:
-        actor, age, _ = select_actor(store, story, args.actor)
+        actor, age, selected_inventory = select_actor(store, story, args.actor)
     if args.donor_map and not actor:
         raise Blocked("--donor-map ต้องระบุ actor ด้วย")
     options = {}
@@ -128,7 +129,19 @@ def use(store, args):
     revision = (old and label and label != old["label"] and actor == old.get("actor")
                 and store.step(old) and (store.step(old)[0] in ("approve", "qa")
                                        or old.get("failed_step") == store.step(old)[0]))
-    if old and store.step(old) and len(old["done"]) >= 2 and not revision:
+    switching = bool(old and actor and old.get("actor") and actor != old["actor"])
+    if switching:
+        # Another actor: keep the current one's progress in its own file and resume the chosen one.
+        store.write(old)
+        resumed = store.parked(story).get(actor)
+        if resumed and not label and not options:
+            resumed["finished_actors"] = sorted(store.finished_actors(old) | set(resumed.get("finished_actors", ())))
+            store.write(resumed)
+            save(store.runs / ".ai_cc5_active.json", {"story": story})
+            store.log(resumed, f"สลับมาที่ {actor} ทำต่อจากขั้น {len(resumed['done']) + 1}")
+            return
+        previous, old = old, {**old, "done": [], "label": None}
+    if not switching and old and store.step(old) and len(old["done"]) >= 2 and not revision:
         same = ((actor is None or actor == old["actor"])
                 and (label is None or label == old["label"]) and (not options or all(
                     old.get(k) == value for k, value in options.items())))
@@ -136,7 +149,7 @@ def use(store, args):
             raise Blocked("รอบเดิมยังไม่เสร็จ ให้ทำต่อที่ actor และ label เดิม")
         state = old
     else:
-        in_progress = old and store.step(old) and not revision
+        in_progress = old and old.get("label") and store.step(old) and not revision
         chosen_label = label or (old["label"] if in_progress else
                                  "ai_cc5_" + time.strftime("%Y%m%d") + "_" + uuid4().hex[:8])
         state = {"story": story, "actor": actor or (old.get("actor") if in_progress else None),
@@ -148,6 +161,14 @@ def use(store, args):
         if chosen_label == old.get("label") and in_progress and state["actor"] == old.get("actor"):
             state.update({k: old[k] for k in ("donor_map", "donor_sha") if k in old})
         state.update(options)
+        if switching and previous.get("new_actor") and not selected_inventory:
+            # New-story actor (no exported QA inventory yet): face -> build flow like the queue does.
+            data = manifest(store, story)["characters"][f"{story}_{actor}"]
+            state.update(new_actor=True, review_tools=previous["review_tools"],
+                         build_job=data.get("staging_job", f"{story}_{actor}"))
+            for key in ("prior_project", "prior_project_sha"):
+                if key in previous:
+                    state[key] = previous[key]
         if (not in_progress or label and label != old["label"]) and (
             store.folder(state).exists() or (run / "cast_fittings" / state["label"]).exists()
         ):

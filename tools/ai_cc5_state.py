@@ -157,9 +157,12 @@ class State:
 
     def finished_actors(self, state):
         finished = set(state.get("finished_actors", ()))
-        actor = state.get("actor")
-        if actor and state.get("done") == [step[0] for step in STEPS]:
-            finished.add(f'{state["story"]}_{actor}')
+        everything = [step[0] for step in STEPS]
+        others = self.parked(state["story"]).values() if state.get("story") else ()
+        for item in (state, *others):
+            if item.get("actor") and item.get("done") == everything:
+                finished.add(f'{item["story"]}_{item["actor"]}')
+            finished.update(item.get("finished_actors", ()))
         return finished
 
     def cast_rows(self, story, state=None, manifest=None):
@@ -301,8 +304,24 @@ class State:
     def state_file(self, story):
         return self.runs / identifier(story) / "ai_cc5_state.json"
 
+    def actor_file(self, story, actor):
+        """Per-actor progress. ai_cc5_state.json is the actor shown now; every actor keeps its own copy here
+        so switching actors in Preview resumes each one where it stopped."""
+        return self.runs / identifier(story) / "ai_cc5_actors" / f"{identifier(actor)}.json"
+
+    def parked(self, story):
+        folder = self.runs / identifier(story) / "ai_cc5_actors"
+        result = {}
+        for path in sorted(folder.glob("*.json")) if folder.is_dir() else ():
+            data = load(path, {})
+            if isinstance(data, dict) and data.get("actor") and data.get("story") == story:
+                result[data["actor"]] = data
+        return result
+
     def write(self, state):
         save(self.state_file(state["story"]), state)
+        if state.get("actor"):
+            save(self.actor_file(state["story"], state["actor"]), state)
         try:
             self.sync_cast_report(state["story"],state)
         except (OSError,ValueError):

@@ -115,6 +115,27 @@ class WorkflowTests(unittest.TestCase):
             self.cli("do", "--allow-cc5")
         self.cli("do")
 
+    def test_switch_actor_keeps_each_actor_progress(self):
+        stories = self.root / "stories/example.json"
+        data = load(stories)
+        data["characters"]["example_son_young"] = {"age": 20, "age_group": "young", "sex": "male"}
+        save(stories, data)
+        self.start()
+        self.cli("do")
+        self.cli("do")
+        father = self.store.active()
+        self.assertEqual(father["done"], ["preflight", "select"])
+        self.cli("use", "example", "son_young")          # no inventory entry needed, father is parked
+        son = self.store.active()
+        self.assertEqual((son["actor"], son["done"]), ("son_young", []))
+        self.assertNotEqual(son["label"], father["label"])
+        self.cli("do")
+        self.cli("use", "example", "father_main")        # resumes where father stopped
+        back = self.store.active()
+        self.assertEqual((back["label"], back["done"]), (father["label"], ["preflight", "select"]))
+        self.cli("use", "example", "son_young")
+        self.assertEqual(self.store.active()["done"], ["preflight"])
+
     def test_one_step_and_dry_run_read_only(self):
         self.cli("use", "example")
         before = self.store.state_file("example").read_bytes()
