@@ -273,9 +273,9 @@ class Preview(tk.Tk):
         for key, actor in (characters.items() if isinstance(characters, dict) else ()):
             if not isinstance(actor, dict):
                 continue
-            if key not in inventory or not key.startswith(story + "_"):
+            if not key.startswith(story + "_"):
                 continue
-            name = inventory[key].get("name") or actor.get("name") or key
+            name = inventory.get(key, {}).get("name") or actor.get("name") or key
             display = f"{name} · {actor.get('age', '—')} ปี"
             if display in self.actors:
                 display += f" · {key.removeprefix(story + '_')}"
@@ -295,7 +295,12 @@ class Preview(tk.Tk):
                     raise Blocked("AI รับงานเรื่องใหม่แล้ว")
                 use(self.store, args)
         except (Blocked, OSError, ValueError, KeyError) as exc:
-            self.show_notice(str(exc))
+            current = self.store.active()
+            self.actor.set(next((text for text, key in self.actors.items() if key == current.get("actor")),
+                                "เลือกตัวละคร / ช่วงวัย"))
+            step = self.store.step(current) if current else None
+            where = f" (ค้างที่ขั้น {step[1]})" if step else ""
+            self.show_notice(f"เปลี่ยนตัวไม่ได้: {exc}{where}")
             return
         self.notice.pack_forget()
         self.update_view()

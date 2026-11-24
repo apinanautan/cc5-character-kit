@@ -95,12 +95,13 @@ def select_actor(store, story, actor):
     key = story + "_" + identifier(short)
     cast = load(store.runs / story / "CAST_QA_INVENTORY.json", {}).get("actors", {})
     actors = manifest(store, story).get("characters", {})
-    if key not in cast or not isinstance(actors, dict) or key not in actors:
-        raise Blocked(f"เลือก actor key ของช่วงวัยเดียวที่มีทั้งใน story และ inventory: {actor}")
+    if not isinstance(actors, dict) or key not in actors:
+        raise Blocked(f"ไม่มีตัวละครนี้ใน story: {actor}")
     data = actors[key]
-    if cast[key].get("age") != data.get("age") or cast[key].get("sex") != data.get("sex"):
+    # New stories have no QA inventory until actors are exported; the story entry is then the source.
+    if key in cast and (cast[key].get("age") != data.get("age") or cast[key].get("sex") != data.get("sex")):
         raise Blocked("อายุหรือเพศใน inventory ต่างจาก story")
-    return short, f'{data["age"]} ปี ({data["age_group"]})', cast[key]
+    return short, f'{data["age"]} ปี ({data["age_group"]})', cast.get(key, {})
 
 
 def use(store, args):
