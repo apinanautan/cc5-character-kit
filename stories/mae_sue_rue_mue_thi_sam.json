@@ -184,6 +184,50 @@
         "ทรงผม": "ผมดำแซมหงอกเก็บเรียบ เปิดหน้าผากและหูสองข้างสำหรับ Headshot",
         "prompt_name": "แม่ของนงรักษ์"
       }
+    },
+    "mae_sue_rue_mue_thi_sam_ek_27": {
+      "name": "เอก",
+      "sex": "male",
+      "age": 27,
+      "age_group": "adult",
+      "body": "neutral",
+      "folder": "เอก",
+      "occasion": "salon_work",
+      "social_tier": "urban_middle_class",
+      "age_source": "ผู้ใช้ยืนยันในแชต 25 พ.ย. 2569",
+      "notes": "ช่างทำผมชายในร้านนงรักษ์ ไม่ใช่ชายแท้ แต่งตัวจัดสายร็อก ฉากร้านไทยราว พ.ศ. 2539",
+      "layer": "out",
+      "style": "ร็อก/ไบเกอร์ เสื้อยืดลาย กางเกงดำ บูตหนัง",
+      "wardrobe_selection": "locked_script_grounded",
+      "outfit": [
+        [
+          "LIB:!Converted STUFFS/Male Outfits/Biker/Shirt(1).ccCloth",
+          null
+        ],
+        [
+          "LIB:!Converted STUFFS/Male Outfits/Biker/Pants(1).ccCloth",
+          null
+        ],
+        [
+          "LIB:!Converted STUFFS/Male Outfits/Biker/Boots(1).ccShoes",
+          null
+        ]
+      ],
+      "hair": "G:\\คอมพิวเตอร์เครื่องอื่นๆ\\คอมพิวเตอร์ของฉัน\\โมชั่น\\Prop ของใช้ต่างๆ\\เสื้อผ้า-ทรงผม\\Reallusion Custom\\Hair\\Group\\ผม\\Spiky Quiff.rlHair",
+      "hair_rgb": [
+        18,
+        16,
+        15
+      ],
+      "face": {
+        "อายุ": "ประมาณ 27 ปี",
+        "เพศ": "ชาย",
+        "บทบาท": "เอก ช่างทำผมชาย ท่าทางสาว (ไม่ใช่ชายแท้)",
+        "สีผิว": "ผิวไทยคล้ำแดด สีน้ำผึ้งเข้ม",
+        "ใบหน้า": "ใบหน้าคนไทยรูปเหลี่ยม กรามกว้าง โหนกแก้มสูงชัด สันคิ้วโหนก ตาเล็กชั้นเดียว ดูหน้าโหดดุดัน แต่งหน้าบางๆ ไม่ใช่หน้าเนียนหล่อแบบพระเอก หน้าตรง ปากปิด ห้ามเหมือนบุคคลจริงในภาพอ้างอิง",
+        "ทรงผม": "สำหรับภาพ Headshot เก็บผมให้เห็นหน้าผากและใบหูทั้งสองข้าง",
+        "prompt_name": "เอก"
+      }
     }
   },
   "status": {
@@ -199,11 +243,15 @@
     },
     "mae_sue_rue_mue_thi_sam_mother_56": {
       "plan": "ok"
+    },
+    "mae_sue_rue_mue_thi_sam_ek_27": {
+      "plan": "ok"
     }
   },
   "production_queue": [
     "mae_sue_rue_mue_thi_sam_nongrak_28",
     "mae_sue_rue_mue_thi_sam_son_2",
-    "mae_sue_rue_mue_thi_sam_mother_56"
+    "mae_sue_rue_mue_thi_sam_mother_56",
+    "mae_sue_rue_mue_thi_sam_ek_27"
   ]
 }
