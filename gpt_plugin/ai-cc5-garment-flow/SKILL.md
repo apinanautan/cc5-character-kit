@@ -14,6 +14,13 @@ Never invent another script, skip a step, or run a later step before the earlier
 - The row "สร้างชุด AI 3D" shows `ขั้น N/20 · <key>`; the progress bar shows `งานชุด · ขั้น N/20`.
 - Everything you do must go through the commands below so the window and its log update. Work done outside them is invisible and does not count.
 
+## Whole character order (as the Preview window shows it)
+ตรวจความพร้อม → เลือกตัว → สร้างหน้า (Tidmunz, `tools/cc5_face_queue.py`) → ส่งภาพหน้าให้ตรวจ (ntfy) →
+สร้างตัว CC5 + Headshot (`tools/cc5_build_queue.py`) → เปิดงาน → **สร้างชุด AI 3D (garment steps 1–14)** → ใส่ชุด →
+เตรียมตัวละครก่อนตรวจ (garment steps 15–20) → เรนเดอร์ → ภาพรวม → ส่งภาพ → รอผู้ใช้ → ส่งออก → QA → เก็บงาน.
+Face/build status is read from `stories/<slug>.json` → `status[<slug>_<actor>]` (`face`, `face_delivery`, `build`);
+the queues write it, so never edit it by hand to look finished.
+
 ## Loop (repeat until step 20 is done)
 1. `python tools\ai_cc5.py garment status`: see which step is current. If no round is registered:
    `python tools\ai_cc5.py garment init --source <ccProject> --top-image <PNG> --age <years>`

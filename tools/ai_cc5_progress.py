@@ -23,6 +23,11 @@ GREEN, GREEN_BG = "#166C50", "#E8F5EE"
 AMBER, AMBER_BG = "#895308", "#FFF1D8"
 RED, RED_BG = "#A32E3E", "#FCECEF"
 FONT = "Tahoma"
+BUILD_STAGES = (
+    ("face", "สร้างหน้า (Tidmunz)"),
+    ("face_delivery", "ส่งภาพหน้าให้ตรวจ (ntfy)"),
+    ("build", "สร้างตัว CC5 + Headshot"),
+)
 FINISHING_STEP = next(i for i, (key, *_) in enumerate(flow_preview.STEPS, 1) if key == "physics")
 
 
@@ -157,6 +162,21 @@ class Preview(tk.Tk):
             for widget in (row, dot, text, meta):
                 widget.bind("<Button-1>", lambda _, i=index: self.toggle(i))
             self.rows.append((row, dot, text, meta, detail, description, owner))
+
+        # Actor build stages (face -> review -> CC5 body) shown between เลือกตัว and เปิดงาน.
+        # Read-only: status comes from story["status"][<story>_<actor>] written by the face/build queues.
+        self.build_rows = []
+        for key, title in BUILD_STAGES:
+            row = tk.Frame(checklist, bg=WHITE, height=23)
+            row.pack_propagate(False)
+            dot = tk.Canvas(row, width=25, height=22, highlightthickness=0, bg=WHITE)
+            dot.pack(side="left")
+            text = label(row, "   " + title, bg=WHITE, size=10)
+            text.pack(side="left", fill="x", expand=True)
+            meta = label(row, "", bg=WHITE, size=8, anchor="e", padx=8)
+            meta.pack(side="right")
+            row.pack(fill="x", before=self.rows[2][0])
+            self.build_rows.append((key, row, dot, text, meta))
 
         self.cloth_row = tk.Frame(checklist, bg=AMBER_BG, height=23)
         self.cloth_row.pack_propagate(False)
@@ -303,6 +323,34 @@ class Preview(tk.Tk):
         except ValueError:
             return False
         return bool(flow and flow[1].get("label") and flow_preview.next_number(flow[2]) is not None)
+
+    def draw_build(self, state, manifest):
+        story, actor = state.get("story"), state.get("actor")
+        job = f"{story}_{actor}" if story and actor else None
+        status = (manifest.get("status") or {}).get(job, {}) if job else {}
+        char = (manifest.get("characters") or {}).get(job, {}) if job else {}
+        for key, row, dot, text, meta in self.build_rows:
+            value = status.get(key)
+            if key in ("face", "face_delivery") and char.get("head_from") and not value:
+                right, color = "ใช้หัวเดิม", GREEN
+            elif value == "ok":
+                right, color = "เสร็จ", GREEN
+            elif value in ("fail", "error", "blocked"):
+                right, color = "ค้าง", RED
+            elif value == "review":
+                right, color = "รอตรวจภาพ", AMBER
+            elif value:
+                right, color = str(value), AMBER
+            elif not job:
+                right, color = "รอเลือกตัว", MUTED
+            else:
+                right, color = "รอดำเนินการ", MUTED
+            done = color == GREEN
+            dot.delete("all")
+            dot.create_oval(9, 7, 17, 15, fill=color if color != MUTED else WHITE,
+                            outline=color if color != MUTED else "#A1AFC1", width=1)
+            text.configure(fg=color if color in (RED, AMBER) else TEXT)
+            meta.configure(text=right, fg=color)
 
     def draw_rows(self):
         state = self.state_data
@@ -681,6 +729,7 @@ class Preview(tk.Tk):
             self.draw_gallery(story)
         if self.page == "preview":
             self.cloth_view = cloth3d.display(self.store,state)
+            self.draw_build(state, manifest)
             self.draw_rows()
             if self.cloth_view:
                 stage, _, _ = self.cloth_view
